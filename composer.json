@@ -1,0 +1,7 @@
+{
+    "require": {
+        "tecnickcom/tcpdf": "^6.10",
+        "mike42/escpos-php": "^2.2",
+        "dompdf/dompdf": "^3.1"
+    }
+}

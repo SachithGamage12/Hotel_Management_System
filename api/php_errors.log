@@ -1,0 +1,44 @@
+[17-Jul-2025 06:54:48 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 203, ac_type: AC
+[17-Jul-2025 07:36:40 Europe/Berlin] Database error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wedding_bliss.room_rates' doesn't exist
+[17-Jul-2025 07:40:19 Europe/Berlin] Database error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'room_number' in 'where clause'
+[17-Jul-2025 07:47:54 Europe/Berlin] Rate not found for room_type_id: 4, room_number: 203, ac_type: Non-AC
+[17-Jul-2025 07:48:07 Europe/Berlin] Rate not found for room_type_id: 4, room_number: 401, ac_type: Non-AC
+[17-Jul-2025 07:48:20 Europe/Berlin] Rate not found for room_type_id: 4, room_number: 402, ac_type: AC
+[17-Jul-2025 08:35:06 Europe/Berlin] PHP Warning:  Undefined array key "check_out_am_pm" in F:\xampp\htdocs\HMS\api\save_guest.php on line 60
+[17-Jul-2025 08:35:06 Europe/Berlin] PHP Warning:  Undefined array key "meal_plan_id" in F:\xampp\htdocs\HMS\api\save_guest.php on line 62
+[17-Jul-2025 08:35:06 Europe/Berlin] Database error: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: '101.5000.00102.4000.00' for column 'total_room_rate' at row 1
+[17-Jul-2025 08:36:07 Europe/Berlin] PHP Warning:  Undefined array key "check_out_am_pm" in F:\xampp\htdocs\HMS\api\save_guest.php on line 70
+[17-Jul-2025 08:36:07 Europe/Berlin] PHP Warning:  Undefined array key "meal_plan_id" in F:\xampp\htdocs\HMS\api\save_guest.php on line 72
+[17-Jul-2025 08:36:07 Europe/Berlin] Database error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'check_out_am_pm' cannot be null
+[17-Jul-2025 08:36:39 Europe/Berlin] PHP Warning:  Undefined array key "check_out_am_pm" in F:\xampp\htdocs\HMS\api\save_guest.php on line 70
+[17-Jul-2025 08:36:39 Europe/Berlin] PHP Warning:  Undefined array key "meal_plan_id" in F:\xampp\htdocs\HMS\api\save_guest.php on line 72
+[17-Jul-2025 08:36:40 Europe/Berlin] Database error: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'check_out_am_pm' cannot be null
+[17-Jul-2025 09:18:01 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 103, ac_type: Non-AC
+[17-Jul-2025 09:18:23 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 201, ac_type: Non-AC
+[18-Jul-2025 09:09:28 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 201, ac_type: AC
+[18-Jul-2025 09:09:31 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 201, ac_type: Non-AC
+[18-Jul-2025 09:09:36 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 101, ac_type: Non-AC
+[18-Jul-2025 09:09:51 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 201, ac_type: Non-AC
+[18-Jul-2025 09:09:56 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 202, ac_type: AC
+[29-Aug-2025 06:08:46 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 205, ac_type: Non-AC
+[29-Aug-2025 06:08:49 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 203, ac_type: Non-AC
+[29-Aug-2025 06:08:51 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 203, ac_type: AC
+[29-Aug-2025 06:08:53 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 203, ac_type: AC
+[29-Aug-2025 06:08:55 Europe/Berlin] Rate not found for room_type_id: 3, room_number: 203, ac_type: AC
+[29-Aug-2025 06:08:57 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 203, ac_type: AC
+[29-Aug-2025 06:08:59 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 203, ac_type: Non-AC
+[29-Aug-2025 06:09:01 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 203, ac_type: Non-AC
+[29-Aug-2025 06:09:03 Europe/Berlin] Rate not found for room_type_id: 3, room_number: 203, ac_type: Non-AC
+[29-Aug-2025 06:09:09 Europe/Berlin] Rate not found for room_type_id: 3, room_number: 101, ac_type: Non-AC
+[29-Aug-2025 06:09:10 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 101, ac_type: Non-AC
+[29-Aug-2025 06:09:12 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 101, ac_type: Non-AC
+[29-Aug-2025 06:09:15 Europe/Berlin] Rate not found for room_type_id: 3, room_number: 101, ac_type: Non-AC
+[29-Aug-2025 06:09:17 Europe/Berlin] Rate not found for room_type_id: 3, room_number: 101, ac_type: AC
+[01-Sep-2025 12:03:58 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 203, ac_type: AC
+[01-Sep-2025 12:04:00 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 203, ac_type: Non-AC
+[01-Sep-2025 12:04:05 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 202, ac_type: Non-AC
+[01-Sep-2025 12:04:07 Europe/Berlin] Rate not found for room_type_id: 1, room_number: 202, ac_type: AC
+[01-Sep-2025 12:04:08 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 202, ac_type: AC
+[01-Sep-2025 12:04:10 Europe/Berlin] Rate not found for room_type_id: 3, room_number: 202, ac_type: AC
+[01-Sep-2025 12:04:13 Europe/Berlin] Rate not found for room_type_id: 2, room_number: 202, ac_type: AC
+[04-Sep-2025 18:07:48 Europe/Berlin] No room_data provided in request

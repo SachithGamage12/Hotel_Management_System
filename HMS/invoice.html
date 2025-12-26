@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Wedding Payment Receipt</title>
+    <link rel="icon" type="image/avif" href="images/logo.avif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            line-height: 1.4;
+        }
+
+        .no-print-top {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 160mm;
+            text-align: left;
+        }
+
+        .receipt-container {
+            width: 90%;
+            max-width: 160mm;
+            min-width: 300px;
+            height: auto;
+            min-height: 290mm;
+            margin: 20px auto;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            position: relative;
+            overflow: auto;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
+            text-align: center;
+            min-height: 100px; /* Maintains the approximate space of the original header */
+        }
+
+        .receipt-title-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .receipt-title {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1e293b;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            flex: 1;
+        }
+
+        .billing-date, .invoice-number {
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+
+        .invoice-number {
+            text-align: right;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .details-grid p {
+            padding: 6px 0;
+            font-size: 0.75rem;
+        }
+
+        .details-grid strong {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .payment-summary {
+            margin-top: 10px;
+        }
+
+        .payment-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 0.75rem;
+        }
+
+        .payment-row.total {
+            font-weight: 600;
+            border-top: 1px solid #cbd5e1;
+            border-bottom: 1px solid #cbd5e1;
+            margin: 8px 0;
+        }
+
+        .payment-row.pending {
+            font-weight: 600;
+            border-bottom: 2px double #1e293b;
+            padding-bottom: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.7rem;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+            page-break-before: auto;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            text-align: left;
+            margin: 8px 0;
+            padding-left: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .footer ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #64748b;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+            align-items: flex-end;
+        }
+
+        .signature-box {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+
+        .signature-line {
+            margin-top: auto;
+            border-top: 1px dashed #64748b;
+            padding-top: 4px;
+            font-size: 0.7rem;
+            color: #64748b;
+            text-align: center;
+        }
+
+        .thank-you {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.2rem;
+            color: #000000;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+            margin: 10px 0;
+        }
+
+        .no-print {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+            color: #1e293b;
+            font-size: 0.75rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.75rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            flex: 1;
+        }
+
+        button:hover:not(:disabled) {
+            transform: translateY(-1px);
+        }
+
+        #searchButton {
+            background-color: #6366f1;
+            color: white;
+        }
+
+        #searchButton:hover:not(:disabled) {
+            background-color: #4f46e5;
+        }
+
+        #printButton {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        #printButton:hover:not(:disabled) {
+            background-color: #2563eb;
+        }
+
+        #backButton {
+            background-color: #6b7280;
+            color: white;
+        }
+
+        #backButton:hover:not(:disabled) {
+            background-color: #4b5563;
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .error-message {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 0.75rem;
+            display: none;
+        }
+
+        .error-message.error {
+            background-color: #fee2e2;
+            color: #dc2626;
+            border: 1px solid #f5a5a5;
+        }
+
+        .error-message.success {
+            background-color: #dcfce7;
+            color: #16a34a;
+            border: 1px solid #86efac;
+        }
+
+        /* Mobile Devices (≤600px) */
+        @media screen and (max-width: 600px) {
+            .receipt-container {
+                padding: 10px;
+            }
+
+            .receipt-title {
+                font-size: 0.9rem;
+            }
+
+            .billing-date, .invoice-number {
+                font-size: 0.8rem;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 4px;
+            }
+
+            .details-grid p {
+                font-size: 0.85rem;
+            }
+
+            .details-grid strong {
+                font-size: 0.9rem;
+            }
+
+            .signature-section {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .signature-box {
+                width: 100%;
+                height: 50px;
+            }
+
+            input, select {
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+
+            button {
+                padding: 10px 12px;
+                font-size: 0.85rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .footer {
+                font-size: 0.75rem;
+            }
+
+            .thank-you {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Tablets (601px–900px) */
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+            .receipt-container {
+                width: 95%;
+                max-width: 700px;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr 1.5fr;
+            }
+
+            .receipt-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            .footer ul {
+                list-style-type: disc;
+                padding-left: 15px;
+            }
+
+            .footer ul li::before {
+                content: none;
+            }
+
+            .header {
+                align-items: center;
+                min-height: 100px; /* Maintains space in print */
+            }
+
+            .no-print, .no-print-top {
+                display: none !important;
+            }
+
+            body {
+                background: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .receipt-container {
+                box-shadow: none;
+                border: none;
+                width: 160mm;
+                height: auto;
+                min-height: 290mm;
+                padding: 10mm;
+                margin: 0;
+                overflow: visible;
+                page-break-after: auto;
+            }
+
+            .footer {
+                page-break-before: auto;
+            }
+
+            @page {
+                size: 160mm 290mm;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print-top">
+        <button id="backButton" aria-label="Go back to previous page">Back</button>
+    </div>
+    
+    <div class="receipt-container">
+        <div class="header">
+            <!-- Header content removed but space preserved -->
+        </div>
+
+        <div class="receipt-title-section">
+            <span class="billing-date" id="billingDate"></span>
+            <h2 class="receipt-title">PAYMENT RECEIPT</h2>
+            <span class="invoice-number" id="invoiceNumber"></span>
+        </div>
+
+        <div id="details" class="details-grid">
+            <!-- Details will be populated here -->
+        </div>
+
+        <div id="paymentSection">
+            <!-- Payment summary will be added here -->
+        </div>
+
+        <div class="footer">
+            <p>Special Instructions</p>
+            <ul>
+                <li>You are liable for any damage to hotel property or event materials; charges apply as per current market value.</li>
+                <li>Food menu must be finalized at least 14 days before the event; otherwise, the booking will be automatically canceled.</li>
+                <li>All payments are non-refundable and non-transferable.</li>
+                <li>A 10% service charge and applicable government taxes apply; prices may vary with market rates or tax changes.</li>
+                <li>Rescheduling may incur additional taxes; full advance payment is required within 14 days of booking.</li>
+            </ul>
+            <div class="signature-section">
+                <div class="signature-box">
+                    <p>Bill Issued by: <span id="issuedBy"></span></p>
+                    <div class="signature-line">Authorised Signature</div>
+                </div>
+                <div class="signature-box">
+                    <div class="signature-line">Customer Signature</div>
+                </div>
+            </div>
+            <div class="thank-you">Thank you for choosing Hotel Grand Guardian</div>
+        </div>
+
+        <div class="no-print">
+            <div id="error" class="error-message"></div>
+
+            <div class="input-group">
+                <label for="invoiceNumberInput">Invoice Number</label>
+                <input type="text" id="invoiceNumberInput" placeholder="Enter invoice number (e.g., 1400)" aria-label="Enter invoice number">
+            </div>
+
+            <div class="button-group">
+                <button id="searchButton" aria-label="Search for payment details">Search</button>
+                <button id="printButton" aria-label="Print receipt" disabled>Print Receipt</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const invoiceNumberInput = document.getElementById('invoiceNumberInput');
+        const searchButton = document.getElementById('searchButton');
+        const printButton = document.getElementById('printButton');
+        const backButton = document.getElementById('backButton');
+        const errorDiv = document.getElementById('error');
+        const detailsDiv = document.getElementById('details');
+        const invoiceNumberDiv = document.getElementById('invoiceNumber');
+        const billingDateDiv = document.getElementById('billingDate');
+        const paymentSectionDiv = document.getElementById('paymentSection');
+        const issuedBySpan = document.getElementById('issuedBy');
+
+        // Set current date as billing date
+        const today = new Date();
+        billingDateDiv.textContent = formatDate(today);
+
+        // Real-time input validation
+        invoiceNumberInput.addEventListener('input', function() {
+            const value = this.value.trim();
+            if (value && !value.match(/^\d{4}$/)) {
+                showError('Invoice number must be a 4-digit number');
+            } else {
+                errorDiv.style.display = 'none';
+            }
+        });
+
+        // Back button event listener
+        backButton.addEventListener('click', () => {
+            window.location.href = 'Backoffice.php';
+        });
+
+        // Search button
+        searchButton.addEventListener('click', function() {
+            const searchValue = invoiceNumberInput.value.trim();
+            if (!searchValue || !searchValue.match(/^\d{4}$/)) {
+                showError('Please enter a valid 4-digit invoice number (e.g., 1400)');
+                return;
+            }
+            fetchPaymentDetails(`INV-${searchValue}`);
+        });
+
+        // Print button
+        printButton.addEventListener('click', () => {
+            window.print();
+        });
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+
+        function formatCurrency(amount) {
+            return amount ? `Rs. ${parseFloat(amount).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}` : 'Not specified';
+        }
+
+        function fetchPaymentDetails(invoiceNumber) {
+            fetch(`api/fetch_payment_info.php?invoice_number=${invoiceNumber}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                    } else {
+                        displayPaymentDetails(data);
+                        showSuccess('Payment details loaded successfully');
+                        printButton.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    showError('Error fetching payment details: ' + error.message);
+                });
+        }
+
+        function displayPaymentDetails(payment) {
+            issuedBySpan.textContent = payment.issued_by || 'Admin';
+
+            fetch(`api/fetch_booking_info.php?reference=${payment.booking_reference}`)
+                .then(response => response.json())
+                .then(booking => {
+                    if (booking.error) {
+                        showError('Could not load booking details');
+                        return;
+                    }
+
+                    let contactNumbers = booking.contact_no1 || '';
+                    if (booking.contact_no2) {
+                        contactNumbers += contactNumbers ? ` / ${booking.contact_no2}` : booking.contact_no2;
+                    }
+
+                    const address = booking.groom_address || booking.bride_address || 'Address not provided';
+                    const bookingDate = booking.booking_date ? formatDate(new Date(booking.booking_date)) : 'Date not specified';
+
+                    detailsDiv.innerHTML = `
+                        <p><strong>Name:</strong></p><p>${booking.full_name || 'Not provided'}</p>
+                        <p><strong>Contact No:</strong></p><p>${payment.contact_no || contactNumbers || 'Not provided'}</p>
+                        <p><strong>WhatsApp No:</strong></p><p>${payment.whatsapp_no || 'Not provided'}</p>
+                        <p><strong>Email:</strong></p><p>${payment.email || 'Not provided'}</p>
+                        <p><strong>Address:</strong></p><p>${address}</p>
+                        <p><strong>Date of Event:</strong></p><p>${bookingDate}</p>
+                        <p><strong>Event Type:</strong></p><p>${booking.function_type || 'Not specified'}</p>
+                        <p><strong>Venue:</strong></p><p>${booking.venue || 'Not specified'}</p>
+                        <p><strong>Number of Pax:</strong></p><p>${payment.no_of_pax || booking.no_of_pax || 'Not specified'}</p>
+                        <p><strong>Rate Per Plate:</strong></p><p>${formatCurrency(payment.rate_per_plate)}</p>
+                        <p><strong>Additional Plate Rate:</strong></p><p>${formatCurrency(payment.additional_plate_rate)}</p>
+                        <p><strong>Remarks:</strong></p><p>${payment.remarks || 'Not specified'}</p>
+                    `;
+
+                    const paymentSummary = document.createElement('div');
+                    paymentSummary.className = 'payment-summary';
+
+                    if (payment.value_type && payment.total_amount) {
+                        const totalRow = document.createElement('div');
+                        totalRow.className = 'payment-row total';
+                        totalRow.innerHTML = `
+                            <span>${payment.value_type}:</span>
+                            <span>${formatCurrency(payment.total_amount)}</span>
+                        `;
+                        paymentSummary.appendChild(totalRow);
+                    }
+
+                    if (payment.payment_type && payment.payment_amount) {
+                        const paymentRow = document.createElement('div');
+                        paymentRow.className = 'payment-row';
+                        paymentRow.innerHTML = `
+                            <span>${payment.payment_type}:</span>
+                            <span>${formatCurrency(payment.payment_amount)}</span>
+                        `;
+                        paymentSummary.appendChild(paymentRow);
+                    }
+
+                    if (payment.pending_amount) {
+                        const pendingRow = document.createElement('div');
+                        pendingRow.className = 'payment-row pending';
+                        pendingRow.innerHTML = `
+                            <span>Pending Amount:</span>
+                            <span>${formatCurrency(payment.pending_amount)}</span>
+                        `;
+                        paymentSummary.appendChild(pendingRow);
+                    }
+
+                    paymentSectionDiv.innerHTML = '';
+                    paymentSectionDiv.appendChild(paymentSummary);
+
+                    invoiceNumberDiv.textContent = payment.invoice_number;
+                    billingDateDiv.textContent = payment.payment_date ? formatDate(new Date(payment.payment_date)) : formatDate(today);
+                })
+                .catch(error => {
+                    showError('Error fetching booking details: ' + error.message);
+                });
+        }
+
+        function showError(message) {
+            errorDiv.textContent = message;
+            errorDiv.className = 'error-message error';
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 5000);
+        }
+
+        function showSuccess(message) {
+            errorDiv.textContent = message;
+            errorDiv.className = 'error-message success';
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 3000);
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+Starting export_bookings_pdf.php[21-Jul-2025 15:22:01 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:22:13 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:22:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.phpmPDF library not found at F:\xampp\htdocs\HMSmpdf/src/Mpdf.phpStarting export_bookings_pdf.phpmPDF library not found at F:\xampp\htdocs\HMS../mpdf/src/Mpdf.phpStarting export_bookings_pdf.phpmPDF library not found at F:\xampp\htdocs\HMS../mpdf/src/Mpdf.phpStarting export_bookings_pdf.php[21-Jul-2025 15:24:30 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:25:04 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:25:09 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:25:28 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:25:45 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:26:17 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:26:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:26:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:26:19 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Starting export_bookings_pdf.php[21-Jul-2025 15:26:23 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Interface "Psr\Log\LoggerAwareInterface" not found in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php:28
+Stack trace:
+#0 F:\xampp\htdocs\HMS\export_bookings_pdf.php(34): require_once()
+#1 {main}
+  thrown in F:\xampp\htdocs\HMS\mpdf\src\Mpdf.php on line 28
+Connection failed: SQLSTATE[HY000] [1045] Access denied for user 'your_username'@'localhost' (using password: YES)Query failed: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parametersDatabase connection successfulQuery: 
+        SELECT 
+            guest_name, 
+            telephone, 
+            check_in, 
+            check_out, 
+            GROUP_CONCAT(room_number ORDER BY room_number) AS room_numbers, 
+            pax, 
+            remarks, 
+            function_type
+        FROM room_bookings 
+        WHERE check_in <= :end_date 
+        AND check_out >= :start_date 
+        AND function_type IN (?,?,?,?,?,?)
+        GROUP BY guest_name, telephone, check_in, check_out, pax, remarks, function_type
+        ORDER BY check_in, guest_name
+    Params: {"start_date":"2025-07-01","end_date":"2025-08-01","0":"Out Guest Room","1":"Out Guest HoneyMoon Room","2":"Out Guest Anniversary Room","3":"Day Use Room","4":"Group Booking Room","5":"Foreign Room"}Query failed: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parametersDatabase connection successfulQuery: 
+        SELECT 
+            guest_name, 
+            telephone, 
+            check_in, 
+            check_out, 
+            GROUP_CONCAT(room_number ORDER BY room_number) AS room_numbers, 
+            pax, 
+            remarks, 
+            function_type
+        FROM room_bookings 
+        WHERE check_in <= :end_date 
+        AND check_out >= :start_date 
+        AND function_type IN (?,?,?,?,?,?)
+        GROUP BY guest_name, telephone, check_in, check_out, pax, remarks, function_type
+        ORDER BY check_in, guest_name
+    Params: {"start_date":"2025-07-01","end_date":"2025-08-01","0":"Out Guest Room","1":"Out Guest HoneyMoon Room","2":"Out Guest Anniversary Room","3":"Day Use Room","4":"Group Booking Room","5":"Foreign Room"}Query failed: SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters

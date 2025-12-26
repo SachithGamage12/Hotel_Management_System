@@ -1,0 +1,42 @@
+[2025-09-24 09:50:25] Database connection successful
+[2025-09-24 09:50:25] Received action: get_rooms
+[2025-09-24 09:50:25] get_rooms success: Retrieved 13 rooms
+[2025-09-24 09:50:25] Database connection successful
+[2025-09-24 09:50:25] Received action: get_bookings
+[2025-09-24 09:50:25] get_bookings input: start=2025-09-01, end=2025-10-01
+[2025-09-24 09:50:25] get_bookings success: Retrieved 9 bookings
+[2025-09-24 09:50:28] Database connection successful
+[2025-09-24 09:50:28] Received action: get_booking_details
+[2025-09-24 09:50:28] get_booking_details input: date=2025-09-24, room_number=201, time_slot=Day
+[2025-09-24 09:50:28] get_booking_details success: Retrieved 1 bookings
+[2025-09-24 09:50:37] Database connection successful
+[2025-09-24 09:50:37] Received action: get_booking_details
+[2025-09-24 09:50:37] get_booking_details input: date=2025-09-25, room_number=202, time_slot=Night
+[2025-09-24 09:50:37] get_booking_details success: Retrieved 1 bookings
+[2025-09-24 09:51:04] Database connection successful
+[2025-09-24 09:51:04] Received action: get_rooms
+[2025-09-24 09:51:04] get_rooms success: Retrieved 13 rooms
+[2025-09-24 09:51:04] Database connection successful
+[2025-09-24 09:51:04] Received action: get_bookings
+[2025-09-24 09:51:04] get_bookings input: start=2025-09-01, end=2025-10-01
+[2025-09-24 09:51:04] get_bookings success: Retrieved 9 bookings
+[2025-09-24 09:51:09] Database connection successful
+[2025-09-24 09:51:09] Received action: get_booking_details
+[2025-09-24 09:51:09] get_booking_details input: date=2025-09-24, room_number=201, time_slot=Day
+[2025-09-24 09:51:09] get_booking_details success: Retrieved 1 bookings
+[2025-09-24 09:53:33] Database connection successful
+[2025-09-24 09:53:33] Received action: get_booking_details
+[2025-09-24 09:53:33] get_booking_details input: date=2025-09-24, room_number=201, time_slot=Day
+[2025-09-24 09:53:33] get_booking_details success: Retrieved 1 bookings
+[2025-09-24 10:02:29] Database connection successful
+[2025-09-24 10:02:29] Received action: get_rooms
+[2025-09-24 10:02:29] get_rooms success: Retrieved 13 rooms
+[2025-09-24 10:02:29] Database connection successful
+[2025-09-24 10:02:29] Received action: get_bookings
+[2025-09-24 10:02:29] get_bookings input: start=2025-09-01, end=2025-10-01
+[2025-09-24 10:02:29] get_bookings success: Retrieved 9 bookings
+[2025-09-24 10:02:34] Database connection successful
+[2025-09-24 10:02:34] Received action: get_booking_details
+[2025-09-24 10:02:34] get_booking_details input: date=2025-09-24, room_number=201, time_slot=Day
+[2025-09-24 10:02:34] get_booking_details query: date=2025-09-24, room_number=201, time_slot=Day, results=1
+[2025-09-24 10:02:34] get_booking_details results: [{"id":48,"guest_name":"Sachith Gamage","telephone":"0741773588","check_in":"2025-09-24","check_out":"2025-09-24","room_number":"201","pax":2,"remarks":"","function_type":"Day Use Room","time_slot":"Day"}]

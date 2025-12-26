@@ -1,0 +1,2068 @@
+Input data: Array
+(
+    [invoiceNumber] => INV-1401
+    [paymentType] => cash_staff
+    [creditorName] => 
+    [focResponsible] => 
+    [tableNumber] => 1
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => INV-1402
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => Malangama
+    [deliveryCharge] => 250
+    [tableNumber] => 1
+    [total] => 5050
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => INV-1403
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => Malangama
+    [deliveryCharge] => 250
+    [tableNumber] => 2
+    [total] => 3850
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => INV-1404
+    [paymentType] => other_credit
+    [creditorName] => Yasith Perera
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 1
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => INV-1404
+    [paymentType] => other_credit
+    [creditorName] => Sanju
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => other_credit
+    [creditorName] => Malaka Fernando
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 1
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => other_credit
+    [creditorName] => Sachith Gamage
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 2
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => other_credit
+    [creditorName] => Sachith Gamage
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 2
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => other_credit
+    [creditorName] => nisham
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 3
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => credit
+    [creditorName] => chanuka
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 1
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => credit
+    [creditorName] => chanuka
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 1
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1401
+    [paymentType] => other_credit
+    [creditorName] => Malin
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 2
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1401
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 3
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Bandula
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Bandula
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Bandula
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Bandula
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Bandula
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Bandula
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3600
+    [discount] => 0
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => other_credit
+    [creditorName] => sachith gamage
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 4
+    [total] => 3564
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => cash_staff
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 
+    [total] => 3240
+    [discount] => 360
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 3
+    [total] => 4752
+    [discount] => 480
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 3
+    [total] => 4320
+    [discount] => 480
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 3
+    [total] => 4320
+    [discount] => 480
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 3
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1403
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => malangama
+    [deliveryCharge] => 250
+    [tableNumber] => 4
+    [total] => 3850
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1404
+    [paymentType] => cash_staff
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 
+    [total] => 4800
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1405
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1406
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => malangama
+    [deliveryCharge] => 250
+    [discount] => 200
+    [tableNumber] => 1
+    [total] => 3650
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1406
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => malangama
+    [deliveryCharge] => 250
+    [discount] => 200
+    [tableNumber] => 1
+    [total] => 3650
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Subtotal: 3600, Discount: 200, Net Subtotal: 3400, Service Charge: 0, Delivery Charge: 250, Calculated Total: 3650, Received Total: 3650Input data: Array
+(
+    [invoiceNumber] => 1407
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 400
+    [tableNumber] => 1
+    [total] => 4400
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Subtotal: 4800, Discount: 400, Net Subtotal: 4400, Service Charge: 0, Delivery Charge: , Calculated Total: 4400, Received Total: 4400Input data: Array
+(
+    [invoiceNumber] => 1408
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => Malangama
+    [deliveryCharge] => 500
+    [discount] => 1000
+    [tableNumber] => 2
+    [total] => 12700
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 11
+                    [total] => 13200
+                )
+
+        )
+
+)
+Subtotal: 13200, Discount: 1000, Net Subtotal: 12200, Service Charge: 0, Delivery Charge: 500, Calculated Total: 12700, Received Total: 12700Input data: Array
+(
+    [invoiceNumber] => 1409
+    [paymentType] => other_credit
+    [creditorName] => Dasun Shanaka
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 300
+    [tableNumber] => 3
+    [total] => 3630
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Subtotal: 3600, Discount: 300, Net Subtotal: 3300, Service Charge: 330, Delivery Charge: , Calculated Total: 3630, Received Total: 3630Input data: Array
+(
+    [invoiceNumber] => 1410
+    [paymentType] => credit
+    [creditorName] => Chamod Amakara
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 4
+    [total] => 6000
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 5
+                    [total] => 6000
+                )
+
+        )
+
+)
+Subtotal: 6000, Discount: 0, Net Subtotal: 6000, Service Charge: 0, Delivery Charge: , Calculated Total: 6000, Received Total: 6000Input data: Array
+(
+    [invoiceNumber] => 1411
+    [paymentType] => card_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 6600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 5
+                    [total] => 6000
+                )
+
+        )
+
+)
+Subtotal: 6000, Discount: 0, Net Subtotal: 6000, Service Charge: 600, Delivery Charge: , Calculated Total: 6600, Received Total: 6600Input data: Array
+(
+    [invoiceNumber] => 1412
+    [paymentType] => other_credit
+    [creditorName] => Test
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 1320
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 1
+                    [total] => 1200
+                )
+
+        )
+
+)
+Subtotal: 1200, Discount: 0, Net Subtotal: 1200, Service Charge: 120, Delivery Charge: , Calculated Total: 1320, Received Total: 1320Input data: Array
+(
+    [invoiceNumber] => 1413
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Test
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 4800
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: , Calculated Total: 4800, Received Total: 4800Input data: Array
+(
+    [invoiceNumber] => 1414
+    [paymentType] => credit
+    [creditorName] => Test
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 4800
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: , Calculated Total: 4800, Received Total: 4800Input data: Array
+(
+    [invoiceNumber] => 1415
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 500
+    [tableNumber] => 1
+    [total] => 4730
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Subtotal: 4800, Discount: 500, Net Subtotal: 4300, Service Charge: 430, Delivery Charge: , Calculated Total: 4730, Received Total: 4730Input data: Array
+(
+    [invoiceNumber] => 1416
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 6000
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 5
+                    [total] => 6000
+                )
+
+        )
+
+)
+Subtotal: 6000, Discount: 0, Net Subtotal: 6000, Service Charge: 0, Delivery Charge: , Calculated Total: 6000, Received Total: 6000Input data: Array
+(
+    [invoiceNumber] => 1417
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => Rathnapura
+    [deliveryCharge] => 1500
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 6300
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: 1500, Calculated Total: 6300, Received Total: 6300Input data: Array
+(
+    [invoiceNumber] => 1418
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Sarath Perera
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 0
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 5
+                    [total] => 6000
+                )
+
+        )
+
+)
+Subtotal: 6000, Discount: 0, Net Subtotal: 6000, Service Charge: 0, Delivery Charge: , Calculated Total: 6000, Received Total: 0Input data: Array
+(
+    [invoiceNumber] => 1418
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Sarath Perera
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 0
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: foc, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: , Calculated Total: 0, Received Total: 0Input data: Array
+(
+    [invoiceNumber] => 1419
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Sarath Perera
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 0
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 5
+                    [total] => 6000
+                )
+
+        )
+
+)
+Payment Type: foc, Subtotal: 6000, Discount: 0, Net Subtotal: 6000, Service Charge: 0, Delivery Charge: , Calculated Total: 0, Received Total: 0Input data: Array
+(
+    [invoiceNumber] => 1420
+    [paymentType] => credit
+    [creditorName] => Maya
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 2
+    [total] => 4800
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: credit, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: , Calculated Total: 4800, Received Total: 4800Input data: Array
+(
+    [invoiceNumber] => 1421
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Kavidu
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 0
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: foc, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: , Calculated Total: 0, Received Total: 0Input data: Array
+(
+    [invoiceNumber] => 1422
+    [paymentType] => credit
+    [creditorName] => chanuka
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: credit, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 0, Delivery Charge: , Calculated Total: 3600, Received Total: 3600Input data: Array
+(
+    [invoiceNumber] => 1423
+    [paymentType] => other_credit
+    [creditorName] => Nimesh
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: other_credit, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 360, Delivery Charge: , Calculated Total: 3960, Received Total: 3960Input data: Array
+(
+    [invoiceNumber] => 1424
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => Malangama
+    [deliveryCharge] => 250
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 5050
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: delivery, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: 250, Calculated Total: 5050, Received Total: 5050Input data: Array
+(
+    [invoiceNumber] => 1425
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 1000
+    [tableNumber] => 
+    [total] => 2860
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 3600, Discount: 1000, Net Subtotal: 2600, Service Charge: 260, Delivery Charge: , Calculated Total: 2860, Received Total: 2860Input data: Array
+(
+    [invoiceNumber] => 1426
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 2
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: take_away, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 0, Delivery Charge: , Calculated Total: 3600, Received Total: 3600Input data: Array
+(
+    [invoiceNumber] => 1426
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 2
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: take_away, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 0, Delivery Charge: , Calculated Total: 3600, Received Total: 3600Input data: Array
+(
+    [invoiceNumber] => 1427
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 360, Delivery Charge: , Calculated Total: 3960, Received Total: 3960Input data: Array
+(
+    [invoiceNumber] => 
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1429
+    [paymentType] => other_credit
+    [creditorName] => Masha
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 5
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1428
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 3
+    [total] => 4800
+    [user] => Sachith
+    [items] => Array
+        (
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1428
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 480, Delivery Charge: , Calculated Total: 5280, Received Total: 5280Input data: Array
+(
+    [invoiceNumber] => 1429
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 360, Delivery Charge: , Calculated Total: 3960, Received Total: 3960Input data: Array
+(
+    [invoiceNumber] => 1430
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 4800
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: take_away, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 0, Delivery Charge: , Calculated Total: 4800, Received Total: 4800Input data: Array
+(
+    [invoiceNumber] => 1431
+    [paymentType] => foc
+    [creditorName] => 
+    [focResponsible] => Kavidu
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 0
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Chicken Fride Rice
+                    [code] => F1234
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: foc, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 0, Delivery Charge: , Calculated Total: 0, Received Total: 0Input data: Array
+(
+    [invoiceNumber] => 1432
+    [paymentType] => card_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Chicken Fride Rice
+                    [code] => F1234
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: card_customer, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 360, Delivery Charge: , Calculated Total: 3960, Received Total: 3960Input data: Array
+(
+    [invoiceNumber] => 1433
+    [paymentType] => take_away
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3600
+    [user] => Sachith
+    [items] => Array
+        (
+        )
+
+)
+Input data: Array
+(
+    [invoiceNumber] => 1433
+    [paymentType] => card_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Chicken Fride Rice
+                    [code] => F1234
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: card_customer, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 360, Delivery Charge: , Calculated Total: 3960, Received Total: 3960Input data: Array
+(
+    [invoiceNumber] => 1434
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => Ahangama
+    [deliveryCharge] => 400
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 4000
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Chicken Fride Rice
+                    [code] => F1234
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: delivery, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 0, Delivery Charge: 400, Calculated Total: 4000, Received Total: 4000Input data: Array
+(
+    [invoiceNumber] => 1435
+    [paymentType] => credit
+    [creditorName] => chanuka
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 400
+    [tableNumber] => 2
+    [total] => 3200
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 2
+                    [name] => Chicken Fried Rice
+                    [code] => ITEM001
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: credit, Subtotal: 3600, Discount: 400, Net Subtotal: 3200, Service Charge: 0, Delivery Charge: , Calculated Total: 3200, Received Total: 3200Input data: Array
+(
+    [invoiceNumber] => 1436
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 1
+    [total] => 5280
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Chicken Fride Rice
+                    [code] => F1234
+                    [price] => 1200
+                    [quantity] => 4
+                    [total] => 4800
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 4800, Discount: 0, Net Subtotal: 4800, Service Charge: 480, Delivery Charge: , Calculated Total: 5280, Received Total: 5280Input data: Array
+(
+    [invoiceNumber] => 1437
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3960
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [name] => Chicken Fride Rice
+                    [code] => F1234
+                    [price] => 1200
+                    [quantity] => 3
+                    [total] => 3600
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 3600, Discount: 0, Net Subtotal: 3600, Service Charge: 360, Delivery Charge: , Calculated Total: 3960, Received Total: 3960Input data: Array
+(
+    [invoiceNumber] => 1438
+    [paymentType] => cash_staff
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 3900
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [name] => OLD ARRACK
+                    [code] => BAR0001
+                    [price] => 1300
+                    [quantity] => 3
+                    [total] => 3900
+                )
+
+        )
+
+)
+Payment Type: cash_staff, Subtotal: 3900, Discount: 0, Net Subtotal: 3900, Service Charge: 0, Delivery Charge: , Calculated Total: 3900, Received Total: 3900Input data: Array
+(
+    [invoiceNumber] => 1439
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 5720
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [name] => OLD ARRACK
+                    [code] => BAR0001
+                    [price] => 1300
+                    [quantity] => 4
+                    [total] => 5200
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 5200, Discount: 0, Net Subtotal: 5200, Service Charge: 520, Delivery Charge: , Calculated Total: 5720, Received Total: 5720Input data: Array
+(
+    [invoiceNumber] => 1439
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 5720
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [name] => OLD ARRACK
+                    [code] => BAR0001
+                    [price] => 1300
+                    [quantity] => 4
+                    [total] => 5200
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 5200, Discount: 0, Net Subtotal: 5200, Service Charge: 520, Delivery Charge: , Calculated Total: 5720, Received Total: 5720Input data: Array
+(
+    [invoiceNumber] => 1439
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 5720
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [name] => OLD ARRACK
+                    [code] => BAR0001
+                    [price] => 1300
+                    [quantity] => 4
+                    [total] => 5200
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 5200, Discount: 0, Net Subtotal: 5200, Service Charge: 520, Delivery Charge: , Calculated Total: 5720, Received Total: 5720Input data: Array
+(
+    [invoiceNumber] => 1440
+    [paymentType] => card_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 5720
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 3
+                    [name] => OLD ARRACK
+                    [code] => BAR0001
+                    [price] => 1300
+                    [quantity] => 4
+                    [total] => 5200
+                )
+
+        )
+
+)
+Payment Type: card_customer, Subtotal: 5200, Discount: 0, Net Subtotal: 5200, Service Charge: 520, Delivery Charge: , Calculated Total: 5720, Received Total: 5720Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 4070
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 101
+                    [name] => DEEP FRIED BEEF WITH CRISPY GARLIC
+                    [code] => ITEM098
+                    [price] => 1850
+                    [quantity] => 2
+                    [total] => 3700
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 3700, Discount: 0, Net Subtotal: 3700, Service Charge: 370, Delivery Charge: , Calculated Total: 4070, Received Total: 4070Input data: Array
+(
+    [invoiceNumber] => 1401
+    [paymentType] => cash_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 8250
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 597
+                    [name] => DCSL OLD ARRACK  375ML
+                    [code] => ITEM594
+                    [price] => 2500
+                    [quantity] => 3
+                    [total] => 7500
+                )
+
+        )
+
+)
+Payment Type: cash_customer, Subtotal: 7500, Discount: 0, Net Subtotal: 7500, Service Charge: 750, Delivery Charge: , Calculated Total: 8250, Received Total: 8250Input data: Array
+(
+    [invoiceNumber] => 1402
+    [paymentType] => card_customer
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 627
+    [user] => Sachith
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 197
+                    [name] => DUNHILL
+                    [code] => ITEM194
+                    [price] => 190
+                    [quantity] => 3
+                    [total] => 570
+                )
+
+        )
+
+)
+Payment Type: card_customer, Subtotal: 570, Discount: 0, Net Subtotal: 570, Service Charge: 57, Delivery Charge: , Calculated Total: 627, Received Total: 627Input data: Array
+(
+    [invoiceNumber] => 1400
+    [paymentType] => credit
+    [creditorName] => abishek
+    [focResponsible] => 
+    [deliveryPlace] => 
+    [deliveryCharge] => 
+    [discount] => 0
+    [tableNumber] => 2
+    [total] => 600
+    [user] => Gampathi
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 582
+                    [name] => EXTRA SPECIAL  50ML
+                    [code] => ITEM579
+                    [price] => 300
+                    [quantity] => 1
+                    [total] => 300
+                )
+
+            [1] => Array
+                (
+                    [id] => 77
+                    [name] => SODA 1L
+                    [code] => ITEM074
+                    [price] => 300
+                    [quantity] => 1
+                    [total] => 300
+                )
+
+        )
+
+)
+Payment Type: credit, Subtotal: 600, Discount: 0, Net Subtotal: 600, Service Charge: 0, Delivery Charge: , Calculated Total: 600, Received Total: 600Input data: Array
+(
+    [invoiceNumber] => 1401
+    [paymentType] => delivery
+    [creditorName] => 
+    [focResponsible] => 
+    [deliveryPlace] => malangama
+    [deliveryCharge] => 250
+    [discount] => 0
+    [tableNumber] => 
+    [total] => 1750
+    [user] => Gampathi
+    [items] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 16
+                    [name] => BATTER FRIED CUTTLEFISH WITH THAI CHILI SAUCE
+                    [code] => ITEM013
+                    [price] => 1500
+                    [quantity] => 1
+                    [total] => 1500
+                )
+
+        )
+
+)
+Payment Type: delivery, Subtotal: 1500, Discount: 0, Net Subtotal: 1500, Service Charge: 0, Delivery Charge: 250, Calculated Total: 1750, Received Total: 1750

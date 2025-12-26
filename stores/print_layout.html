@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=80mm, initial-scale=1.0">
+    <title>Order Sheet Receipt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            font-size: 9pt;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            width: 80mm;
+        }
+        .receipt-container {
+            width: 80mm;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        .receipt-header {
+            text-align: center;
+            margin: 0 0 5mm 0;
+            padding: 0 0 3mm 0;
+            border-bottom: 2px solid #000;
+        }
+        .receipt-header h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            margin-bottom: 2mm;
+            text-transform: uppercase;
+        }
+        .receipt-header div {
+            font-size: 9pt;
+            font-weight: bold;
+        }
+        .receipt-details {
+            margin: 0 0 5mm 0;
+            padding: 0 0 3mm 0;
+            font-size: 9pt;
+            text-align: left;
+        }
+        .receipt-details div {
+            margin-bottom: 2mm;
+            word-break: break-word;
+            font-weight: bold;
+        }
+        .receipt-table {
+            width: 80mm;
+            border-collapse: collapse;
+            margin: 0 0 5mm 0;
+            font-size: 9pt;
+        }
+        .receipt-table th {
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+            padding: 2mm 1mm;
+            text-align: left;
+            font-weight: bold;
+        }
+        .receipt-table td {
+            padding: 2mm 1mm;
+            border-bottom: 1px solid #000;
+            vertical-align: top;
+            font-weight: bold;
+        }
+        .receipt-table td:first-child {
+            word-wrap: break-word;
+            white-space: normal;
+        }
+        .receipt-table td:not(:first-child) {
+            white-space: nowrap;
+        }
+        .receipt-table tr:last-child td {
+            border-bottom: 2px solid #000;
+        }
+        .receipt-footer {
+            margin: 0 0 5mm 0;
+            padding: 3mm 0 0 0;
+            border-top: 2px dashed #000;
+            font-size: 9pt;
+            text-align: left;
+        }
+        .signatures {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 5mm 0;
+            font-size: 9pt;
+            text-align: left;
+        }
+        .signature-box {
+            width: 48%;
+            min-width: 35mm;
+            text-align: center;
+            padding: 3mm;
+            overflow: visible;
+        }
+        .signature-box div {
+            font-weight: bold;
+            font-size: 10pt;
+            white-space: nowrap;
+        }
+        .signature-line {
+            border-top: 1px solid #000;
+            margin-top: 8mm;
+            padding-top: 1mm;
+        }
+        .controls {
+            text-align: center;
+            margin: 0 0 5mm 0;
+            padding-top: 3mm;
+            border-top: 2px dashed #000;
+        }
+        .controls button {
+            padding: 2mm 4mm;
+            margin: 0 2mm;
+            font-size: 9pt;
+            cursor: pointer;
+            background: #f0f0f0;
+            border: 1px solid #000;
+            font-weight: bold;
+        }
+        .no-print {
+            display: block;
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            .receipt-container, .receipt-container * {
+                visibility: visible;
+            }
+            .receipt-container {
+                position: static;
+                width: 80mm;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+            }
+            .controls, .no-print {
+                display: none !important;
+            }
+            .receipt-header, .receipt-details, .receipt-table, .receipt-footer, .signatures {
+                margin: 0 0 5mm 0;
+                padding: 0;
+            }
+            .receipt-header h2 {
+                font-size: 14pt;
+                font-weight: bold;
+                margin-bottom: 2mm;
+                text-transform: uppercase;
+            }
+            .receipt-header div, .receipt-details div, .receipt-table th, .receipt-table td, .signatures div {
+                color: #000 !important;
+                font-weight: bold !important;
+            }
+            .receipt-table {
+                width: 80mm;
+                border-collapse: collapse;
+            }
+            .signature-box {
+                width: 48%;
+                min-width: 35mm;
+                text-align: center;
+                padding: 3mm;
+                font-size: 10pt;
+            }
+            @page {
+                size: 80mm auto;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="receipt-header">
+            <h2>Order Sheet Issued</h2>
+            <div><strong>Order Sheet No:</strong> <span id="print_order_no"></span></div>
+            <div><strong>Function Type:</strong> <span id="print_function_type"></span></div>
+            <div><strong>Date Issued:</strong> <span id="print_date"></span></div>
+        </div>
+        <div class="receipt-details">
+            <div><strong>Responsible:</strong> <span id="print_responsible"></span></div>
+        </div>
+        <table class="receipt-table">
+            <thead>
+                <tr>
+                    <th style="width: 50%;">Item</th>
+                    <th style="width: 20%;">Qty</th>
+                    <th style="width: 30%;">Unit</th>
+                </tr>
+            </thead>
+            <tbody id="print_items"></tbody>
+        </table>
+        <div id="print_partial" class="no-print" style="display: none;">
+            <div><strong>Partial Issuance Note:</strong></div>
+            <div id="print_partial_details"></div>
+        </div>
+        <div class="signatures">
+            <div class="signature-box">
+                <div>Authorised By:</div>
+                <div class="signature-line"></div>
+            </div>
+            <div class="signature-box">
+                <div>Storeman:</div>
+                <div class="signature-line"></div>
+            </div>
+        </div>
+        <div class="receipt-footer">
+            <div>System Generated!</div>
+        </div>
+        <div class="controls no-print">
+            <button onclick="printIssuedOrder()">Print</button>
+            <button onclick="closePrintModal()">Close</button>
+        </div>
+    </div>
+</body>
+</html>

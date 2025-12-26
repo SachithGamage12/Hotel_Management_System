@@ -1,0 +1,219 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body { 
+                font-family: Arial, sans-serif; 
+                font-size: 12px;
+                margin: 20px;
+            }
+            .header { 
+                text-align: center; 
+                margin-bottom: 30px;
+                border-bottom: 2px solid #333;
+                padding-bottom: 15px;
+            }
+            .header h1 { 
+                color: #333; 
+                margin: 0;
+                font-size: 20px;
+            }
+            .header h2 { 
+                color: #666; 
+                margin: 5px 0;
+                font-size: 16px;
+            }
+            .meta-info {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                padding: 10px;
+                background-color: #f5f5f5;
+                border-radius: 5px;
+            }
+            table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin-bottom: 20px;
+                font-size: 10px;
+            }
+            th, td { 
+                border: 1px solid #ddd; 
+                padding: 8px; 
+                text-align: left;
+                word-wrap: break-word;
+            }
+            th { 
+                background-color: #f2f2f2; 
+                font-weight: bold;
+                text-align: center;
+            }
+            tr:nth-child(even) { 
+                background-color: #f9f9f9; 
+            }
+            .summary {
+                margin-top: 20px;
+                padding: 15px;
+                background-color: #e8f4f8;
+                border-radius: 5px;
+                border-left: 4px solid #2196F3;
+            }
+            .shortage-negative {
+                color: #d32f2f;
+                font-weight: bold;
+            }
+            .shortage-positive {
+                color: #2e7d32;
+            }
+            .footer {
+                margin-top: 30px;
+                text-align: center;
+                font-size: 10px;
+                color: #666;
+                border-top: 1px solid #ccc;
+                padding-top: 15px;
+            }
+            .page-break {
+                page-break-after: always;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Monthly Logistics Stock Report</h1>
+            <h2>August 2025</h2>
+        </div>
+        
+        <div class="meta-info">
+            <div><strong>Report Period:</strong> August 2025</div>
+            <div><strong>Generated:</strong> 2025-09-02 14:24:24</div>
+            <div><strong>Total Items:</strong> 7</div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 15%;">Items</th>
+                    <th style="width: 8%;">Unit Price</th>
+                    <th style="width: 10%;">Last Audit Date</th>
+                    <th style="width: 8%;">Last Audit Qty</th>
+                    <th style="width: 8%;">New Received</th>
+                    <th style="width: 8%;">Total Issue</th>
+                    <th style="width: 8%;">Balance</th>
+                    <th style="width: 10%;">Present Audit Date</th>
+                    <th style="width: 8%;">Present Audit Qty</th>
+                    <th style="width: 8%;">Short/Excess</th>
+                    <th style="width: 9%;">Value Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 Kg Coconut Powder</td>
+                    <td style="text-align: right;">$0.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">3.00</td>
+                    <td style="text-align: right;">30.00</td>
+                    <td style="text-align: right;">-27.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;" class="shortage-negative">-27.00</td>
+                    <td style="text-align: right;" class="shortage-negative">$0.00</td>
+                </tr>
+                <tr>
+                    <td>4L Carpet Cleaner</td>
+                    <td style="text-align: right;">$2,750.00</td>
+                    <td style="text-align: center;">2025-08-22</td>
+                    <td style="text-align: right;">0.20</td>
+                    <td style="text-align: right;">5,009.01</td>
+                    <td style="text-align: right;">50.01</td>
+                    <td style="text-align: right;">4,959.20</td>
+                    <td style="text-align: center;">2025-08-30</td>
+                    <td style="text-align: right;">0.13</td>
+                    <td style="text-align: right;" class="shortage-positive">4,959.07</td>
+                    <td style="text-align: right;" class="shortage-positive">$13,637,442.50</td>
+                </tr>
+                <tr>
+                    <td>875g Coconut Powder</td>
+                    <td style="text-align: right;">$0.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">1.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">1.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;" class="shortage-positive">1.00</td>
+                    <td style="text-align: right;" class="shortage-positive">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Butter 100g</td>
+                    <td style="text-align: right;">$1,300.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">30.00</td>
+                    <td style="text-align: right;">30.02</td>
+                    <td style="text-align: right;">-0.02</td>
+                    <td style="text-align: center;">2025-08-29</td>
+                    <td style="text-align: right;">0.03</td>
+                    <td style="text-align: right;" class="shortage-negative">-0.05</td>
+                    <td style="text-align: right;" class="shortage-negative">$-58.50</td>
+                </tr>
+                <tr>
+                    <td>Butter 250g</td>
+                    <td style="text-align: right;">$0.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: center;">2025-08-29</td>
+                    <td style="text-align: right;">20.00</td>
+                    <td style="text-align: right;" class="shortage-negative">-20.00</td>
+                    <td style="text-align: right;" class="shortage-negative">$0.00</td>
+                </tr>
+                <tr>
+                    <td>Cocount Powder</td>
+                    <td style="text-align: right;">$1,200.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">1.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">1.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;" class="shortage-positive">1.00</td>
+                    <td style="text-align: right;" class="shortage-positive">$1,200.00</td>
+                </tr>
+                <tr>
+                    <td>Milk 100 ml</td>
+                    <td style="text-align: right;">$0.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: center;">N/A</td>
+                    <td style="text-align: right;">0.00</td>
+                    <td style="text-align: right;" class="">0.00</td>
+                    <td style="text-align: right;" class="">$0.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <p><strong>Total Value Impact:</strong> $13,638,584.00</p>
+            <p><strong>Items with Shortages:</strong> 3</p>
+            <p><strong>Items with Excess:</strong> 3</p>
+            <p><strong>Items Balanced:</strong> 1</p>
+        </div>
+
+        <div class="footer">
+            <p>This report was automatically generated by the Wedding Bliss Logistics System</p>
+            <p>Report ID: LR-202508-142424</p>
+        </div>
+    </body>
+    </html>

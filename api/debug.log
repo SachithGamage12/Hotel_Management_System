@@ -1,0 +1,1524 @@
+Raw input: {"booking_reference":"8423","room_number":"200","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Honey Moon Room","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Raw input: {"booking_reference":"8425","room_number":"200","ac_type":"Non A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Honey Moon Room","value_type":"Subtotal","amount_type":"Amount","total_amount":"35000","advance_payment":"17500","pending_amount":"17500.00"}
+Raw input: {"booking_reference":"8425","room_number":"200","ac_type":"Non A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Honey Moon Room","value_type":"Subtotal","amount_type":"Amount","total_amount":"35000","advance_payment":"17500","pending_amount":"17500.00"}
+Raw input: {"booking_reference":"8425","nic":"200328100859","contact_no":"0725876139 / 0706773588","room_number":"204","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"room","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invalid NIC format. Expected 9 digits followed by V, v, X, or x (e.g., 123456789V)
+Raw input: {"booking_reference":"8425","nic":"200328100859","contact_no":"0725876139 / 0706773588","room_number":"204","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"room","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invalid NIC format. Expected 9 digits followed by V, v, X, or x (e.g., 123456789V)
+Raw input: {"booking_reference":"8425","nic":"200328100859","contact_no":"0725876139 / 0706773588","room_number":"204","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"room","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invalid NIC format. Expected 9 digits followed by V, v, X, or x (e.g., 123456789V)
+Raw input: {"booking_reference":"8423","nic":"200328100857","contact_no":"0725876139 / 0706773588","room_number":"203/204/205","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"rooms","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invalid NIC format. Expected 9 digits followed by V, v, X, or x (e.g., 123456789V)
+Raw input: {"booking_reference":"8423","nic":"200328100857","contact_no":"0725876139 / 0706773588","room_number":"203/204/205","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"rooms","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'FOC' for column 'total_amount' at row 1
+Raw input: {"booking_reference":"8423","nic":"200328100857","contact_no":"0725876139 / 0706773588","room_number":"203/204/205","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"rooms","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'FOC' for column 'total_amount' at row 1
+Raw input: {"booking_reference":"8423","nic":"200328100857","contact_no":"0725876139 / 0706773588","room_number":"203/204/205","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"rooms","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'FOC' for column 'total_amount' at row 1
+Raw input: {"booking_reference":"8423","nic":"200328100857","contact_no":"0725876139 / 0706773588","room_number":"203/204/205","ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"rooms","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Raw input: {"booking_reference":"8425","nic":"200328100859","contact_no":"0725876139 / 0706773588","rooms":[{"number":"203","type":"Changing","hotel":"Grand View Lodge"},{"number":"204","type":"Standard","hotel":"Paragon"},{"number":"205","type":"Honeymoon","hotel":"Sky"},{"number":"206","type":"Anniversary","hotel":"Rose Garden Hotel"},{"number":"207","type":"Standard","hotel":"Sapthpadhi Hotel"}],"ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner, Room Only","remarks":"Rooms","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Raw input: {"booking_reference":"8425","nic":"200328100859","contact_no":"0725876139 / 0706773588","rooms":[{"number":"203","type":"Standard","hotel":"Grand View Lodge"}],"ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Hall","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Raw input: {"booking_reference":"8425","nic":"200328100858/20034587912","contact_no":"0725876139 / 0706773588","rooms":[{"number":"203","type":"Standard","hotel":"Paragon"},{"number":"202","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Hall","value_type":"Subtotal","amount_type":"Amount","total_amount":"340000","advance_payment":"200000","pending_amount":"140000.00"}
+Error: Invalid NIC format. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"8425","nic":"200328100859 / 2003456789V","contact_no":"0725876139 / 0706773588","rooms":[{"number":"203","type":"Changing","hotel":"Grand View Lodge"},{"number":"209","type":"Standard","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Hall","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invalid NIC format: 2003456789V. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"8425","nic":"200328100859 / 557651519V","contact_no":"0725876139 / 0706773588","rooms":[{"number":"203","type":"Changing","hotel":"Grand View Lodge"},{"number":"209","type":"Standard","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Breakfast, Lunch, Dinner","remarks":"Hall","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invoice not found
+Error: Invoice not found
+Error: Invoice not found
+Error: Invoice not found
+Error: Invoice not found
+Raw input: {"booking_reference":"8436","nic":"200145673891","contact_no":"0725876139 / 0706773588","rooms":[{"number":"201","type":"Changing","hotel":"Paragon"},{"number":"202","type":"Changing","hotel":"Paragon"}],"ac_type":"Non A/C","meal_plan":null,"remarks":"FOC","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Error: Invoice number is required
+Raw input: {"booking_reference":"8436","nic":"200328100859","contact_no":"0725876139","rooms":[{"number":"201","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"bed","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Raw input: {"booking_reference":"8436","nic":"200328100859","contact_no":"0725876139","rooms":[{"number":"201","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"bed","value_type":"Subtotal","amount_type":"FOC","total_amount":"FOC","advance_payment":"FOC","pending_amount":"FOC"}
+Raw input: {"booking_reference":"8439","nic":"557651519V","contact_no":"0725876139","rooms":[{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":null,"meal_plan":"Room Only","remarks":"2 hours only","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invoice not found
+Error: Invoice not found
+Error: Invoice not found
+Executed history query for invoice INV-2087, found: yes
+Fetched 0 rooms for payment ID 
+Executed history query for invoice INV-2087, found: yes
+Fetched 0 rooms for payment ID 
+Executed history query for invoice INV-2087, found: yes
+Fetched 0 rooms for payment ID 
+Received invoice number: INV-2087
+History query for invoice INV-2087, found: yes
+Payment ID: 36
+Fetched 1 rooms for payment ID 36
+Response: {
+    "invoice_number": "INV-2087",
+    "booking_reference": "8439",
+    "ac_type": null,
+    "meal_plan": "Room Only",
+    "remarks": "2 hours only",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2500.00",
+    "payment_date": "2025-10-19 11:08:23",
+    "issued_by": "Admin",
+    "nic": "557651519V",
+    "contact_no": "0725876139",
+    "full_name": "Sachith Gamage",
+    "couple_name": "Suchi $ Bchi",
+    "booking_date": "2025-09-25",
+    "groom_address": "No.17\/30,Daladawaththa 2nd lane,Thalpitiya,Wadduwa",
+    "bride_address": "qwewqewq",
+    "function_type": null,
+    "venue": null,
+    "rooms": [
+        {
+            "room_number": "201",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Raw input: {"booking_reference":"8443","nic":null,"contact_no":null,"rooms":[{"number":"301","type":"Changing","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Wedding Day","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Received invoice number: INV-2088
+History query for invoice INV-2088, found: yes
+Bookings query for invoice INV-2088, found: yes
+Payment ID: 37
+Fetched 0 rooms for payment ID 37
+Response: {
+    "invoice_number": "INV-2088",
+    "booking_reference": "1210",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "12000.00",
+    "advance_payment": "2000.00",
+    "pending_amount": "5000.00",
+    "added_amount": null,
+    "payment_date": "2025-10-19 11:51:16",
+    "issued_by": "Admin",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-2088
+History query for invoice INV-2088, found: yes
+Bookings query for invoice INV-2088, found: yes
+Payment ID: 37
+Fetched 0 rooms for payment ID 37
+Response: {
+    "invoice_number": "INV-2088",
+    "booking_reference": "1210",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "12000.00",
+    "advance_payment": "2000.00",
+    "pending_amount": "5000.00",
+    "added_amount": null,
+    "payment_date": "2025-10-19 11:51:16",
+    "issued_by": "Admin",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-8443
+History query for invoice INV-8443, found: no
+Bookings query for invoice INV-8443, found: no
+Error: Invoice not found
+Received invoice number: INV-2088
+History query for invoice INV-2088, found: yes
+Bookings query for invoice INV-2088, found: yes
+Payment ID: 37
+Fetched 0 rooms for payment ID 37
+Response: {
+    "invoice_number": "INV-2088",
+    "booking_reference": "1210",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "12000.00",
+    "advance_payment": "2000.00",
+    "pending_amount": "5000.00",
+    "added_amount": null,
+    "payment_date": "2025-10-19 11:51:16",
+    "issued_by": "Admin",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Error: Booking reference is required
+Received invoice number: INV-2088
+History query for invoice INV-2088, found: yes
+Bookings query for invoice INV-2088, found: yes
+Payment ID: 37
+Fetched 0 rooms for payment ID 37
+Response: {
+    "invoice_number": "INV-2088",
+    "booking_reference": "1210",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "12000.00",
+    "advance_payment": "2000.00",
+    "pending_amount": "5000.00",
+    "added_amount": null,
+    "payment_date": "2025-10-19 11:51:16",
+    "issued_by": "Admin",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Error: Booking reference is required
+Error: Booking reference is required
+Error: Booking reference is required
+Error: Booking reference is required
+Received invoice number: INV-8443
+History query for invoice INV-8443, found: no
+Bookings query for invoice INV-8443, found: no
+Error: Invoice not found
+Received invoice number: INV-2088
+History query for invoice INV-2088, found: yes
+Bookings query for invoice INV-2088, found: yes
+Payment ID: 37
+Fetched 0 rooms for payment ID 37
+Response: {
+    "invoice_number": "INV-2088",
+    "booking_reference": "1210",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "12000.00",
+    "advance_payment": "2000.00",
+    "pending_amount": "5000.00",
+    "added_amount": null,
+    "payment_date": "2025-10-19 11:51:16",
+    "issued_by": "Admin",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-2090
+History query for invoice INV-2090, found: no
+Bookings query for invoice INV-2090, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"8443","nic":null,"contact_no":null,"rooms":[{"number":"201","type":"Changing","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Raw input: {"booking_reference":"8443","nic":"200328100859","contact_no":"0725876139","rooms":[{"number":"201","type":"Honeymoon","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Raw input: {"booking_reference":"8443","nic":"200328100859","contact_no":"0725876139","rooms":[{"number":"201","type":"Honeymoon","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Raw input: {"booking_reference":"8443","nic":"200328100859","contact_no":"0725876139","rooms":[{"number":"201","type":"Honeymoon","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Raw input: {"booking_reference":"8443","nic":null,"contact_no":null,"rooms":[{"number":"201","type":"Standard","hotel":"Grand View Lodge"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2300"}
+Raw input: {"booking_reference":"8443","nic":null,"contact_no":null,"rooms":[{"number":"203","type":"Honeymoon","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2300"}
+Raw input: {"booking_reference":"8461","nic":"200328100859","contact_no":"0725876138","rooms":[{"number":"203","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Nothing to pay","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2300"}
+Raw input: {"booking_reference":"8436","nic":"13456721","contact_no":"0765432178","rooms":[{"number":"201","type":"Standard","hotel":"Paragon"}],"ac_type":"Non A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2300"}
+Error: Invalid NIC format: 13456721. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"8436","nic":"200328100843","contact_no":"0765432178","rooms":[{"number":"201","type":"Standard","hotel":"Paragon"}],"ac_type":"Non A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2300"}
+Raw input: {"booking_reference":"5005","nic":"199604800767","contact_no":"0760318811","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.22 Banquet Hall Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5006","nic":"570110322V","contact_no":"0704012222","rooms":[{"number":"205","type":"Changing","hotel":"Paragon"},{"number":"301","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.22 Ballroom Customer, Two Changing Rooms","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":null,"pending_amount":null,"added_amount":"11000"}
+Raw input: {"booking_reference":"5007","nic":"198931800290","contact_no":"0765352271","rooms":[{"number":"304","type":"Changing","hotel":"Sky"},{"number":"204","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.22 Red Hall Function(204 Room Two Hours Only - 3000/=)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Received invoice number: INV-1626
+History query for invoice INV-1626, found: yes
+Bookings query for invoice INV-1626, found: yes
+Payment ID: 65
+Fetched 1 rooms for payment ID 65
+Response: {
+    "invoice_number": "INV-1626",
+    "booking_reference": "5005",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.22 Banquet Hall Customer",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "7500.00",
+    "payment_date": "2025-10-23 11:38:21",
+    "issued_by": "Sujeewani",
+    "nic": "199604800767",
+    "contact_no": "0760318811",
+    "full_name": "Mr.R.G.N.B.Kumarasiri",
+    "couple_name": "Nimesha & Nishantha",
+    "booking_date": "2025-10-22",
+    "groom_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "bride_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "305",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5005","nic":null,"contact_no":null,"rooms":[{"number":"201","type":"Changing","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.22 Banquet Customer - 02 Hours Only  ","value_type":"Subtotal","amount_type":"FOC","total_amount":null,"advance_payment":"FOC","pending_amount":"FOC","added_amount":null}
+Raw input: {"booking_reference":"5011","nic":"941952127V","contact_no":"0703275410","rooms":[{"number":"304","type":"Changing","hotel":"Grand Guardian Hotel"},{"number":"305","type":"Honeymoon","hotel":"Grand Guardian Hotel"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.23 Red Hall Wedding Day Customer ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"12000"}
+Received invoice number: INV-1632
+History query for invoice INV-1632, found: yes
+Bookings query for invoice INV-1632, found: yes
+Payment ID: 71
+Fetched 0 rooms for payment ID 71
+Response: {
+    "invoice_number": "INV-1632",
+    "booking_reference": "1227",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "7500.00",
+    "advance_payment": "0.00",
+    "pending_amount": "7500.00",
+    "added_amount": null,
+    "payment_date": "2025-10-24 08:34:18",
+    "issued_by": "Shanika",
+    "nic": "910863843V",
+    "contact_no": "",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-5001
+History query for invoice INV-5001, found: no
+Bookings query for invoice INV-5001, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5004","nic":"922471690V","contact_no":"0702633685","rooms":[{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":null,"value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Received invoice number: INV-1634
+History query for invoice INV-1634, found: yes
+Bookings query for invoice INV-1634, found: yes
+Payment ID: 73
+Fetched 1 rooms for payment ID 73
+Response: {
+    "invoice_number": "INV-1634",
+    "booking_reference": "5004",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "7500.00",
+    "payment_date": "2025-10-24 11:59:10",
+    "issued_by": "Sujeewani",
+    "nic": "922471690V",
+    "contact_no": "0702633685",
+    "full_name": "Ms. Sachini Rashmila",
+    "couple_name": "-",
+    "booking_date": "2025-10-23",
+    "groom_address": "-",
+    "bride_address": "-",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "306",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5013","nic":"977360250V","contact_no":"0766998044","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.24 Banquet Hall","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5010","nic":null,"contact_no":null,"rooms":[{"number":"307","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.25 Ballroom","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5014","nic":"200356110055","contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":null,"remarks":"Dressing Only for Dancing Team = 4,500/-","value_type":"Subtotal","amount_type":"FOC","total_amount":null,"advance_payment":null,"pending_amount":null,"added_amount":null}
+Received invoice number: INV-1644
+History query for invoice INV-1644, found: yes
+Bookings query for invoice INV-1644, found: yes
+Payment ID: 83
+Fetched 0 rooms for payment ID 83
+Response: {
+    "invoice_number": "INV-1644",
+    "booking_reference": "1234",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "4500.00",
+    "advance_payment": "1000.00",
+    "pending_amount": "3500.00",
+    "added_amount": null,
+    "payment_date": "2025-10-25 18:07:20",
+    "issued_by": "Sujeewani",
+    "nic": "196225503392",
+    "contact_no": "0777389201",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-1643
+History query for invoice INV-1643, found: yes
+Bookings query for invoice INV-1643, found: yes
+Payment ID: 82
+Fetched 1 rooms for payment ID 82
+Response: {
+    "invoice_number": "INV-1643",
+    "booking_reference": "5014",
+    "ac_type": "A\/C",
+    "meal_plan": null,
+    "remarks": "Dressing Only for Dancing Team = 4,500\/-",
+    "value_type": "Subtotal",
+    "amount_type": "FOC",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": null,
+    "payment_date": "2025-10-25 17:37:55",
+    "issued_by": "Hirushi",
+    "nic": "200356110055",
+    "contact_no": null,
+    "full_name": "Mr.Padmakumara",
+    "couple_name": "Thilina & Wasana",
+    "booking_date": "2025-10-25",
+    "groom_address": "Kuruvita",
+    "bride_address": "Theppanawa",
+    "function_type": "Home Coming",
+    "venue": "Red Hall",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1636
+History query for invoice INV-1636, found: yes
+Bookings query for invoice INV-1636, found: yes
+Payment ID: 75
+Fetched 0 rooms for payment ID 75
+Response: {
+    "invoice_number": "INV-1636",
+    "booking_reference": "1229",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "6500.00",
+    "advance_payment": "0.00",
+    "pending_amount": "6500.00",
+    "added_amount": null,
+    "payment_date": "2025-10-25 08:57:14",
+    "issued_by": "Hirushi",
+    "nic": "197755800992",
+    "contact_no": "-",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-1643
+History query for invoice INV-1643, found: yes
+Bookings query for invoice INV-1643, found: yes
+Payment ID: 82
+Fetched 1 rooms for payment ID 82
+Response: {
+    "invoice_number": "INV-1643",
+    "booking_reference": "5014",
+    "ac_type": "A\/C",
+    "meal_plan": null,
+    "remarks": "Dressing Only for Dancing Team = 4,500\/-",
+    "value_type": "Subtotal",
+    "amount_type": "FOC",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": null,
+    "payment_date": "2025-10-25 17:37:55",
+    "issued_by": "Hirushi",
+    "nic": "200356110055",
+    "contact_no": null,
+    "full_name": "Mr.Padmakumara",
+    "couple_name": "Thilina & Wasana",
+    "booking_date": "2025-10-25",
+    "groom_address": "Kuruvita",
+    "bride_address": "Theppanawa",
+    "function_type": "Home Coming",
+    "venue": "Red Hall",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1644
+History query for invoice INV-1644, found: yes
+Bookings query for invoice INV-1644, found: yes
+Payment ID: 83
+Fetched 0 rooms for payment ID 83
+Response: {
+    "invoice_number": "INV-1644",
+    "booking_reference": "1234",
+    "ac_type": "AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Invoice",
+    "total_amount": "4500.00",
+    "advance_payment": "1000.00",
+    "pending_amount": "3500.00",
+    "added_amount": null,
+    "payment_date": "2025-10-25 18:07:20",
+    "issued_by": "Sujeewani",
+    "nic": "196225503392",
+    "contact_no": "0777389201",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Received invoice number: INV-1646
+History query for invoice INV-1646, found: no
+Bookings query for invoice INV-1646, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5019","nic":"200371811267","contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Ballroom Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Raw input: {"booking_reference":"5018","nic":"968540696V & 972161748","contact_no":null,"rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"307","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Banquet Hall Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"14500"}
+Error: Invalid NIC format: 968540696V & 972161748. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5018","nic":"968540696V & 972161748","contact_no":null,"rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"307","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Banquet Hall Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"14500"}
+Error: Invalid NIC format: 968540696V & 972161748. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5018","nic":"968540696V & 972161748","contact_no":null,"rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"307","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Banquet Hall Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"14500"}
+Error: Invalid NIC format: 968540696V & 972161748. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5018","nic":"968540696V & 972161748","contact_no":null,"rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"307","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Banquet Hall Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"14500"}
+Error: Invalid NIC format: 968540696V & 972161748. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5018","nic":"968540696V ","contact_no":null,"rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"307","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Banquet Hall Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"14500"}
+Raw input: {"booking_reference":"5019","nic":"945521317V","contact_no":null,"rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.26 Ballroom Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5020","nic":"961480116V","contact_no":null,"rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.27 Ballroom Changing Room","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"4500"}
+Raw input: {"booking_reference":"5020","nic":null,"contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"Non A/C","meal_plan":"Room Only","remarks":"2025.10.27 Ballroom Wedding","value_type":"Subtotal","amount_type":"Add to Repayment","total_amount":null,"advance_payment":"Add to Repayment","pending_amount":"Add to Repayment","added_amount":"6500"}
+Received invoice number: INV-1651
+History query for invoice INV-1651, found: yes
+Bookings query for invoice INV-1651, found: yes
+Payment ID: 90
+Fetched 2 rooms for payment ID 90
+Response: {
+    "invoice_number": "INV-1651",
+    "booking_reference": "5020",
+    "ac_type": "Non A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.27 Ballroom Wedding",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": "0.00",
+    "pending_amount": "0.00",
+    "added_amount": null,
+    "payment_date": "2025-10-27 13:50:02",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Mr.Rajitha Karunarathna",
+    "couple_name": "Pamalka & Rajitha",
+    "booking_date": "2025-10-27",
+    "groom_address": "Bopeththa",
+    "bride_address": "Rajitha",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        },
+        {
+            "room_number": "201",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-1650
+History query for invoice INV-1650, found: yes
+Bookings query for invoice INV-1650, found: yes
+Payment ID: 89
+Fetched 1 rooms for payment ID 89
+Response: {
+    "invoice_number": "INV-1650",
+    "booking_reference": "5020",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.27 Ballroom Changing Room",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "4500.00",
+    "payment_date": "2025-10-27 13:33:55",
+    "issued_by": "Sujeewani",
+    "nic": "961480116V",
+    "contact_no": null,
+    "full_name": "Mr.Rajitha Karunarathna",
+    "couple_name": "Pamalka & Rajitha",
+    "booking_date": "2025-10-27",
+    "groom_address": "Bopeththa",
+    "bride_address": "Rajitha",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "301",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1651
+History query for invoice INV-1651, found: yes
+Bookings query for invoice INV-1651, found: yes
+Payment ID: 90
+Fetched 2 rooms for payment ID 90
+Response: {
+    "invoice_number": "INV-1651",
+    "booking_reference": "5020",
+    "ac_type": "Non A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.27 Ballroom Wedding",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "6500.00",
+    "payment_date": "2025-10-27 13:50:02",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Mr.Rajitha Karunarathna",
+    "couple_name": "Pamalka & Rajitha",
+    "booking_date": "2025-10-27",
+    "groom_address": "Bopeththa",
+    "bride_address": "Rajitha",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        },
+        {
+            "room_number": "201",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-1651
+History query for invoice INV-1651, found: yes
+Bookings query for invoice INV-1651, found: yes
+Payment ID: 90
+Fetched 2 rooms for payment ID 90
+Response: {
+    "invoice_number": "INV-1651",
+    "booking_reference": "5020",
+    "ac_type": "Non A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.27 Ballroom Wedding",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "6500.00",
+    "payment_date": "2025-10-27 13:50:02",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Mr.Rajitha Karunarathna",
+    "couple_name": "Pamalka & Rajitha",
+    "booking_date": "2025-10-27",
+    "groom_address": "Bopeththa",
+    "bride_address": "Rajitha",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        },
+        {
+            "room_number": "201",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-1650
+History query for invoice INV-1650, found: yes
+Bookings query for invoice INV-1650, found: yes
+Payment ID: 89
+Fetched 1 rooms for payment ID 89
+Response: {
+    "invoice_number": "INV-1650",
+    "booking_reference": "5020",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.27 Ballroom Changing Room",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "4500.00",
+    "payment_date": "2025-10-27 13:33:55",
+    "issued_by": "Sujeewani",
+    "nic": "961480116V",
+    "contact_no": null,
+    "full_name": "Mr.Rajitha Karunarathna",
+    "couple_name": "Pamalka & Rajitha",
+    "booking_date": "2025-10-27",
+    "groom_address": "Bopeththa",
+    "bride_address": "Rajitha",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "301",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5005","nic":"200328100859","contact_no":"0725876139","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"test","value_type":"Subtotal","amount_type":"Add to Repayment","total_amount":null,"advance_payment":"Add to Repayment","pending_amount":"Add to Repayment","added_amount":"2300"}
+Received invoice number: INV-1652
+History query for invoice INV-1652, found: yes
+Bookings query for invoice INV-1652, found: yes
+Payment ID: 91
+Fetched 1 rooms for payment ID 91
+Response: {
+    "invoice_number": "INV-1652",
+    "booking_reference": "5005",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "test",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2300.00",
+    "payment_date": "2025-10-27 15:13:47",
+    "issued_by": "Hirushi",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": "Mr.R.G.N.B.Kumarasiri",
+    "couple_name": "Nimesha & Nishantha",
+    "booking_date": "2025-10-22",
+    "groom_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "bride_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "203",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-1652
+History query for invoice INV-1652, found: yes
+Bookings query for invoice INV-1652, found: yes
+Payment ID: 91
+Fetched 1 rooms for payment ID 91
+Response: {
+    "invoice_number": "INV-1652",
+    "booking_reference": "5005",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "test",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2300.00",
+    "payment_date": "2025-10-27 15:13:47",
+    "issued_by": "Hirushi",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": "Mr.R.G.N.B.Kumarasiri",
+    "couple_name": "Nimesha & Nishantha",
+    "booking_date": "2025-10-22",
+    "groom_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "bride_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "203",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-1652
+History query for invoice INV-1652, found: yes
+Bookings query for invoice INV-1652, found: yes
+Payment ID: 91
+Fetched 1 rooms for payment ID 91
+Response: {
+    "invoice_number": "INV-1652",
+    "booking_reference": "5005",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "test",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2300.00",
+    "payment_date": "2025-10-27 15:13:47",
+    "issued_by": "Hirushi",
+    "nic": "200328100859",
+    "contact_no": "0725876139",
+    "full_name": "Mr.R.G.N.B.Kumarasiri",
+    "couple_name": "Nimesha & Nishantha",
+    "booking_date": "2025-10-22",
+    "groom_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "bride_address": "228\/C\/1,Pussalla,Parakaduwa",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "203",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-1651
+History query for invoice INV-1651, found: yes
+Bookings query for invoice INV-1651, found: yes
+Payment ID: 90
+Fetched 2 rooms for payment ID 90
+Response: {
+    "invoice_number": "INV-1651",
+    "booking_reference": "5020",
+    "ac_type": "Non A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.27 Ballroom Wedding",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Repayment",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "6500.00",
+    "payment_date": "2025-10-27 13:50:02",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Mr.Rajitha Karunarathna",
+    "couple_name": "Pamalka & Rajitha",
+    "booking_date": "2025-10-27",
+    "groom_address": "Bopeththa",
+    "bride_address": "Rajitha",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        },
+        {
+            "room_number": "201",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Received invoice number: INV-5022
+History query for invoice INV-5022, found: no
+Bookings query for invoice INV-5022, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5020","nic":"942581033V","contact_no":null,"rooms":[{"number":"307","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"(Customer Room Eka Balala 305 Room Eke Clean Madi Kiyala 307ta Change Kala) ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5099","nic":"940112958V","contact_no":null,"rooms":[{"number":"206","type":"Honeymoon","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.27 Rose Couple","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5103","nic":null,"contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.29 Ballroom Changing Room","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Received invoice number: INV-1658
+History query for invoice INV-1658, found: yes
+Bookings query for invoice INV-1658, found: yes
+Payment ID: 98
+Fetched 1 rooms for payment ID 98
+Response: {
+    "invoice_number": "INV-1658",
+    "booking_reference": "5103",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.29 Ballroom Changing Room",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2500.00",
+    "payment_date": "2025-10-30 09:42:16",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Mr.Chaminda Abesinghe",
+    "couple_name": "-",
+    "booking_date": "2025-10-29",
+    "groom_address": "Abance,Rathnapura",
+    "bride_address": "-",
+    "function_type": "Training Program",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1658
+History query for invoice INV-1658, found: yes
+Bookings query for invoice INV-1658, found: yes
+Payment ID: 98
+Fetched 1 rooms for payment ID 98
+Response: {
+    "invoice_number": "INV-1658",
+    "booking_reference": "5103",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.29 Ballroom Changing Room",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2500.00",
+    "payment_date": "2025-10-30 09:42:16",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Mr.Chaminda Abesinghe",
+    "couple_name": "-",
+    "booking_date": "2025-10-29",
+    "groom_address": "Abance,Rathnapura",
+    "bride_address": "-",
+    "function_type": "Training Program",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5095","nic":"200332310395","contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.30 Red Hall Changing Room","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5097","nic":"972463299 V / 991431690V","contact_no":"0763839015/ 0778190558","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.30 Ballroom Wedding Day  ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Error: Invalid NIC format: 972463299 V. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5097","nic":"972463299 V / 991431690V","contact_no":"0763839015/ 0778190558","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.30 Ballroom Wedding Day  ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Error: Invalid NIC format: 972463299 V. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Received invoice number: INV-1666
+History query for invoice INV-1666, found: no
+Bookings query for invoice INV-1666, found: no
+Error: Invoice not found
+Received invoice number: INV-1666
+History query for invoice INV-1666, found: no
+Bookings query for invoice INV-1666, found: no
+Error: Invoice not found
+Received invoice number: INV-1665
+History query for invoice INV-1665, found: yes
+Bookings query for invoice INV-1665, found: yes
+Invalid amount_type for invoice INV-1665: Invoice
+Error: Invalid amount type in payment record
+Received invoice number: INV-1667
+History query for invoice INV-1667, found: no
+Bookings query for invoice INV-1667, found: no
+Error: Invoice not found
+Received invoice number: INV-1666
+History query for invoice INV-1666, found: no
+Bookings query for invoice INV-1666, found: no
+Error: Invoice not found
+Received invoice number: INV-1664
+History query for invoice INV-1664, found: yes
+Bookings query for invoice INV-1664, found: yes
+Payment ID: 133
+Fetched 1 rooms for payment ID 133
+Response: {
+    "invoice_number": "INV-1664",
+    "booking_reference": "5095",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.10.30 Red Hall Changing Room",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "2500.00",
+    "payment_date": "2025-10-30 17:04:45",
+    "issued_by": "Shanika",
+    "nic": "200332310395",
+    "contact_no": null,
+    "full_name": "Mr. Chathuranga",
+    "couple_name": "-",
+    "booking_date": "2025-10-30",
+    "groom_address": "Gammedda, Colombagama, Nivithigala.",
+    "bride_address": "Gammedda, Colombagama, Nivithigala.",
+    "function_type": "Wedding",
+    "venue": "Red Hall",
+    "rooms": [
+        {
+            "room_number": "304",
+            "room_type": "Changing",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1666
+History query for invoice INV-1666, found: no
+Bookings query for invoice INV-1666, found: no
+Error: Invoice not found
+Received invoice number: INV-1710
+History query for invoice INV-1710, found: no
+Bookings query for invoice INV-1710, found: no
+Error: Invoice not found
+Received invoice number: INV-1710
+History query for invoice INV-1710, found: no
+Bookings query for invoice INV-1710, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5097","nic":null,"contact_no":null,"rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"305 Check In Name - Mr.Rasika Nuwan (941431690V) / 301Check In Name - Mr.Milinda Nirosh(972463299V)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5098","nic":"942620047V","contact_no":null,"rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"},{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.10.31 Ballroom","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"12000"}
+Received invoice number: INV-1620
+History query for invoice INV-1620, found: yes
+Bookings query for invoice INV-1620, found: yes
+Payment ID: 59
+Fetched 0 rooms for payment ID 59
+Response: {
+    "invoice_number": "INV-1620",
+    "booking_reference": "1221",
+    "ac_type": "Non-AC",
+    "meal_plan": "Room Only",
+    "remarks": null,
+    "value_type": "Room Booking",
+    "amount_type": "Amount",
+    "total_amount": "3500.00",
+    "advance_payment": "0.00",
+    "pending_amount": "3500.00",
+    "added_amount": null,
+    "payment_date": "2025-10-23 10:16:01",
+    "issued_by": "Admin",
+    "nic": "683032913V",
+    "contact_no": "0773513123",
+    "full_name": null,
+    "couple_name": null,
+    "booking_date": null,
+    "groom_address": null,
+    "bride_address": null,
+    "function_type": null,
+    "venue": null,
+    "rooms": []
+}
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"-","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"-","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"-","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"--","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"-","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"-","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5110","nic":"912721132V / 907590755V","contact_no":"0779091571 ","rooms":[{"number":"203","type":"Changing","hotel":"Paragon"},{"number":"201","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom for Army Band & Dancing Group ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Raw input: {"booking_reference":"5060","nic":"975700437v","contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Red Hall Changing Room","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Received invoice number: INV-1671
+History query for invoice INV-1671, found: yes
+Bookings query for invoice INV-1671, found: yes
+Invalid amount_type for invoice INV-1671: Invoice
+Error: Invalid amount type in payment record
+Raw input: {"booking_reference":"5060","nic":"981252080V","contact_no":"0742715232 / 0740790410","rooms":[{"number":"307","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Red Hall Wedding Day ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5110","nic":"20002140006","contact_no":"0779091571/0705673443","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom Wedding Day (Mr.Yohan Rashitha Kumara -305 / Mr.Hasith Sachintha - 301)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Error: Invalid NIC format: 20002140006. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5110","nic":"20002140006","contact_no":"0779091571/0705673443","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom Wedding Day (Mr.Yohan Rashitha Kumara -305 / Mr.Hasith Sachintha - 301)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Error: Invalid NIC format: 20002140006. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5110","nic":"20002140006","contact_no":"0779091571/0705673443","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom Wedding Day (Mr.Yohan Rashitha Kumara -305 / Mr.Hasith Sachintha - 301)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Error: Invalid NIC format: 20002140006. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5110","nic":"20002140006","contact_no":"0779091571 /0705673443","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom Wedding Day (Mr.Yohan Rashitha Kumara -305 / Mr.Hasith Sachintha - 301)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Error: Invalid NIC format: 20002140006. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5110","nic":"200021400026","contact_no":"0779091571 /0705673443","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.03 Ballroom Wedding Day (Mr.Yohan Rashitha Kumara -305 / Mr.Hasith Sachintha - 301)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5112","nic":null,"contact_no":null,"rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.08 Ballroom Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"11000"}
+Received invoice number: INV-1738
+History query for invoice INV-1738, found: no
+Bookings query for invoice INV-1738, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5075","nic":null,"contact_no":null,"rooms":[{"number":"202","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Payment Add To Menu","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"6500"}
+Received invoice number: INV-1695
+History query for invoice INV-1695, found: yes
+Payment ID: 164
+Fetched 1 rooms for payment ID 164
+Response: {
+    "invoice_number": "INV-1695",
+    "booking_reference": "5075",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "Payment Add To Menu",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Menu",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "6500.00",
+    "payment_date": "2025-11-11 18:03:44",
+    "issued_by": "Sujeewani",
+    "nic": null,
+    "contact_no": null,
+    "full_name": "Ms.K.H.Medagangoda",
+    "couple_name": "-",
+    "booking_date": "2025-11-10",
+    "groom_address": "B\/192\/4,Panawala,Eheliyagoda",
+    "bride_address": "-",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "202",
+            "room_type": "Changing",
+            "hotel": "Paragon"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5075","nic":null,"contact_no":null,"rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"304","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"301/304 Customer Name -Ms.Amali Shalika Medagangoda)                     (305 Customer Name Mr.RadeeshanLakshitha )","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"14500"}
+Received invoice number: INV-1705
+History query for invoice INV-1705, found: yes
+Bookings query for invoice INV-1705, found: yes
+Invalid amount_type for invoice INV-1705: Invoice
+Error: Invalid amount type in payment record
+Received invoice number: INV-1705
+History query for invoice INV-1705, found: yes
+Bookings query for invoice INV-1705, found: yes
+Invalid amount_type for invoice INV-1705: Invoice
+Error: Invalid amount type in payment record
+Received invoice number: INV-1706
+History query for invoice INV-1706, found: yes
+Bookings query for invoice INV-1706, found: yes
+Invalid amount_type for invoice INV-1706: Invoice
+Error: Invalid amount type in payment record
+Raw input: {"booking_reference":"5113","nic":"571570319V","contact_no":"0763920857/0713354630","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.14 Banquet Hall Wedding Day(ID Name - Mr.K.Dayarathna & Mr.K.Prabhath","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"5000"}
+Raw input: {"booking_reference":"5035","nic":"198954301613","contact_no":"0710618706/0715315204","rooms":[{"number":"204","type":"Changing","hotel":"Paragon"},{"number":"206","type":"Changing","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.14 Red Hall Wedding Day (ID Name - Ms.W.A.Chamika Harshani & Ms.E.W.M.A.Anushka Thejani","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"12000"}
+Raw input: {"booking_reference":"5113","nic":"932061449V","contact_no":"0763920857/0713354630","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"},{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.14 Banquet Hall Wedding Day (ID Name - Mr.K.Prabhath Sampath Dayarathna)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"15000"}
+Received invoice number: INV-1711
+History query for invoice INV-1711, found: yes
+Bookings query for invoice INV-1711, found: yes
+Invalid amount_type for invoice INV-1711: Invoice
+Error: Invalid amount type in payment record
+Received invoice number: INV-1711
+History query for invoice INV-1711, found: yes
+Bookings query for invoice INV-1711, found: yes
+Invalid amount_type for invoice INV-1711: Invoice
+Error: Invalid amount type in payment record
+Received invoice number: INV-1712
+History query for invoice INV-1712, found: yes
+Payment ID: 181
+Fetched 2 rooms for payment ID 181
+Response: {
+    "invoice_number": "INV-1712",
+    "booking_reference": "5113",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.11.14 Banquet Hall Wedding Day (ID Name - Mr.K.Prabhath Sampath Dayarathna)",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "15000.00",
+    "payment_date": "2025-11-16 08:30:43",
+    "issued_by": "Shanika",
+    "nic": "932061449V",
+    "contact_no": "0763920857\/0713354630",
+    "full_name": "Mr.Prasad",
+    "couple_name": "-",
+    "booking_date": "2025-11-14",
+    "groom_address": "Halkandaliya Waththa, Doloswala Kanda,Nivithigala, Rathnapura",
+    "bride_address": "-",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "305",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        },
+        {
+            "room_number": "306",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5113","nic":"932061449V","contact_no":"0763920857/0713354630","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"},{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.14 Banquet Hall Wedding Day (ID Name - Mr.K. Prabhath Sampath Dayarathna) (2025.11.15 Night)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"15000"}
+Raw input: {"booking_reference":"5114","nic":"951793175V","contact_no":"0715628548","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"-","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5115","nic":"930812218V","contact_no":"0763264985","rooms":[{"number":"306","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.20 Ballroom Wedding Day (ID Name - Mr.S.Chanaka Krishan) Honeymoon Room eka wenuwata Room eka gaththa.","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5038","nic":"921973039V","contact_no":"0743816114/ 0743005291","rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.26 Red Hall Wedding Day -(ID Name-Mr.M.D.Lakshitha Kumarasiri)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5087","nic":null,"contact_no":null,"rooms":[{"number":"201","type":"Changing","hotel":"Paragon"},{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"201 Room Ekata Awe 2025.11.26 wenida Hawasa(4500+3500)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"8000"}
+Raw input: {"booking_reference":"5009","nic":null,"contact_no":null,"rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.27 Muslim Night Function  changing room ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"3500"}
+Raw input: {"booking_reference":"5118","nic":null,"contact_no":null,"rooms":[{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.29 Banquet Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5076","nic":null,"contact_no":null,"rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.11.29 Muslim Night Function ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"3500"}
+Raw input: {"booking_reference":"5117","nic":"971200103LV","contact_no":"-","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2nd Day Add to Menu ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"15000.00"}
+Error: Invalid NIC format: 971200103LV. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5117","nic":"971200103LV","contact_no":"-","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2nd Day Add to Menu ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"15000.00"}
+Error: Invalid NIC format: 971200103LV. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5117","nic":"971200103V","contact_no":"-","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2nd Day Add to Menu ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"15000.00"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5117","nic":"971200103V","contact_no":"0718874675 / 0452263378","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2nd Day Add to Menu ","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"15000.00"}
+Raw input: {"booking_reference":"5117","nic":"971200103V","contact_no":"0718874675 / 0452263378","rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":null,"remarks":"-","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5140","nic":"923302913V","contact_no":null,"rooms":[{"number":"306","type":"Honeymoon","hotel":"Sky"},{"number":"202","type":"Standard","hotel":"Paragon"},{"number":"203","type":"Standard","hotel":"Paragon"},{"number":"204","type":"Standard","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"202,203,204 Payment Add To Menu,306 2nd Night Payment Add To Menu(306 1st Day Add To Package )","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"30500"}
+Raw input: {"booking_reference":"5121","nic":null,"contact_no":null,"rooms":[{"number":"202","type":"Changing","hotel":"Paragon"},{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"Non A/C","meal_plan":"Room Only","remarks":"301 Room Check In ID Name - (Landegedara Najeetha Nirmali Wijesinghe)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"17500"}
+Raw input: {"booking_reference":"5140","nic":null,"contact_no":null,"rooms":[{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"Non A/C","meal_plan":"Room Only","remarks":"1st Day Add to Package, 2nd Day Add to Menu","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"15000"}
+Raw input: {"booking_reference":"5196","nic":"970021073V","contact_no":"0705538892/0701034638","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.07 Orchid Hall Homecoming Day Function","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5100","nic":"196977300966","contact_no":"072325560723255668/077576177168/0775761771","rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.07 Ballroom Wedding Day Function","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Raw input: {"booking_reference":"5100","nic":"196977300966","contact_no":"072325560723255668/077576177168/0775761771","rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.07 Ballroom Wedding Day Function","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid Contact No format. Expected 10 digits or two 10-digit numbers separated by " / "
+Received invoice number: INV-1768
+History query for invoice INV-1768, found: no
+Bookings query for invoice INV-1768, found: no
+Error: Invoice not found
+Received invoice number: INV-1767
+History query for invoice INV-1767, found: yes
+Payment ID: 236
+Fetched 1 rooms for payment ID 236
+Response: {
+    "invoice_number": "INV-1767",
+    "booking_reference": "5196",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "2025.12.07 Orchid Hall Homecoming Day Function",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "7500.00",
+    "payment_date": "2025-12-08 10:54:31",
+    "issued_by": "Shanika",
+    "nic": "970021073V",
+    "contact_no": "0705538892\/0701034638",
+    "full_name": "Mr. Thenabadu",
+    "couple_name": "-",
+    "booking_date": "2025-12-07",
+    "groom_address": "136,Eksath Mawatha,New Town,Rathnapura",
+    "bride_address": "-",
+    "function_type": "Home Coming",
+    "venue": "Orchid Hall",
+    "rooms": [
+        {
+            "room_number": "305",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1768
+History query for invoice INV-1768, found: no
+Bookings query for invoice INV-1768, found: no
+Error: Invoice not found
+Received invoice number: INV-1768
+History query for invoice INV-1768, found: no
+Bookings query for invoice INV-1768, found: no
+Error: Invoice not found
+Received invoice number: INV-1768
+History query for invoice INV-1768, found: no
+Bookings query for invoice INV-1768, found: no
+Error: Invoice not found
+Received invoice number: INV-1768
+History query for invoice INV-1768, found: no
+Bookings query for invoice INV-1768, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5100","nic":"196977300966","contact_no":"0723255668/0775761771","rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.07 Ballroom Wedding Day Function","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5061","nic":"950450207V","contact_no":"0713905383/0703360172","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.08 Banquet Hall Wedding Day","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5089","nic":"199807300522","contact_no":"0765261263/0712356596","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Banquet Hall Wedding Day Customer (301 - ID Name - Mr.L.A.Hasantha Piyumal)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5100","nic":"962531334V","contact_no":"0723255668","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check In Date - 2025.12.09 ( 2025.12.07 Ballroom Wedding Day Customer)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1777
+History query for invoice INV-1777, found: yes
+Bookings query for invoice INV-1777, found: yes
+Payment ID: 246
+Fetched 1 rooms for payment ID 246
+Response: {
+    "invoice_number": "INV-1777",
+    "booking_reference": "5100",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "Check In Date - 2025.12.09 ( 2025.12.07 Ballroom Wedding Day Customer)",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "7500.00",
+    "payment_date": "2025-12-11 10:51:14",
+    "issued_by": "Shanika",
+    "nic": "962531334V",
+    "contact_no": "0723255668",
+    "full_name": "Mr.S.W.Dilakshana Ravindu",
+    "couple_name": "-",
+    "booking_date": "2025-12-07",
+    "groom_address": "36\/8\/16, Polhengoda,Rathnapura",
+    "bride_address": "36\/8\/16, Polhengoda,Rathnapura",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "305",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1777
+History query for invoice INV-1777, found: yes
+Bookings query for invoice INV-1777, found: yes
+Payment ID: 246
+Fetched 1 rooms for payment ID 246
+Response: {
+    "invoice_number": "INV-1777",
+    "booking_reference": "5100",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "Check In Date - 2025.12.09 ( 2025.12.07 Ballroom Wedding Day Customer)",
+    "value_type": "Subtotal",
+    "amount_type": "Added to package",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "7500.00",
+    "payment_date": "2025-12-11 10:51:14",
+    "issued_by": "Shanika",
+    "nic": "962531334V",
+    "contact_no": "0723255668",
+    "full_name": "Mr.S.W.Dilakshana Ravindu",
+    "couple_name": "-",
+    "booking_date": "2025-12-07",
+    "groom_address": "36\/8\/16, Polhengoda,Rathnapura",
+    "bride_address": "36\/8\/16, Polhengoda,Rathnapura",
+    "function_type": "Wedding",
+    "venue": "Grand Ball Room",
+    "rooms": [
+        {
+            "room_number": "305",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-1778
+History query for invoice INV-1778, found: no
+Bookings query for invoice INV-1778, found: no
+Error: Invoice not found
+Received invoice number: INV-5122
+History query for invoice INV-5122, found: no
+Bookings query for invoice INV-5122, found: no
+Error: Invoice not found
+Received invoice number: INV-5122
+History query for invoice INV-5122, found: no
+Bookings query for invoice INV-5122, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5122","nic":"-","contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5203","nic":"198524510021","contact_no":"0711930870/0777657081","rooms":[{"number":"201","type":"Changing","hotel":"Sky"},{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Orchid Hall Wedding Day Function (201 ID Name -Mr.P.Manjula,306- Mr.R.M.Namal Priyasarshana)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Received invoice number: INV-5122
+History query for invoice INV-5122, found: no
+Bookings query for invoice INV-5122, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5122","nic":null,"contact_no":"0713883519","rooms":[{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Red Hall Wedding Day","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5221","nic":"940810515V","contact_no":null,"rooms":[{"number":"307","type":"Standard","hotel":"Sky"},{"number":"206","type":"Standard","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.10 Orchid Night Function -ID Name - Mr.Amantha (307 Room ekata 2500/- ka Discount ekak dunna.VIP Double room thibune nathi nisa.Informed Mr.Gayan)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":null,"pending_amount":null,"added_amount":"15000"}
+Raw input: {"booking_reference":"5124","nic":"953131188 V","contact_no":"0764607758","rooms":[{"number":"202","type":"Standard","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Red Hall Wedding Day (206 - Groom Family in the room)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"6500"}
+Error: Invalid NIC format: 953131188 V. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5124","nic":"953131188 V","contact_no":"0764607758","rooms":[{"number":"202","type":"Standard","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Red Hall Wedding Day (206 - Groom Family in the room)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"6500"}
+Error: Invalid NIC format: 953131188 V. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5124","nic":"953131188V","contact_no":"0764607758","rooms":[{"number":"202","type":"Standard","hotel":"Paragon"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Red Hall Wedding Day (206 - Groom Family in the room)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"6500"}
+Raw input: {"booking_reference":"5123","nic":"198821200643","contact_no":"0767802779","rooms":[{"number":"301","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Banquet Hall Wedding Day Customer","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"2500"}
+Raw input: {"booking_reference":"5124","nic":"953131188V","contact_no":"0764607758","rooms":[{"number":"304","type":"Changing","hotel":"Sky"},{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Red Hall Wedding Day Customer (ID Name - Mr.D.M.Sadaka Isuru Gunadasa)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5125","nic":"200171301554","contact_no":"0761592244","rooms":[{"number":"304","type":"Changing","hotel":"Sky"},{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Ballroom Wedding Night Customer ( ID Name - Ms.D.A.Dewmi Rangana Dewasinghe)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5123","nic":"N8683045","contact_no":"0767802779/0713233783","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Banquet Hall Wedding Day ( Check-in Date - 2025.12.12,ID Name - Mr.J.W.Chamara)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: N8683045. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"N8683045","contact_no":"0767802779/0713233783","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.11 Banquet Hall Wedding Day ( Check-in Date - 2025.12.12,ID Name - Mr.J.W.Chamara)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: N8683045. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Received invoice number: INV-1789
+History query for invoice INV-1789, found: no
+Bookings query for invoice INV-1789, found: no
+Error: Invoice not found
+Raw input: {"booking_reference":"5123","nic":"N8683045","contact_no":"0767802779/0713233783","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: N8683045. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"N8683045","contact_no":"0767802779/0713233783","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: N8683045. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"N8683045","contact_no":"0767802779","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: N8683045. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"-","contact_no":"0767802779","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"-","contact_no":"0767802779","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: -. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"N8683045","contact_no":"0767802779","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Error: Invalid NIC format: N8683045. Expected either 9 digits followed by V, v, X, or x or 12 digits
+Raw input: {"booking_reference":"5123","nic":"891003420V","contact_no":"0767802779","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)","value_type":"Subtotal","amount_type":"Add to Menu","total_amount":null,"advance_payment":"Add to Menu","pending_amount":"Add to Menu","added_amount":"7500"}
+Received invoice number: INV-1790
+History query for invoice INV-1790, found: yes
+Bookings query for invoice INV-1790, found: yes
+Payment ID: 259
+Fetched 1 rooms for payment ID 259
+Response: {
+    "invoice_number": "INV-1790",
+    "booking_reference": "5123",
+    "ac_type": "A\/C",
+    "meal_plan": "Room Only",
+    "remarks": "Check in date -2025.12.12 (ID Name - Mr.J.W.Chanaka)",
+    "value_type": "Subtotal",
+    "amount_type": "Add to Menu",
+    "total_amount": null,
+    "advance_payment": null,
+    "pending_amount": null,
+    "added_amount": "7500.00",
+    "payment_date": "2025-12-14 08:48:43",
+    "issued_by": "Shanika",
+    "nic": "891003420V",
+    "contact_no": "0767802779",
+    "full_name": "Mr.Srinath",
+    "couple_name": "-",
+    "booking_date": "2025-12-11",
+    "groom_address": "380\/a A\/2, Kosgoda,Hidellana ,Rathnapura",
+    "bride_address": "-",
+    "function_type": "Wedding",
+    "venue": "Banquet Hall",
+    "rooms": [
+        {
+            "room_number": "305",
+            "room_type": "Honeymoon",
+            "hotel": "Sky"
+        }
+    ]
+}
+Raw input: {"booking_reference":"5122","nic":"923083014V","contact_no":"0719840700/0743133779","rooms":[{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"ID Name - Mr.D.Sampath Munasingha","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"7500"}
+Raw input: {"booking_reference":"5219","nic":"892822310V","contact_no":"0706989090","rooms":[{"number":"305","type":"Honeymoon","hotel":"Sky"},{"number":"304","type":"Changing","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"2025.12.16 Banquet Hall Wedding Day (ID Name - 305 - Mr.U.Chaminda Siri,304 - Ms.A.D.Erangi Shashikala)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}
+Raw input: {"booking_reference":"5126","nic":"960111648V","contact_no":"0719103382","rooms":[{"number":"301","type":"Changing","hotel":"Sky"},{"number":"306","type":"Honeymoon","hotel":"Sky"}],"ac_type":"A/C","meal_plan":"Room Only","remarks":"301 Room ID Name - Mr.Lahiru Madhusanka(2025.12.25 Ballroom Night Customer)","value_type":"Subtotal","amount_type":"Added to package","total_amount":null,"advance_payment":"Added to package","pending_amount":"Added to package","added_amount":"10000"}

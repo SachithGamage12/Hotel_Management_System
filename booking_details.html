@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Bliss Booking Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f8fafc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      color: #111827;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0.5cm auto;
+      background: white;
+      border-radius: 8px;
+      padding: 1cm;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      background: linear-gradient(90deg, #7c3aed, #ec4899);
+      padding: 0.6cm;
+      border-radius: 6px 6px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    .header img {
+      height: 1.5rem;
+      border-radius: 50%;
+    }
+    .header h1 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 0;
+    }
+    .booking-ref {
+      font-size: 0.9rem;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .section {
+      margin: 0.3cm 0;
+    }
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #7c3aed;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.15cm;
+      margin-bottom: 0.2cm;
+    }
+    .detail {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 0.2cm;
+      padding: 0.1cm 0;
+      font-size: 0.65rem;
+      line-height: 1.1;
+      break-inside: avoid;
+    }
+    .detail-label {
+      font-weight: 500;
+      color: #4b5563;
+    }
+    .detail-value {
+      color: #111827;
+    }
+    .empty-value {
+      color: #9ca3af;
+    }
+    .print-btn {
+      background: linear-gradient(90deg, #7c3aed, #ec4899);
+      color: white;
+      padding: 0.3cm 0.6cm;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 0.75rem;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin: 0.4cm auto;
+      transition: background 0.3s ease;
+    }
+    .print-btn:hover {
+      background: linear-gradient(90deg, #6d28d9, #db2777);
+    }
+    .signature-section {
+      margin-top: 0.3cm;
+      text-align: right;
+    }
+    .signature-line {
+      border-bottom: 1px dotted #4b5563;
+      width: 200px;
+      margin: 0 0 0.2cm;
+      display: inline-block;
+    }
+    .signature-label {
+      font-size: 0.65rem;
+      font-weight: bold;
+      color: #4b5563;
+      margin-top: 0.75rem;
+    }
+    @media print {
+      @page { size: A4; margin: 0.4cm; }
+      .print-btn { display: none !important; }
+      body { background: none; margin: 0; padding: 0; font-size: 11px; height: 100vh; overflow: hidden; }
+      .container { margin: 0; padding: 0; max-width: 100%; background: white; box-shadow: none; border-radius: 0; height: 100vh; display: flex; flex-direction: column; }
+      .header {
+        background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 25%, #c026d3 50%, #e11d48 75%, #dc2626 100%);
+        position: relative; padding: 0.5cm 0.6cm; display: flex; justify-content: space-between; align-items: center;
+        color: white; box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4); border-bottom: 6px solid #dc2626; overflow: hidden; min-height: 2.2cm;
+      }
+      .header::before {
+        content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%;
+        background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.2) 0%, transparent 40%),
+                    radial-gradient(circle at 70% 70%, rgba(255,255,255,0.15) 0%, transparent 40%);
+        pointer-events: none;
+      }
+      .header img {
+        height: 2.5cm; width: 2.5cm; border: 4px solid #fff; border-radius: 50%; box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        position: relative; z-index: 5; background: linear-gradient(45deg, #8b5cf6, #dc2626); padding: 3px; object-fit: contain;
+      }
+      .header h1 {
+        font-family: 'Arial', sans-serif; font-size: 1.8rem; font-weight: 900; text-align: center; color: #000;
+        margin: 0; flex-grow: 1; z-index: 5; letter-spacing: 2px; text-transform: uppercase; -webkit-text-fill-color: #000;
+      }
+      .booking-ref {
+        font-size: 1.2rem; font-weight: bold; background: linear-gradient(135deg, #8b5cf6, #dc2626); color: #fff;
+        padding: 0.4cm 0.6cm; border-radius: 15px; box-shadow: 0 4px 15px rgba(139,92,246,0.4); text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+        z-index: 5; border: 3px solid rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px;
+      }
+      .content-wrapper { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 0.25cm; padding: 0.15cm 0.3cm; flex-grow: 1; overflow: hidden; }
+      .left-column { border-right: 3px solid #667eea; padding-right: 0.2cm; display: flex; flex-direction: column; justify-content: space-between; }
+      .right-column { padding-left: 0.2cm; display: flex; flex-direction: column; }
+      .detail {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 0.2cm;
+        padding: 0.1cm 0;
+        font-size: 0.65rem;
+        line-height: 1.1;
+        break-inside: avoid;
+      }
+      .detail-label {
+        font-weight: 500;
+        color: #4b5563;
+      }
+      .detail-value {
+        color: #111827;
+      }
+      .empty-value {
+        color: #9ca3af;
+      }
+    }
+    @media (max-width: 640px) {
+      .container { margin: 0.4cm; padding: 0.4cm; }
+      .header h1 { font-size: 0.9rem; }
+      .booking-ref { font-size: 0.8rem; }
+      .detail { grid-template-columns: 1fr; gap: 0.1cm; }
+      .content-wrapper { grid-template-columns: 1fr; }
+      .left-column { border-right: none; }
+      .signature-section { text-align: center; }
+      .signature-line { width: 150px; margin: 0 auto 0.2cm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/logo.avif" alt="Hotel Logo" class="h-8 rounded-full">
+    <h1>Hotel Grand Guardian</h1>
+    <div class="booking-ref" id="booking-ref">Booking ID - </div>
+  </div>
+  <div class="container">
+    <div class="content-wrapper">
+      <div class="left-column">
+        <div class="section">
+          <h2 class="section-title">Basic Details</h2>
+          <div id="basic-details"></div>
+        </div>
+        <div class="section">
+          <h2 class="section-title">Additional Details</h2>
+          <div id="additional-details"></div>
+        </div>
+        <div class="section">
+          <h2 class="section-title">Event Logistics</h2>
+          <div id="logistics-details"></div>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="section">
+          <h2 class="section-title">Cultural & Decor Details</h2>
+          <div id="cultural-decor-details"></div>
+        </div>
+      </div>
+    </div>
+    <div class="signature-section">
+      <div class="signature-line"></div>
+      <div class="signature-label">Customer</div>
+    </div>
+    <button class="print-btn" onclick="printAndClear()">Print Booking Details</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      let bookingData = JSON.parse(localStorage.getItem('bookingData') || '{}');
+
+      // Display booking reference
+      const bookingRefElement = document.getElementById('booking-ref');
+      bookingRefElement.textContent = `Booking ID - ${bookingData.booking_reference || '-'}`;
+
+      // Fetch names for foreign key fields
+      const fetchNames = async () => {
+        try {
+          const response = await fetch('get_names.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              venue_id: bookingData.venue_id,
+              menu_id: bookingData.menu_id,
+              function_type_id: bookingData.function_type_id,
+              music_type_id: bookingData.music_type_id,
+              wedding_car_id: bookingData.wedding_car_id,
+              jayamangala_gatha_id: bookingData.jayamangala_gatha_id,
+              wes_dance_id: bookingData.wes_dance_id,
+              ashtaka_id: bookingData.ashtaka_id,
+              welcome_song_id: bookingData.welcome_song_id,
+              indian_dhol_id: bookingData.indian_dhol_id,
+              floor_dance_id: bookingData.floor_dance_id,
+              flower_decoration_id: bookingData.flower_decoration_id,
+              car_decoration_id: bookingData.car_decoration_id,
+              milk_fountain_id: bookingData.milk_fountain_id,
+              champagne_id: bookingData.champagne_id,
+              cultural_table_id: bookingData.cultural_table_id,
+              kiribath_structure_id: bookingData.kiribath_structure_id,
+              cake_structure_id: bookingData.cake_structure_id
+            })
+          });
+          const data = await response.json();
+          if (data.success) {
+            bookingData = {
+              ...bookingData,
+              venue_name: data.names.venue_name || '-',
+              menu_name: data.names.menu_name || '-',
+              function_type_name: data.names.function_type_name || '-',
+              music_type_name: data.names.music_type_name || '-',
+              wedding_car_name: data.names.wedding_car_name || '-',
+              jayamangala_gatha_name: data.names.jayamangala_gatha_name || '-',
+              wes_dance_name: data.names.wes_dance_name || '-',
+              ashtaka_name: data.names.ashtaka_name || '-',
+              welcome_song_name: data.names.welcome_song_name || '-',
+              indian_dhol_name: data.names.indian_dhol_name || '-',
+              floor_dance_name: data.names.floor_dance_name || '-',
+              flower_decoration_name: data.names.flower_decoration_name || '-',
+              car_decoration_name: data.names.car_decoration_name || '-',
+              milk_fountain_name: data.names.milk_fountain_name || '-',
+              champagne_name: data.names.champagne_name || '-',
+              cultural_table_name: data.names.cultural_table_name || '-',
+              kiribath_structure_name: data.names.kiribath_structure_name || '-',
+              cake_structure_name: data.names.cake_structure_name || '-'
+            };
+          } else {
+            console.warn('Failed to fetch names:', data.message);
+            bookingData = {
+              ...bookingData,
+              venue_name: '-',
+              menu_name: '-',
+              function_type_name: '-',
+              music_type_name: '-',
+              wedding_car_name: '-',
+              jayamangala_gatha_name: '-',
+              wes_dance_name: '-',
+              ashtaka_name: '-',
+              welcome_song_name: '-',
+              indian_dhol_name: '-',
+              floor_dance_name: '-',
+              flower_decoration_name: '-',
+              car_decoration_name: '-',
+              milk_fountain_name: '-',
+              champagne_name: '-',
+              cultural_table_name: '-',
+              kiribath_structure_name: '-',
+              cake_structure_name: '-'
+            };
+          }
+        } catch (error) {
+          console.error('Error fetching names:', error);
+          bookingData = {
+            ...bookingData,
+            venue_name: '-',
+            menu_name: '-',
+            function_type_name: '-',
+            music_type_name: '-',
+            wedding_car_name: '-',
+            jayamangala_gatha_name: '-',
+            wes_dance_name: '-',
+            ashtaka_name: '-',
+            welcome_song_name: '-',
+            indian_dhol_name: '-',
+            floor_dance_name: '-',
+            flower_decoration_name: '-',
+            car_decoration_name: '-',
+            milk_fountain_name: '-',
+            champagne_name: '-',
+            cultural_table_name: '-',
+            kiribath_structure_name: '-',
+            cake_structure_name: '-'
+          };
+        }
+      };
+
+      // Fetch names if IDs are present
+      if (bookingData.venue_id || bookingData.menu_id || bookingData.function_type_id ||
+          bookingData.music_type_id || bookingData.wedding_car_id || bookingData.jayamangala_gatha_id ||
+          bookingData.wes_dance_id || bookingData.ashtaka_id || bookingData.welcome_song_id ||
+          bookingData.indian_dhol_id || bookingData.floor_dance_id || bookingData.flower_decoration_id ||
+          bookingData.car_decoration_id || bookingData.milk_fountain_id || bookingData.champagne_id ||
+          bookingData.cultural_table_id || bookingData.kiribath_structure_id || bookingData.cake_structure_id) {
+        await fetchNames();
+      }
+
+      // Format time with Nakatha
+      const formatTime = (time, amPm, nakatha = '') => {
+        if (!time || time === null || time === undefined || time.trim() === '' || time === '00:00:00' || time === '00:00') {
+          return '-';
+        }
+        let result = `${time} ${amPm || ''}`;
+        if (nakatha && nakatha.trim() !== '') result += ` (${nakatha.trim()})`;
+        return result;
+      };
+
+      const formatTimeRange = (from, fromAmPm, fromNakatha, to, toAmPm, toNakatha) => {
+        const f = formatTime(from, fromAmPm, fromNakatha);
+        const t = formatTime(to, toAmPm, toNakatha);
+        if (!f && !t) return '-';
+        if (!f || f === '-') return t;
+        if (!t || t === '-') return f;
+        return `${f} - ${t}`;
+      };
+
+      const formatRoom = (date, number) => {
+        if (!date || !number || date === null || number === null) return '-';
+        return `${date} (${number})`;
+      };
+
+      const createDetail = (label, value) => {
+        const displayValue = !value || value === '' || value === null || value === undefined || value.trim() === '' ? 
+          '<span class="empty-value">-</span>' : value;
+        return `
+          <div class="detail">
+            <span class="detail-label">${label}</span>
+            <span class="detail-value">${displayValue}</span>
+          </div>
+        `;
+      };
+
+      // Fill Basic Details
+      document.getElementById('basic-details').innerHTML = `
+        ${createDetail('Full Name', bookingData.full_name)}
+        ${createDetail('Primary Contact', bookingData.contact_no1)}
+        ${createDetail('Secondary Contact', bookingData.contact_no2)}
+        ${createDetail('Booking Date', bookingData.booking_date)}
+        ${createDetail('Time Slot', formatTimeRange(bookingData.time_from, bookingData.time_from_am_pm, '', bookingData.time_to, bookingData.time_to_am_pm, ''))}
+        ${createDetail('Couple Name', bookingData.couple_name)}
+        ${createDetail('Groom Address', bookingData.groom_address)}
+        ${createDetail('Bride Address', bookingData.bride_address)}
+        ${createDetail('Venue', bookingData.venue_name)}
+        ${createDetail('Menu', bookingData.menu_name)}
+        ${createDetail('Function Type', bookingData.function_type_name)}
+        ${createDetail('Day/Night', bookingData.day_or_night)}
+        ${createDetail('Number of Pax', bookingData.no_of_pax)}
+        ${createDetail('Floor Coordinator', bookingData.floor_coordinator)}
+        ${createDetail('Drinks Coordinator', bookingData.drinks_coordinator)}
+      `;
+
+      // Fill Additional Details
+      document.getElementById('additional-details').innerHTML = `
+        ${createDetail('Bride Dressing', bookingData.bride_dressing)}
+        ${createDetail('Groom Dressing', bookingData.groom_dressing)}
+        ${createDetail('Bride Arrival', formatTime(bookingData.bride_arrival_time, bookingData.bride_arrival_time_am_pm, bookingData.bride_arrival_nakatha))}
+        ${createDetail('Groom Arrival', formatTime(bookingData.groom_arrival_time, bookingData.groom_arrival_time_am_pm, bookingData.groom_arrival_nakatha))}
+        ${createDetail('Morning Tea Time', formatTimeRange(
+          bookingData.morning_tea_time_from, bookingData.morning_tea_time_from_am_pm, '',
+          bookingData.morning_tea_time_to, bookingData.morning_tea_time_to_am_pm, bookingData.morning_tea_nakatha
+        ))}
+        ${createDetail('Tea Pax', bookingData.tea_pax)}
+        ${createDetail('Kiribath', bookingData.kiribath)}
+        ${createDetail('Poruwa Time', formatTimeRange(bookingData.poruwa_time_from, bookingData.poruwa_time_from_am_pm, '', bookingData.poruwa_time_to, bookingData.poruwa_time_to_am_pm, ''))}
+        ${createDetail('Poruwa Direction', bookingData.poruwa_direction)}
+        ${createDetail('Registration Time', formatTimeRange(bookingData.registration_time_from, bookingData.registration_time_from_am_pm, '', bookingData.registration_time_to, bookingData.registration_time_to_am_pm, ''))}
+        ${createDetail('Registration Direction', bookingData.registration_direction)}
+        ${createDetail('Welcome Drink Time', formatTime(bookingData.welcome_drink_time, bookingData.welcome_drink_time_am_pm))}
+        ${createDetail('Floor Table Arrangement', bookingData.floor_table_arrangement)}
+      `;
+
+      // Fill Logistics
+      document.getElementById('logistics-details').innerHTML = `
+        ${createDetail('Drinks Time', formatTime(bookingData.drinks_time, bookingData.drinks_time_am_pm))}
+        ${createDetail('Drinks Pax', bookingData.drinks_pax)}
+        ${createDetail('Drink Serving', bookingData.drink_serving)}
+        ${createDetail('Bites Source', bookingData.bites_source)}
+        ${createDetail('Bite Items', bookingData.bite_items)}
+        ${createDetail('Buffet Open', formatTime(bookingData.buffet_open, bookingData.buffet_open_am_pm, bookingData.buffet_open_nakatha))}
+        ${createDetail('Buffet Close', formatTime(bookingData.buffet_close, bookingData.buffet_close_am_pm, bookingData.buffet_close_nakatha))}
+        ${createDetail('Buffet Type', bookingData.buffet_type)}
+        ${createDetail('Ice Coffee Time', formatTime(bookingData.ice_coffee_time, bookingData.ice_coffee_time_am_pm))}
+        ${createDetail('Music Close Time', formatTime(bookingData.music_close_time, bookingData.music_close_time_am_pm))}
+        ${createDetail('Departure Time', formatTime(bookingData.departure_time, bookingData.departure_time_am_pm, bookingData.departure_time_nakatha))}
+        ${createDetail('Additional Notes', bookingData.etc_description)}
+      `;
+
+      // Fill Cultural & Decor
+      document.getElementById('cultural-decor-details').innerHTML = `
+        ${createDetail('Music Type', bookingData.music_type_name)}
+        ${createDetail('Wedding Car', bookingData.wedding_car_name)}
+        ${createDetail('Jayamangala Gatha', bookingData.jayamangala_gatha_name)}
+        ${createDetail('Wes Dance', bookingData.wes_dance_name)}
+        ${createDetail('Ashtaka', bookingData.ashtaka_name)}
+        ${createDetail('Welcome Song', bookingData.welcome_song_name)}
+        ${createDetail('Indian Dhol', bookingData.indian_dhol_name)}
+        ${createDetail('Floor Dance', bookingData.floor_dance_name)}
+        ${createDetail('Head Table', bookingData.head_table)}
+        ${createDetail('Chair Cover', bookingData.chair_cover)}
+        ${createDetail('Table Cloth', bookingData.table_cloth)}
+        ${createDetail('Top Cloth', bookingData.top_cloth)}
+        ${createDetail('Bow', bookingData.bow)}
+        ${createDetail('Napkin', bookingData.napkin)}
+        ${createDetail('VIP Arrangements', bookingData.vip)}
+        ${createDetail('Changing Room', formatRoom(bookingData.changing_room_date, bookingData.changing_room_number))}
+        ${createDetail('Honeymoon Room', formatRoom(bookingData.honeymoon_room_date, bookingData.honeymoon_room_number))}
+        ${createDetail('Dressing Room', formatRoom(bookingData.dressing_room_date, bookingData.dressing_room_number))}
+        ${createDetail('Theme Color', bookingData.theme_color)}
+        ${createDetail('Flower Decoration', bookingData.flower_decoration_name)}
+        ${createDetail('Car Decoration', bookingData.car_decoration_name)}
+        ${createDetail('Milk Fountain', bookingData.milk_fountain_name)}
+        ${createDetail('Champagne', bookingData.champagne_name)}
+        ${createDetail('Cultural Table', bookingData.cultural_table_name)}
+        ${createDetail('Kiribath Structure', bookingData.kiribath_structure_name)}
+        ${createDetail('Cake Structure', bookingData.cake_structure_name)}
+        ${createDetail('Projector/Screen', bookingData.projector_screen)}
+        ${createDetail('G.Sky Arrival Time', formatTime(bookingData.gsky_arrival_time, bookingData.gsky_arrival_time_am_pm))}
+        ${createDetail('Photo Team Count', bookingData.photo_team_count)}
+        ${createDetail('Bridal Team Count', bookingData.bridal_team_count)}
+        ${createDetail('Additional Notes', bookingData.additional_notes)}
+      `;
+    });
+
+    function printAndClear() {
+      window.print();
+      setTimeout(() => {
+        localStorage.removeItem('bookingData');
+      }, 1000);
+    }
+  </script>
+</body>
+</html>

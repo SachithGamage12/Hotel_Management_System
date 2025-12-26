@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Room Invoices</title>
+    <link rel="icon" type="image/avif" href="images/logo.avif">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        line-height: 1.4;
+    }
+
+    .no-print-top {
+        margin: 20px auto;
+        width: 160mm;
+        text-align: left;
+    }
+
+    .receipt-container {
+        width: 160mm;
+        height: auto;
+        min-height: 290mm;
+        margin: 20px auto;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        font-size: 0.75rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e2e8f0;
+        text-align: center;
+        page-break-after: avoid;
+        min-height: 100px;
+    }
+
+    .receipt-title-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .receipt-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1e293b;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .billing-date, .invoice-number {
+        font-size: 0.75rem;
+        color: #64748b;
+    }
+
+    .invoice-number {
+        text-align: right;
+    }
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 8px;
+        margin-bottom: 10px;
+        page-break-inside: auto;
+    }
+
+    .details-grid p {
+        padding: 6px 0;
+        font-size: 0.75rem;
+    }
+
+    .details-grid strong {
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    .room-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+    .room-table th, .room-table td {
+        border: 1px solid #e2e8f0;
+        padding: 6px;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    .room-table th {
+        background-color: #f1f5f9;
+        font-weight: 600;
+    }
+
+    .payment-summary {
+        margin-top: 10px;
+        page-break-inside: avoid;
+    }
+
+    .payment-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        font-size: 0.75rem;
+    }
+
+    .payment-row.total {
+        font-weight: 600;
+        border-top: 1px dashed #cbd5e1;
+        border-bottom: 1px solid #cbd5e1;
+        margin: 8px 0;
+    }
+
+    .payment-row.pending {
+        font-weight: 600;
+        border-bottom: 2px double #1e293b;
+        padding-bottom: 8px;
+    }
+
+    .payment-row span:last-child {
+        text-align: right;
+        min-width: 100px;
+    }
+
+    .signature-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        padding-top: 10px;
+        border-top: 1px solid #e2e8f0;
+        align-items: flex-end;
+        page-break-before: avoid;
+    }
+
+    .signature-box {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .signature-box p {
+        margin-bottom: 20px;
+    }
+
+    .signature-line {
+        margin-top: auto;
+        border-top: 1px dashed #64748b;
+        padding-top: 4px;
+        font-size: 0.7rem;
+        color: #64748b;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+        color: #64748b;
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #e2e8f0;
+        page-break-before: auto;
+    }
+
+    .thank-you {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2rem;
+        color: #000000;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        margin: 10px 0;
+    }
+
+    .no-print {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 500;
+        color: #1e293b;
+        font-size: 0.75rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+        font-size: 0.75rem;
+    }
+
+    input:focus {
+        outline: none;
+        border-color: #6366f1;
+        box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+    }
+
+    .button-group {
+        display: flex;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        flex: 1;
+    }
+
+    button:hover:not(:disabled) {
+        transform: translateY(-1px);
+    }
+
+    #fetchButton {
+        background-color: #6366f1;
+        color: white;
+    }
+
+    #fetchButton:hover:not(:disabled) {
+        background-color: #4f46e5;
+    }
+
+    #printButton {
+        background-color: #3b82f6;
+        color: white;
+    }
+
+    #printButton:hover:not(:disabled) {
+        background-color: #2563eb;
+    }
+
+    #backButton {
+        background-color: #6b7280;
+        color: white;
+    }
+
+    #backButton:hover:not(:disabled) {
+        background-color: #4b5563;
+    }
+
+    button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .error-message {
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+        font-size: 0.75rem;
+        display: none;
+    }
+
+    .error-message.error {
+        background-color: #fee2e2;
+        color: #dc2626;
+        border: 1px solid;
+    }
+
+    .error-message.success {
+        background-color: #dcfce7;
+        color: #16a34a;
+        border: 1px solid #86efac;
+    }
+
+    @media print {
+        .header {
+            align-items: center;
+            min-height: 100px;
+        }
+
+        .no-print, .no-print-top {
+            display: none !important;
+        }
+
+        body {
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .receipt-container {
+            box-shadow: none;
+            border: none;
+            width: 160mm;
+            height: auto;
+            min-height: 290mm;
+            padding: 10mm;
+            margin: 0;
+            overflow: visible;
+            page-break-after: auto;
+        }
+
+        .details-grid, .payment-summary, .footer {
+            page-break-inside: auto;
+        }
+
+        .header, .signature-section {
+            page-break-inside: avoid;
+        }
+
+        .receipt-container:last-child {
+            page-break-after: avoid;
+        }
+
+        .room-table th, .room-table td {
+            border: 1px solid #1e293b;
+            padding: 6px;
+            font-size: 0.75rem;
+        }
+
+        .room-table th {
+            background-color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        @page {
+            size: 160mm auto;
+            margin: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="no-print-top">
+        <button id="backButton">Back</button>
+    </div>
+    
+    <div class="receipt-container">
+        <div class="header">
+            <!-- Header content removed but space preserved -->
+        </div>
+
+        <div class="receipt-title-section">
+            <span class="billing-date" id="billingDate"></span>
+            <h2 class="receipt-title">Room Invoice</h2>
+            <span class="invoice-number" id="invoiceNumber"></span>
+        </div>
+
+        <div id="details" class="details-grid">
+            <!-- Details will be populated here -->
+        </div>
+
+        <div id="roomDetails">
+            <!-- Room table will be added here -->
+        </div>
+
+        <div id="paymentSection">
+            <!-- Payment summary will be added here -->
+        </div>
+
+        <div class="footer">
+            <div class="signature-section">
+                <div class="signature-box">
+                    <p>Bill Issued by: <span id="issuedBy"></span></p>
+                    <div class="signature-line">Authorised Signature</div>
+                </div>
+                <div class="signature-box">
+                    <div class="signature-line">Customer Signature</div>
+                </div>
+            </div>
+            
+            <div class="thank-you">Thank you for choosing Hotel Grand Guardian</div>
+        </div>
+
+        <div class="no-print">
+            <div id="error" class="error-message"></div>
+
+            <div class="input-group" id="invoiceNumberGroup">
+                <label for="invoiceNumberInput">Invoice Number</label>
+                <input type="text" id="invoiceNumberInput" placeholder="Enter invoice number (e.g., 2081)" maxlength="4">
+            </div>
+
+            <div class="button-group">
+                <button id="fetchButton">Fetch Invoice</button>
+                <button id="printButton" disabled>Print Receipt</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const invoiceNumberInput = document.getElementById('invoiceNumberInput');
+        const fetchButton = document.getElementById('fetchButton');
+        const printButton = document.getElementById('printButton');
+        const backButton = document.getElementById('backButton');
+        const errorDiv = document.getElementById('error');
+        const detailsDiv = document.getElementById('details');
+        const invoiceNumberDiv = document.getElementById('invoiceNumber');
+        const billingDateDiv = document.getElementById('billingDate');
+        const paymentSectionDiv = document.getElementById('paymentSection');
+        const roomDetailsDiv = document.getElementById('roomDetails');
+        const issuedBySpan = document.getElementById('issuedBy');
+
+        // Set current date as billing date
+        const today = new Date();
+        billingDateDiv.textContent = formatDate(today);
+
+        // Back button event listener
+        backButton.addEventListener('click', () => {
+            window.location.href = '../admin.php';
+        });
+
+        // Fetch button event listener
+        fetchButton.addEventListener('click', () => {
+            const invoiceNumber = invoiceNumberInput.value.trim();
+            if (!invoiceNumber || !/^\d{4}$/.test(invoiceNumber)) {
+                showError('Please enter a valid 4-digit invoice number');
+                return;
+            }
+            fetchInvoiceDetails(invoiceNumber);
+        });
+
+        // Print button event listener
+        printButton.addEventListener('click', () => {
+            printButton.disabled = true;
+            window.print();
+            printButton.disabled = false;
+        });
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+
+        function fetchInvoiceDetails(invoiceNumber) {
+            fetch(`../api/get_invoice_details.php?invoice_number=INV-${invoiceNumber}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                    } else {
+                        displayInvoiceDetails(data);
+                        showSuccess('Invoice details loaded successfully');
+                        printButton.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    showError('Error fetching invoice details: ' + error.message);
+                });
+        }
+
+        function displayInvoiceDetails(data) {
+            // Format payment date
+            const paymentDate = data.payment_date
+                ? formatDate(new Date(data.payment_date))
+                : formatDate(new Date());
+
+            // Populate details
+            detailsDiv.innerHTML = `
+                <p><strong>Customer Name:</strong></p>
+                <p>${data.full_name || 'Not provided'}</p>
+                <p><strong>Couple Name:</strong></p>
+                <p>${data.couple_name || 'Not provided'}</p>
+                <p><strong>NIC:</strong></p>
+                <p>${data.nic || 'Not provided'}</p>
+                <p><strong>Contact No:</strong></p>
+                <p>${data.contact_no || 'Not provided'}</p>
+                <p><strong>Address:</strong></p>
+                <p>${data.groom_address || data.bride_address || 'Not provided'}</p>
+                <p><strong>Date of Event:</strong></p>
+                <p>${data.booking_date ? formatDate(new Date(data.booking_date)) : 'Not specified'}</p>
+                <p><strong>Function Type:</strong></p>
+                <p>${data.function_type || 'Not specified'}</p>
+                <p><strong>Hall Name:</strong></p>
+                <p>${data.venue || 'Not specified'}</p>
+                <p><strong>Room Type:</strong></p>
+                <p>${data.ac_type || 'Not specified'}</p>
+                <p><strong>Meal Plan:</strong></p>
+                <p>${data.meal_plan || 'Not specified'}</p>
+                ${data.remarks ? `
+                    <p><strong>Remarks:</strong></p>
+                    <p>${data.remarks}</p>
+                ` : ''}
+            `;
+
+            // Update invoice number and billing date
+            invoiceNumberDiv.textContent = data.invoice_number || 'Not specified';
+            billingDateDiv.textContent = paymentDate;
+
+            // Update room details
+            const roomTable = document.createElement('table');
+            roomTable.className = 'room-table';
+            roomTable.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Room Type</th>
+                        <th>Hotel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${data.rooms.map(room => `
+                        <tr>
+                            <td>${room.room_number || 'Not specified'}</td>
+                            <td>${room.room_type || 'Not specified'}</td>
+                            <td>${room.hotel || 'Not specified'}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            `;
+            roomDetailsDiv.innerHTML = '';
+            roomDetailsDiv.appendChild(roomTable);
+
+            // Update payment summary
+            paymentSectionDiv.innerHTML = '';
+            const paymentSummary = document.createElement('div');
+            paymentSummary.className = 'payment-summary';
+
+            if (data.value_type && data.amount_type) {
+                const totalRow = document.createElement('div');
+                totalRow.className = 'payment-row total';
+                totalRow.innerHTML = `
+                    <span>${data.value_type}:</span>
+                    <span>${data.amount_type === 'FOC' ? 'FOC' : 'Rs. ' + (parseFloat(data.total_amount) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                `;
+                paymentSummary.appendChild(totalRow);
+            }
+
+            if (data.advance_payment) {
+                const paymentRow = document.createElement('div');
+                paymentRow.className = 'payment-row';
+                paymentRow.innerHTML = `
+                    <span>Advance Payment:</span>
+                    <span>${data.amount_type === 'FOC' ? 'FOC' : 'Rs. ' + (parseFloat(data.advance_payment) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                `;
+                paymentSummary.appendChild(paymentRow);
+            }
+
+            if (data.pending_amount) {
+                const pendingRow = document.createElement('div');
+                pendingRow.className = 'payment-row pending';
+                pendingRow.innerHTML = `
+                    <span>Pending Amount:</span>
+                    <span>${data.amount_type === 'FOC' ? 'FOC' : 'Rs. ' + (parseFloat(data.pending_amount) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                `;
+                paymentSummary.appendChild(pendingRow);
+            }
+
+            paymentSectionDiv.appendChild(paymentSummary);
+
+            // Update issued by
+            issuedBySpan.textContent = data.issued_by || 'Admin';
+        }
+
+        function showError(message) {
+            errorDiv.textContent = message;
+            errorDiv.className = 'error-message error';
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 5000);
+        }
+
+        function showSuccess(message) {
+            errorDiv.textContent = message;
+            errorDiv.className = 'error-message success';
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 3000);
+        }
+    });
+    </script>
+</body>
+</html>

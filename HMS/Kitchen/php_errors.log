@@ -1,0 +1,410 @@
+[27-Jul-2025 13:01:57 Europe/Berlin] Database connection successful at 2025-07-27 13:01:57
+[27-Jul-2025 13:01:57 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 13:01:57 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 13:01:57 Europe/Berlin] Fetched 0 pending requests
+[27-Jul-2025 13:02:17 Europe/Berlin] Database connection successful at 2025-07-27 13:02:17
+[27-Jul-2025 13:02:17 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 13:02:17 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 13:02:17 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 13:02:17 Europe/Berlin] Order sheet number: 1100
+[27-Jul-2025 13:02:17 Europe/Berlin] Inserted item: ID=9, Qty=2, Order=1100
+[27-Jul-2025 13:02:17 Europe/Berlin] Transaction committed for order_sheet_no: 1100
+[27-Jul-2025 13:02:17 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 13:02:17 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 13:02:17 Europe/Berlin] Fetched 1 pending requests
+[27-Jul-2025 13:08:18 Europe/Berlin] Database connection successful at 2025-07-27 13:08:18
+[27-Jul-2025 13:08:18 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 13:08:18 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 13:08:18 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 13:08:18 Europe/Berlin] Order sheet number: 1101
+[27-Jul-2025 13:08:18 Europe/Berlin] Inserted item: ID=9, Qty=2, Order=1101
+[27-Jul-2025 13:08:18 Europe/Berlin] PHP Warning:  Undefined array key "unit" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 218
+[27-Jul-2025 13:08:18 Europe/Berlin] Transaction committed for order_sheet_no: 1101
+[27-Jul-2025 13:08:18 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 13:08:18 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 13:08:18 Europe/Berlin] Fetched 2 pending requests
+[27-Jul-2025 13:16:38 Europe/Berlin] Database connection successful at 2025-07-27 13:16:38
+[27-Jul-2025 13:16:38 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 13:16:38 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 13:16:38 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 13:16:38 Europe/Berlin] Order sheet number: 1102
+[27-Jul-2025 13:16:38 Europe/Berlin] Inserted item: ID=9, Qty=2, Order=1102
+[27-Jul-2025 13:16:38 Europe/Berlin] Transaction committed for order_sheet_no: 1102
+[27-Jul-2025 13:16:38 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 13:16:38 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 13:16:38 Europe/Berlin] Fetched 3 pending requests
+[27-Jul-2025 13:17:11 Europe/Berlin] Database connection successful at 2025-07-27 13:17:11
+[27-Jul-2025 13:17:11 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2,\"unit\":\"units\"},{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":45,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 13:17:11 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[27-Jul-2025 13:17:11 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 13:17:11 Europe/Berlin] Order sheet number: 1103
+[27-Jul-2025 13:17:11 Europe/Berlin] Inserted item: ID=9, Qty=2, Order=1103
+[27-Jul-2025 13:17:11 Europe/Berlin] Inserted item: ID=7, Qty=45, Order=1103
+[27-Jul-2025 13:17:11 Europe/Berlin] Transaction committed for order_sheet_no: 1103
+[27-Jul-2025 13:17:11 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 13:17:11 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 13:17:11 Europe/Berlin] Fetched 4 pending requests
+[27-Jul-2025 13:21:58 Europe/Berlin] Database connection successful at 2025-07-27 13:21:58
+[27-Jul-2025 13:21:58 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"4\",\"item_name\":\"Pineapple\",\"requested_qty\":12,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 13:21:58 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 13:21:58 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 13:21:58 Europe/Berlin] Order sheet number: 1104
+[27-Jul-2025 13:21:58 Europe/Berlin] Inserted item: ID=4, Qty=12, Order=1104
+[27-Jul-2025 13:21:58 Europe/Berlin] Transaction committed for order_sheet_no: 1104
+[27-Jul-2025 13:21:58 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 13:21:58 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 13:21:58 Europe/Berlin] Fetched 2 pending requests
+[27-Jul-2025 14:17:53 Europe/Berlin] Database connection successful at 2025-07-27 14:17:53
+[27-Jul-2025 14:17:53 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:17:53 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:17:53 Europe/Berlin] Fetched 1 pending requests
+[27-Jul-2025 14:18:26 Europe/Berlin] Database connection successful at 2025-07-27 14:18:26
+[27-Jul-2025 14:18:26 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":5,\"unit\":\"units\"},{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":10,\"unit\":\"kg\"},{\"item_id\":\"4\",\"item_name\":\"Pineapple\",\"requested_qty\":18,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 14:18:26 Europe/Berlin] Input validation passed: items=3, responsible_id=1
+[27-Jul-2025 14:18:26 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 14:18:26 Europe/Berlin] Order sheet number: 1105
+[27-Jul-2025 14:18:26 Europe/Berlin] Inserted item: ID=9, Qty=5, Order=1105
+[27-Jul-2025 14:18:26 Europe/Berlin] Inserted item: ID=7, Qty=10, Order=1105
+[27-Jul-2025 14:18:26 Europe/Berlin] Inserted item: ID=4, Qty=18, Order=1105
+[27-Jul-2025 14:18:26 Europe/Berlin] Transaction committed for order_sheet_no: 1105
+[27-Jul-2025 14:18:26 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:18:26 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:18:26 Europe/Berlin] Fetched 2 pending requests
+[27-Jul-2025 14:19:22 Europe/Berlin] Database connection successful at 2025-07-27 14:19:22
+[27-Jul-2025 14:19:22 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":5,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 14:19:22 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 14:19:22 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 14:19:22 Europe/Berlin] Order sheet number: 1106
+[27-Jul-2025 14:19:22 Europe/Berlin] Inserted item: ID=7, Qty=5, Order=1106
+[27-Jul-2025 14:19:22 Europe/Berlin] Transaction committed for order_sheet_no: 1106
+[27-Jul-2025 14:19:22 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:19:22 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:19:22 Europe/Berlin] Fetched 3 pending requests
+[27-Jul-2025 14:27:27 Europe/Berlin] Database connection successful at 2025-07-27 14:27:27
+[27-Jul-2025 14:27:27 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":5,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 14:27:27 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 14:27:27 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 14:27:27 Europe/Berlin] Order sheet number: 1107
+[27-Jul-2025 14:27:27 Europe/Berlin] Inserted item: ID=7, Qty=5, Order=1107
+[27-Jul-2025 14:27:27 Europe/Berlin] Transaction committed for order_sheet_no: 1107
+[27-Jul-2025 14:27:27 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:27:27 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:27:27 Europe/Berlin] Fetched and grouped 4 pending requests
+[27-Jul-2025 14:28:57 Europe/Berlin] Database connection successful at 2025-07-27 14:28:57
+[27-Jul-2025 14:28:57 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":3,\"unit\":\"units\"},{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":12,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 14:28:57 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[27-Jul-2025 14:28:57 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 14:28:57 Europe/Berlin] Order sheet number: 1108
+[27-Jul-2025 14:28:57 Europe/Berlin] Inserted item: ID=9, Qty=3, Order=1108
+[27-Jul-2025 14:28:57 Europe/Berlin] Inserted item: ID=7, Qty=12, Order=1108
+[27-Jul-2025 14:28:57 Europe/Berlin] Transaction committed for order_sheet_no: 1108
+[27-Jul-2025 14:28:57 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:28:57 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:28:57 Europe/Berlin] Fetched and grouped 5 pending requests
+[27-Jul-2025 14:48:30 Europe/Berlin] Database connection successful at 2025-07-27 14:48:30
+[27-Jul-2025 14:48:30 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:48:30 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:48:30 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1103
+[27-Jul-2025 14:48:30 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1105
+[27-Jul-2025 14:48:30 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1106
+[27-Jul-2025 14:48:30 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1107
+[27-Jul-2025 14:48:30 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1108
+[27-Jul-2025 14:48:30 Europe/Berlin] Fetched and grouped 5 pending requests
+[27-Jul-2025 14:48:30 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[27-Jul-2025 14:48:30 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[27-Jul-2025 14:48:30 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[27-Jul-2025 14:48:30 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[27-Jul-2025 14:48:30 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[27-Jul-2025 14:48:48 Europe/Berlin] Database connection successful at 2025-07-27 14:48:48
+[27-Jul-2025 14:48:48 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":12,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[27-Jul-2025 14:48:48 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[27-Jul-2025 14:48:49 Europe/Berlin] Responsible person verified: Sachith Gamage
+[27-Jul-2025 14:48:49 Europe/Berlin] Order sheet number: 1109
+[27-Jul-2025 14:48:49 Europe/Berlin] Inserted item: ID=7, Qty=12, Order=1109
+[27-Jul-2025 14:48:49 Europe/Berlin] Transaction committed for order_sheet_no: 1109
+[27-Jul-2025 14:48:49 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 14:48:49 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 14:48:49 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1103
+[27-Jul-2025 14:48:49 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1105
+[27-Jul-2025 14:48:49 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1106
+[27-Jul-2025 14:48:49 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1107
+[27-Jul-2025 14:48:49 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1108
+[27-Jul-2025 14:48:49 Europe/Berlin] Duplicate item detected in grouped_requests: item_id=7, name=Basmathi, order_sheet_no=1109
+[27-Jul-2025 14:48:49 Europe/Berlin] Fetched and grouped 6 pending requests
+[27-Jul-2025 14:48:49 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[27-Jul-2025 14:48:49 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[27-Jul-2025 14:48:49 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[27-Jul-2025 14:48:49 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[27-Jul-2025 14:48:49 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[27-Jul-2025 14:48:49 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[27-Jul-2025 15:01:37 Europe/Berlin] Database connection successful at 2025-07-27 15:01:37
+[27-Jul-2025 15:01:37 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 15:01:37 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 15:01:37 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:01:37 Europe/Berlin] Aggregated item in order_sheet_no 1103: item_id=7, item_name=Basmathi, new_qty=90
+[27-Jul-2025 15:01:37 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:01:37 Europe/Berlin] Aggregated item in order_sheet_no 1105: item_id=7, item_name=Basmathi, new_qty=20
+[27-Jul-2025 15:01:37 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:01:37 Europe/Berlin] Aggregated item in order_sheet_no 1106: item_id=7, item_name=Basmathi, new_qty=10
+[27-Jul-2025 15:01:37 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:01:37 Europe/Berlin] Aggregated item in order_sheet_no 1107: item_id=7, item_name=Basmathi, new_qty=10
+[27-Jul-2025 15:01:37 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:01:37 Europe/Berlin] Aggregated item in order_sheet_no 1108: item_id=7, item_name=Basmathi, new_qty=24
+[27-Jul-2025 15:01:37 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:01:37 Europe/Berlin] Aggregated item in order_sheet_no 1109: item_id=7, item_name=Basmathi, new_qty=24
+[27-Jul-2025 15:01:37 Europe/Berlin] Fetched and grouped 6 pending requests
+[27-Jul-2025 15:01:37 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[27-Jul-2025 15:01:37 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[27-Jul-2025 15:01:37 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[27-Jul-2025 15:01:37 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[27-Jul-2025 15:01:37 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[27-Jul-2025 15:01:37 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[27-Jul-2025 15:07:12 Europe/Berlin] Database connection successful at 2025-07-27 15:07:12
+[27-Jul-2025 15:07:12 Europe/Berlin] Fetched 6 available items
+[27-Jul-2025 15:07:12 Europe/Berlin] Fetched 1 responsible persons
+[27-Jul-2025 15:07:12 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:07:12 Europe/Berlin] Aggregated item in order_sheet_no 1103: item_id=7, item_name=Basmathi, new_qty=90
+[27-Jul-2025 15:07:12 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:07:12 Europe/Berlin] Aggregated item in order_sheet_no 1105: item_id=7, item_name=Basmathi, new_qty=20
+[27-Jul-2025 15:07:12 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:07:12 Europe/Berlin] Aggregated item in order_sheet_no 1106: item_id=7, item_name=Basmathi, new_qty=10
+[27-Jul-2025 15:07:12 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:07:12 Europe/Berlin] Aggregated item in order_sheet_no 1107: item_id=7, item_name=Basmathi, new_qty=10
+[27-Jul-2025 15:07:12 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:07:12 Europe/Berlin] Aggregated item in order_sheet_no 1108: item_id=7, item_name=Basmathi, new_qty=24
+[27-Jul-2025 15:07:12 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[27-Jul-2025 15:07:12 Europe/Berlin] Aggregated item in order_sheet_no 1109: item_id=7, item_name=Basmathi, new_qty=24
+[27-Jul-2025 15:07:12 Europe/Berlin] Fetched and grouped 6 pending requests
+[27-Jul-2025 15:07:12 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[27-Jul-2025 15:07:12 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[27-Jul-2025 15:07:12 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[27-Jul-2025 15:07:12 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[27-Jul-2025 15:07:12 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[27-Jul-2025 15:07:12 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[28-Jul-2025 04:31:06 Europe/Berlin] Database connection successful at 2025-07-28 04:31:06
+[28-Jul-2025 04:31:06 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:31:06 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:31:06 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:31:06 Europe/Berlin] Aggregated item in order_sheet_no 1103: item_id=7, item_name=Basmathi, new_qty=90
+[28-Jul-2025 04:31:06 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:31:06 Europe/Berlin] Aggregated item in order_sheet_no 1105: item_id=7, item_name=Basmathi, new_qty=20
+[28-Jul-2025 04:31:06 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:31:06 Europe/Berlin] Aggregated item in order_sheet_no 1106: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:31:06 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:31:06 Europe/Berlin] Aggregated item in order_sheet_no 1107: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:31:06 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:31:06 Europe/Berlin] Aggregated item in order_sheet_no 1108: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:31:06 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:31:06 Europe/Berlin] Aggregated item in order_sheet_no 1109: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:31:06 Europe/Berlin] Fetched and grouped 6 pending requests
+[28-Jul-2025 04:31:06 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[28-Jul-2025 04:31:06 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[28-Jul-2025 04:31:06 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[28-Jul-2025 04:31:06 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[28-Jul-2025 04:31:06 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[28-Jul-2025 04:31:06 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[28-Jul-2025 04:32:13 Europe/Berlin] Database connection successful at 2025-07-28 04:32:13
+[28-Jul-2025 04:32:13 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:32:13 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:32:13 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:14 Europe/Berlin] Aggregated item in order_sheet_no 1103: item_id=7, item_name=Basmathi, new_qty=90
+[28-Jul-2025 04:32:14 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:14 Europe/Berlin] Aggregated item in order_sheet_no 1105: item_id=7, item_name=Basmathi, new_qty=20
+[28-Jul-2025 04:32:14 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:14 Europe/Berlin] Aggregated item in order_sheet_no 1106: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:32:14 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:14 Europe/Berlin] Aggregated item in order_sheet_no 1107: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:32:14 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:14 Europe/Berlin] Aggregated item in order_sheet_no 1108: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:32:14 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:14 Europe/Berlin] Aggregated item in order_sheet_no 1109: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:32:14 Europe/Berlin] Fetched and grouped 6 pending requests
+[28-Jul-2025 04:32:14 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[28-Jul-2025 04:32:14 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[28-Jul-2025 04:32:14 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[28-Jul-2025 04:32:14 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[28-Jul-2025 04:32:14 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[28-Jul-2025 04:32:14 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[28-Jul-2025 04:32:39 Europe/Berlin] Database connection successful at 2025-07-28 04:32:39
+[28-Jul-2025 04:32:39 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":3,\"unit\":\"kg\"},{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2,\"unit\":\"units\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:32:39 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[28-Jul-2025 04:32:39 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:32:39 Europe/Berlin] Order sheet number: 1110
+[28-Jul-2025 04:32:39 Europe/Berlin] Transaction rolled back: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:32:39 Europe/Berlin] Submission error: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:32:39 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:32:39 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:32:39 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:39 Europe/Berlin] Aggregated item in order_sheet_no 1103: item_id=7, item_name=Basmathi, new_qty=90
+[28-Jul-2025 04:32:39 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:39 Europe/Berlin] Aggregated item in order_sheet_no 1105: item_id=7, item_name=Basmathi, new_qty=20
+[28-Jul-2025 04:32:39 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:39 Europe/Berlin] Aggregated item in order_sheet_no 1106: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:32:39 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:39 Europe/Berlin] Aggregated item in order_sheet_no 1107: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:32:39 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:39 Europe/Berlin] Aggregated item in order_sheet_no 1108: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:32:39 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:32:39 Europe/Berlin] Aggregated item in order_sheet_no 1109: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:32:39 Europe/Berlin] Fetched and grouped 6 pending requests
+[28-Jul-2025 04:32:39 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[28-Jul-2025 04:32:39 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[28-Jul-2025 04:32:39 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[28-Jul-2025 04:32:39 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[28-Jul-2025 04:32:39 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[28-Jul-2025 04:32:39 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[28-Jul-2025 04:33:01 Europe/Berlin] Database connection successful at 2025-07-28 04:33:01
+[28-Jul-2025 04:33:01 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":3,\"unit\":\"kg\"},{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2,\"unit\":\"units\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:33:01 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[28-Jul-2025 04:33:02 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:33:02 Europe/Berlin] Order sheet number: 1110
+[28-Jul-2025 04:33:02 Europe/Berlin] Transaction rolled back: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:33:02 Europe/Berlin] Submission error: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:33:02 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:33:02 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:33:02 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:33:02 Europe/Berlin] Aggregated item in order_sheet_no 1103: item_id=7, item_name=Basmathi, new_qty=90
+[28-Jul-2025 04:33:02 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:33:02 Europe/Berlin] Aggregated item in order_sheet_no 1105: item_id=7, item_name=Basmathi, new_qty=20
+[28-Jul-2025 04:33:02 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:33:02 Europe/Berlin] Aggregated item in order_sheet_no 1106: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:33:02 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:33:02 Europe/Berlin] Aggregated item in order_sheet_no 1107: item_id=7, item_name=Basmathi, new_qty=10
+[28-Jul-2025 04:33:02 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:33:02 Europe/Berlin] Aggregated item in order_sheet_no 1108: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:33:02 Europe/Berlin] PHP Warning:  Undefined array key "status" in F:\xampp\htdocs\HMS\Kitchen\order_sheet.php on line 291
+[28-Jul-2025 04:33:02 Europe/Berlin] Aggregated item in order_sheet_no 1109: item_id=7, item_name=Basmathi, new_qty=24
+[28-Jul-2025 04:33:02 Europe/Berlin] Fetched and grouped 6 pending requests
+[28-Jul-2025 04:33:02 Europe/Berlin] Displaying order_sheet_no 1103: items=["Basmathi","Bred"]
+[28-Jul-2025 04:33:02 Europe/Berlin] Displaying order_sheet_no 1105: items=["Pineapple","Basmathi","Bred"]
+[28-Jul-2025 04:33:02 Europe/Berlin] Displaying order_sheet_no 1106: items=["Basmathi"]
+[28-Jul-2025 04:33:02 Europe/Berlin] Displaying order_sheet_no 1107: items=["Basmathi"]
+[28-Jul-2025 04:33:02 Europe/Berlin] Displaying order_sheet_no 1108: items=["Basmathi","Bred"]
+[28-Jul-2025 04:33:02 Europe/Berlin] Displaying order_sheet_no 1109: items=["Basmathi"]
+[28-Jul-2025 04:33:55 Europe/Berlin] Database connection successful at 2025-07-28 04:33:55
+[28-Jul-2025 04:33:55 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":3,\"unit\":\"kg\"},{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":2,\"unit\":\"units\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:33:55 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[28-Jul-2025 04:33:55 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:33:55 Europe/Berlin] Order sheet number: 1110
+[28-Jul-2025 04:33:56 Europe/Berlin] Transaction rolled back: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:33:56 Europe/Berlin] Submission error: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:33:56 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:33:56 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:33:56 Europe/Berlin] Fetched and grouped 6 pending requests
+[28-Jul-2025 04:34:13 Europe/Berlin] Database connection successful at 2025-07-28 04:34:13
+[28-Jul-2025 04:34:13 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:34:13 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[28-Jul-2025 04:34:13 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:34:13 Europe/Berlin] Order sheet number: 1110
+[28-Jul-2025 04:34:13 Europe/Berlin] Transaction rolled back: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:34:13 Europe/Berlin] Submission error: SQLSTATE[HY000]: General error: 1364 Field 'order_id' doesn't have a default value
+[28-Jul-2025 04:34:13 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:34:13 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:34:13 Europe/Berlin] Fetched and grouped 6 pending requests
+[28-Jul-2025 04:35:56 Europe/Berlin] Database connection successful at 2025-07-28 04:35:56
+[28-Jul-2025 04:35:56 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:35:56 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:35:56 Europe/Berlin] Fetched and grouped 0 pending requests
+[28-Jul-2025 04:36:20 Europe/Berlin] Database connection successful at 2025-07-28 04:36:20
+[28-Jul-2025 04:36:20 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":4,\"unit\":\"units\"},{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:36:20 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[28-Jul-2025 04:36:20 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:36:20 Europe/Berlin] Order sheet number: 1110
+[28-Jul-2025 04:36:20 Europe/Berlin] Inserted item: ID=9, Qty=4, Order=1110
+[28-Jul-2025 04:36:20 Europe/Berlin] Inserted item: ID=7, Qty=2, Order=1110
+[28-Jul-2025 04:36:20 Europe/Berlin] Transaction committed for order_sheet_no: 1110
+[28-Jul-2025 04:36:20 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:36:20 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:36:20 Europe/Berlin] Fetched and grouped 1 pending requests
+[28-Jul-2025 04:43:42 Europe/Berlin] Database connection successful at 2025-07-28 04:43:42
+[28-Jul-2025 04:43:42 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":4,\"unit\":\"units\"},{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:43:42 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[28-Jul-2025 04:43:42 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:43:42 Europe/Berlin] Order sheet number: 1111
+[28-Jul-2025 04:43:42 Europe/Berlin] Inserted item: ID=9, Qty=4, Order=1111
+[28-Jul-2025 04:43:42 Europe/Berlin] Inserted item: ID=7, Qty=2, Order=1111
+[28-Jul-2025 04:43:42 Europe/Berlin] Transaction committed for order_sheet_no: 1111
+[28-Jul-2025 04:43:42 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:43:42 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:43:42 Europe/Berlin] Fetched and grouped 1 pending requests
+[28-Jul-2025 04:48:43 Europe/Berlin] Database connection successful at 2025-07-28 04:48:43
+[28-Jul-2025 04:48:43 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":4,\"unit\":\"units\"},{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:48:43 Europe/Berlin] Input validation passed: items=2, responsible_id=1
+[28-Jul-2025 04:48:43 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:48:43 Europe/Berlin] Order sheet number: 1112
+[28-Jul-2025 04:48:43 Europe/Berlin] Inserted item: ID=9, Qty=4, Order=1112
+[28-Jul-2025 04:48:43 Europe/Berlin] Inserted item: ID=7, Qty=2, Order=1112
+[28-Jul-2025 04:48:43 Europe/Berlin] Transaction committed for order_sheet_no: 1112
+[28-Jul-2025 04:48:43 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 04:48:43 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:48:43 Europe/Berlin] Fetched and grouped 2 pending requests
+[28-Jul-2025 04:59:01 Europe/Berlin] Database connection successful at 2025-07-28 04:59:01
+[28-Jul-2025 04:59:01 Europe/Berlin] Fetched 4 available items
+[28-Jul-2025 04:59:01 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:59:01 Europe/Berlin] Fetched and grouped 2 pending requests
+[28-Jul-2025 04:59:19 Europe/Berlin] Database connection successful at 2025-07-28 04:59:19
+[28-Jul-2025 04:59:19 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"4\",\"item_name\":\"Pineapple\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 04:59:19 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[28-Jul-2025 04:59:19 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 04:59:19 Europe/Berlin] Order sheet number: 1113
+[28-Jul-2025 04:59:19 Europe/Berlin] Inserted item: ID=4, Qty=2, Order=1113
+[28-Jul-2025 04:59:20 Europe/Berlin] Transaction committed for order_sheet_no: 1113
+[28-Jul-2025 04:59:20 Europe/Berlin] Fetched 4 available items
+[28-Jul-2025 04:59:20 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 04:59:20 Europe/Berlin] Fetched and grouped 3 pending requests
+[28-Jul-2025 05:00:23 Europe/Berlin] Database connection successful at 2025-07-28 05:00:23
+[28-Jul-2025 05:00:23 Europe/Berlin] Fetched 4 available items
+[28-Jul-2025 05:00:23 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 05:00:23 Europe/Berlin] Fetched and grouped 2 pending requests
+[28-Jul-2025 05:01:06 Europe/Berlin] Database connection successful at 2025-07-28 05:01:06
+[28-Jul-2025 05:01:06 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"3\",\"item_name\":\"Papaya\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 05:01:06 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[28-Jul-2025 05:01:06 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 05:01:06 Europe/Berlin] Order sheet number: 1114
+[28-Jul-2025 05:01:06 Europe/Berlin] Inserted item: ID=3, Qty=2, Order=1114
+[28-Jul-2025 05:01:06 Europe/Berlin] Transaction committed for order_sheet_no: 1114
+[28-Jul-2025 05:01:06 Europe/Berlin] Fetched 4 available items
+[28-Jul-2025 05:01:06 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 05:01:06 Europe/Berlin] Fetched and grouped 3 pending requests
+[28-Jul-2025 06:08:49 Europe/Berlin] Database connection successful at 2025-07-28 06:08:49
+[28-Jul-2025 06:08:49 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"3\",\"item_name\":\"Papaya\",\"requested_qty\":2,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 06:08:49 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[28-Jul-2025 06:08:49 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 06:08:49 Europe/Berlin] Order sheet number: 1115
+[28-Jul-2025 06:08:49 Europe/Berlin] Inserted item: ID=3, Qty=2, Order=1115
+[28-Jul-2025 06:08:49 Europe/Berlin] Transaction committed for order_sheet_no: 1115
+[28-Jul-2025 06:08:49 Europe/Berlin] Fetched 4 available items
+[28-Jul-2025 06:08:49 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 06:08:49 Europe/Berlin] Fetched and grouped 4 pending requests
+[28-Jul-2025 06:09:46 Europe/Berlin] Database connection successful at 2025-07-28 06:09:46
+[28-Jul-2025 06:09:46 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":300,\"unit\":\"kg\"},{\"item_id\":\"9\",\"item_name\":\"Bred\",\"requested_qty\":4,\"unit\":\"units\"},{\"item_id\":\"4\",\"item_name\":\"Pineapple\",\"requested_qty\":1,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 06:09:46 Europe/Berlin] Input validation passed: items=3, responsible_id=1
+[28-Jul-2025 06:09:46 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 06:09:46 Europe/Berlin] Order sheet number: 1116
+[28-Jul-2025 06:09:46 Europe/Berlin] Inserted item: ID=7, Qty=300, Order=1116
+[28-Jul-2025 06:09:46 Europe/Berlin] Inserted item: ID=9, Qty=4, Order=1116
+[28-Jul-2025 06:09:46 Europe/Berlin] Inserted item: ID=4, Qty=1, Order=1116
+[28-Jul-2025 06:09:46 Europe/Berlin] Transaction committed for order_sheet_no: 1116
+[28-Jul-2025 06:09:46 Europe/Berlin] Fetched 4 available items
+[28-Jul-2025 06:09:46 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 06:09:46 Europe/Berlin] Fetched and grouped 5 pending requests
+[28-Jul-2025 06:20:54 Europe/Berlin] Database connection successful at 2025-07-28 06:20:54
+[28-Jul-2025 06:20:54 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":300,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 06:20:54 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[28-Jul-2025 06:20:54 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 06:20:54 Europe/Berlin] Order sheet number: 1117
+[28-Jul-2025 06:20:54 Europe/Berlin] Inserted item: ID=7, Qty=300, Order=1117
+[28-Jul-2025 06:20:54 Europe/Berlin] Transaction committed for order_sheet_no: 1117
+[28-Jul-2025 06:20:54 Europe/Berlin] Fetched 5 available items
+[28-Jul-2025 06:20:54 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 06:20:54 Europe/Berlin] Fetched and grouped 5 pending requests
+[28-Jul-2025 06:23:08 Europe/Berlin] Database connection successful at 2025-07-28 06:23:08
+[28-Jul-2025 06:23:08 Europe/Berlin] Form submission started: {"items_json":"[{\"item_id\":\"7\",\"item_name\":\"Basmathi\",\"requested_qty\":250,\"unit\":\"kg\"}]","submit_request":"1","responsible_id":"1","password":"1234"}
+[28-Jul-2025 06:23:08 Europe/Berlin] Input validation passed: items=1, responsible_id=1
+[28-Jul-2025 06:23:08 Europe/Berlin] Responsible person verified: Sachith Gamage
+[28-Jul-2025 06:23:08 Europe/Berlin] Order sheet number: 1118
+[28-Jul-2025 06:23:08 Europe/Berlin] Inserted item: ID=7, Qty=250, Order=1118
+[28-Jul-2025 06:23:08 Europe/Berlin] Transaction committed for order_sheet_no: 1118
+[28-Jul-2025 06:23:08 Europe/Berlin] Fetched 6 available items
+[28-Jul-2025 06:23:08 Europe/Berlin] Fetched 1 responsible persons
+[28-Jul-2025 06:23:08 Europe/Berlin] Fetched and grouped 5 pending requests

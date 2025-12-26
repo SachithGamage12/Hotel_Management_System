@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Room Invoice</title>
+    <link rel="icon" type="image/avif" href="images/logo.avif">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        color: #1e293b;
+        line-height: 1.4;
+    }
+
+    .no-print-top {
+        margin: 20px auto;
+        width: 160mm;
+        text-align: left;
+    }
+
+    .receipt-container {
+        width: 160mm;
+        height: auto;
+        min-height: 290mm;
+        margin: 20px auto;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        font-size: 0.75rem;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e2e8f0;
+        text-align: center;
+        page-break-after: avoid;
+        min-height: 35.6mm; /* 1.4 inches for pre-printed logo */
+    }
+
+    .receipt-title-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .receipt-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1e293b;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .billing-date, .invoice-number {
+        font-size: 0.75rem;
+        color: #64748b;
+    }
+
+    .invoice-number {
+        text-align: right;
+    }
+
+    .details-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 8px;
+        margin-bottom: 10px;
+        page-break-inside: auto;
+    }
+
+    .details-grid p {
+        padding: 6px 0;
+        font-size: 0.75rem;
+    }
+
+    .details-grid strong {
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    .room-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+    .room-table th, .room-table td {
+        border: 1px solid #e2e8f0;
+        padding: 6px;
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    .room-table th {
+        background-color: #f1f5f9;
+        font-weight: 600;
+    }
+
+    .room-table input, .room-table select {
+        width: 100%;
+        padding: 4px;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+        font-size: 0.75rem;
+    }
+
+    .room-table button {
+        padding: 4px 8px;
+        background-color: #ef4444;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .room-table button:hover:not(:disabled) {
+        background-color: #dc2626;
+    }
+
+    .add-room-button {
+        background-color: #10b981;
+        color: white;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.75rem;
+        margin-top: 8px;
+    }
+
+    .add-room-button:hover:not(:disabled) {
+        background-color: #059669;
+    }
+
+    .payment-summary {
+        margin-top: 10px;
+        page-break-inside: avoid;
+    }
+
+    .payment-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        font-size: 0.75rem;
+    }
+
+    .payment-row.total {
+        font-weight: 600;
+        border-top: 1px dashed #cbd5e1;
+        border-bottom: 1px solid #cbd5e1;
+        margin: 8px 0;
+    }
+
+    .payment-row.pending {
+        font-weight: 600;
+        border-bottom: 2px double #1e293b;
+        padding-bottom: 8px;
+    }
+
+    .payment-row span:last-child {
+        text-align: right;
+        min-width: 100px;
+    }
+
+    .signature-section {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0;
+        padding-top: 10px;
+        border-top: 1px solid #e2e8f0;
+        align-items: flex-end;
+        page-break-before: avoid;
+    }
+
+    .signature-box {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .signature-box p {
+        margin-bottom: 20px;
+    }
+
+    .signature-line {
+        margin-top: auto;
+        border-top: 1px dashed #64748b;
+        padding-top: 4px;
+        font-size: 0.7rem;
+        color: #64748b;
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+        color: #64748b;
+        font-size: 0.7rem;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 1px solid #e2e8f0;
+        page-break-before: auto;
+    }
+
+    .thank-you {
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2rem;
+        color: #000000;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        margin: 10px 0;
+    }
+
+    .no-print {
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+        display: none;
+    }
+
+    #bookingIdGroup {
+        display: block;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 500;
+        color: #1e293b;
+        font-size: 0.75rem;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #cbd5e1;
+        border-radius: 4px;
+        font-size: 0.75rem;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+        border-color: #6366f1;
+        box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+    }
+
+    .checkbox-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 8px;
+    }
+
+    .checkbox-group label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.75rem;
+    }
+
+    .payment-inputs {
+        display: flex;
+        gap: 8px;
+    }
+
+    .payment-inputs select,
+    .payment-inputs input {
+        flex: 1;
+    }
+
+    .readonly-input {
+        background-color: #f1f5f9;
+        cursor: not-allowed;
+    }
+
+    .button-group {
+        display: flex;
+        gap: 8px;
+        margin-top: 15px;
+    }
+
+    button {
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 0.75rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        flex: 1;
+    }
+
+    button:hover:not(:disabled) {
+        transform: translateY(-1px);
+    }
+
+    #searchButton {
+        background-color: #6366f1;
+        color: white;
+    }
+
+    #searchButton:hover:not(:disabled) {
+        background-color: #4f46e5;
+    }
+
+    #saveButton {
+        background-color: #10b981;
+        color: white;
+    }
+
+    #saveButton:hover:not(:disabled) {
+        background-color: #059669;
+    }
+
+    #printButton {
+        background-color: #3b82f6;
+        color: white;
+    }
+
+    #printButton:hover:not(:disabled) {
+        background-color: #2563eb;
+    }
+
+    #backButton {
+        background-color: #6b7280;
+        color: white;
+    }
+
+    #backButton:hover:not(:disabled) {
+        background-color: #4b5563;
+    }
+
+    button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .error-message {
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+        font-size: 0.75rem;
+        display: none;
+    }
+
+    .error-message.error {
+        background-color: #fee2e2;
+        color: #dc2626;
+        border: 1px solid #f5a5a5;
+    }
+
+    .error-message.success {
+        background-color: #dcfce7;
+        color: #16a34a;
+        border: 1px solid #86efac;
+    }
+
+    @media print {
+        .header {
+            align-items: center;
+            min-height: 35.6mm; /* 1.4 inches for pre-printed logo */
+        }
+
+        .no-print, .no-print-top {
+            display: none !important;
+        }
+
+        body {
+            background: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .receipt-container {
+            box-shadow: none;
+            border: none;
+            width: 160mm;
+            height: auto;
+            min-height: 290mm;
+            padding: 10mm;
+            margin: 0;
+            overflow: visible;
+            page-break-after: auto;
+        }
+
+        .details-grid, .payment-summary, .footer {
+            page-break-inside: auto;
+        }
+
+        .header, .signature-section {
+            page-break-inside: avoid;
+        }
+
+        .receipt-container:last-child {
+            page-break-after: avoid;
+        }
+
+        .room-table {
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        .room-table th, .room-table td {
+            border: 1px solid #1e293b;
+            padding: 6px;
+            font-size: 0.75rem;
+        }
+
+        .room-table th {
+            background-color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        @page {
+            size: 160mm auto;
+            margin: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="no-print-top">
+        <button id="backButton">Back</button>
+    </div>
+    
+    <div class="receipt-container">
+        <div class="header">
+            <!-- Header content removed but space preserved -->
+        </div>
+
+        <div class="receipt-title-section">
+            <span class="billing-date" id="billingDate"></span>
+            <h2 class="receipt-title">Room Invoice</h2>
+            <span class="invoice-number" id="invoiceNumber"></span>
+        </div>
+
+        <div id="details" class="details-grid">
+            <!-- Details will be populated here -->
+        </div>
+
+        <div id="roomDetails">
+            <!-- Room table will be added here -->
+        </div>
+
+        <div id="paymentSection">
+            <!-- Payment summary will be added here -->
+        </div>
+
+        <div class="footer">
+            <div class="signature-section">
+                <div class="signature-box">
+                    <p>Bill Issued by: <span id="issuedBy"></span></p>
+                    <div class="signature-line">Authorised Signature</div>
+                </div>
+                <div class="signature-box">
+                    <div class="signature-line">Customer Signature</div>
+                </div>
+            </div>
+            
+            <div class="thank-you">Thank you for choosing Hotel Grand Guardian</div>
+        </div>
+
+        <div class="no-print">
+            <div id="error" class="error-message"></div>
+
+            <div class="input-group" id="bookingIdGroup">
+                <label for="billingId">Billing ID</label>
+                <input type="text" id="billingId" placeholder="Enter 4-character billing ID" maxlength="4">
+            </div>
+
+            <div class="input-group" id="nicGroup">
+                <label for="nic">NIC</label>
+                <input type="text" id="nic" placeholder="Enter NIC (e.g., 123456789V)">
+            </div>
+
+            <div class="input-group" id="contactNoGroup">
+                <label for="contactNo">Contact No</label>
+                <input type="text" id="contactNo" placeholder="Enter contact number(s) (e.g., 1234567890 or 1234567890 / 0987654321)">
+            </div>
+
+            <div class="input-group" id="roomTableGroup">
+                <label>Room Details</label>
+                <table class="room-table" id="roomTable">
+                    <thead>
+                        <tr>
+                            <th>Room Number</th>
+                            <th>Room Type</th>
+                            <th>Hotel</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="roomTableBody">
+                        <!-- Rows will be added dynamically -->
+                    </tbody>
+                </table>
+                <button class="add-room-button" id="addRoomButton">Add Room</button>
+            </div>
+
+            <div class="input-group" id="acTypeGroup">
+                <label>Room Type</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="acType" value="A/C"> A/C</label>
+                    <label><input type="radio" name="acType" value="Non A/C"> Non A/C</label>
+                </div>
+            </div>
+
+            <div class="input-group" id="mealPlanGroup">
+                <label>Meal Plan</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="breakfast" value="Breakfast"> Breakfast</label>
+                    <label><input type="checkbox" id="lunch" value="Lunch"> Lunch</label>
+                    <label><input type="checkbox" id="dinner" value="Dinner"> Dinner</label>
+                    <label><input type="checkbox" id="roomOnly" value="Room Only"> Room Only</label>
+                </div>
+            </div>
+
+            <div class="input-group" id="remarksGroup">
+                <label for="remarks">Remarks</label>
+                <input type="text" id="remarks" placeholder="Enter remarks">
+            </div>
+
+            <div class="input-group" id="addedAmountGroup" style="display: none;">
+                <label for="addedAmount">Added Amount (Rs.)</label>
+                <input type="number" id="addedAmount" placeholder="Enter added amount" min="0" step="0.01">
+            </div>
+
+            <div class="input-group" id="totalValueGroup">
+                <label>Total Value Type & Amount</label>
+                <div class="payment-inputs">
+                    <select id="totalValue" disabled>
+                        <option value="Subtotal" selected>Subtotal</option>
+                    </select>
+                    <select id="amountType">
+                        <option value="" disabled selected>Select amount type</option>
+                        <option value="FOC">FOC</option>
+                        <option value="Amount">Amount</option>
+                        <option value="Added to package">Added to package</option>
+                        <option value="Add to Menu">Add to Menu</option>
+                        <option value="Add to Repayment">Add to Repayment</option>
+                    </select>
+                    <input type="number" id="totalAmount" placeholder="Enter amount" min="0" step="0.01" style="display: none;">
+                </div>
+            </div>
+
+            <div class="input-group" id="advancePaymentGroup">
+                <label for="advancePayment">Advance Payment</label>
+                <input type="text" id="advancePayment" placeholder="Enter advance payment" value="">
+            </div>
+
+            <div class="input-group" id="pendingAmountGroup">
+                <label for="pendingAmount">Pending Amount</label>
+                <input type="text" id="pendingAmount" class="readonly-input" readonly value="">
+            </div>
+
+            <div class="button-group">
+                <button id="searchButton">Search</button>
+                <button id="saveButton" disabled>Save</button>
+                <button id="printButton">Print Receipt</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const billingIdInput = document.getElementById('billingId');
+        const nicInput = document.getElementById('nic');
+        const contactNoInput = document.getElementById('contactNo');
+        const searchButton = document.getElementById('searchButton');
+        const saveButton = document.getElementById('saveButton');
+        const printButton = document.getElementById('printButton');
+        const backButton = document.getElementById('backButton');
+        const errorDiv = document.getElementById('error');
+        const detailsDiv = document.getElementById('details');
+        const invoiceNumberDiv = document.getElementById('invoiceNumber');
+        const billingDateDiv = document.getElementById('billingDate');
+        const paymentSectionDiv = document.getElementById('paymentSection');
+        const roomTableBody = document.getElementById('roomTableBody');
+        const addRoomButton = document.getElementById('addRoomButton');
+        const breakfastInput = document.getElementById('breakfast');
+        const lunchInput = document.getElementById('lunch');
+        const dinnerInput = document.getElementById('dinner');
+        const roomOnlyInput = document.getElementById('roomOnly');
+        const remarksInput = document.getElementById('remarks');
+        const totalValueInput = document.getElementById('totalValue');
+        const amountTypeInput = document.getElementById('amountType');
+        const totalAmountInput = document.getElementById('totalAmount');
+        const advancePaymentInput = document.getElementById('advancePayment');
+        const pendingAmountInput = document.getElementById('pendingAmount');
+        const addedAmountInput = document.getElementById('addedAmount');
+        const issuedBySpan = document.getElementById('issuedBy');
+        const roomDetailsDiv = document.getElementById('roomDetails');
+        const acTypeInputs = document.getElementsByName('acType');
+        const addedAmountGroup = document.getElementById('addedAmountGroup');
+        
+        let currentBookingId = '';
+        let rooms = [{ number: '', type: '', hotel: '' }];
+
+        // Set current date as billing date
+        const today = new Date();
+        billingDateDiv.textContent = formatDate(today);
+        
+        // Hide input groups initially except booking ID
+        document.querySelectorAll('.input-group').forEach(group => {
+            if (group.id !== 'bookingIdGroup') {
+                group.style.display = 'none';
+            }
+        });
+
+        // Back button event listener
+        backButton.addEventListener('click', () => {
+            window.location.href = 'Backoffice.php';
+        });
+
+        // Handle amount type change
+        amountTypeInput.addEventListener('change', () => {
+            if (amountTypeInput.value === 'FOC') {
+                totalAmountInput.style.display = 'none';
+                totalAmountInput.value = '';
+                advancePaymentInput.value = 'FOC';
+                advancePaymentInput.type = 'text';
+                advancePaymentInput.setAttribute('readonly', 'true');
+                advancePaymentInput.classList.add('readonly-input');
+                pendingAmountInput.value = 'FOC';
+                pendingAmountInput.type = 'text';
+                pendingAmountInput.setAttribute('readonly', 'true');
+                pendingAmountInput.classList.add('readonly-input');
+                addedAmountGroup.style.display = 'none';
+                addedAmountInput.value = '';
+            } else if (amountTypeInput.value === 'Amount') {
+                totalAmountInput.style.display = 'block';
+                advancePaymentInput.type = 'number';
+                advancePaymentInput.removeAttribute('readonly');
+                advancePaymentInput.classList.remove('readonly-input');
+                advancePaymentInput.value = '';
+                pendingAmountInput.type = 'number';
+                pendingAmountInput.setAttribute('readonly', 'true');
+                pendingAmountInput.classList.add('readonly-input');
+                pendingAmountInput.value = '';
+                addedAmountGroup.style.display = 'none';
+                addedAmountInput.value = '';
+            } else if (['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountTypeInput.value)) {
+                totalAmountInput.style.display = 'none';
+                totalAmountInput.value = '';
+                advancePaymentInput.value = amountTypeInput.value;
+                advancePaymentInput.type = 'text';
+                advancePaymentInput.setAttribute('readonly', 'true');
+                advancePaymentInput.classList.add('readonly-input');
+                pendingAmountInput.value = amountTypeInput.value;
+                pendingAmountInput.type = 'text';
+                pendingAmountInput.setAttribute('readonly', 'true');
+                pendingAmountInput.classList.add('readonly-input');
+                addedAmountGroup.style.display = 'block';
+            }
+            updateReceiptPreview();
+        });
+
+        // Auto-calculate pending amount
+        totalAmountInput.addEventListener('input', calculatePendingAmount);
+        advancePaymentInput.addEventListener('input', calculatePendingAmount);
+        addedAmountInput.addEventListener('input', updateReceiptPreview);
+        
+        // Add room button event listener
+        addRoomButton.addEventListener('click', () => {
+            rooms.push({ number: '', type: '', hotel: '' });
+            updateRoomTable();
+            updateReceiptPreview();
+        });
+
+        function calculatePendingAmount() {
+            if (amountTypeInput.value === 'FOC') {
+                advancePaymentInput.value = 'FOC';
+                pendingAmountInput.value = 'FOC';
+            } else if (['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountTypeInput.value)) {
+                advancePaymentInput.value = amountTypeInput.value;
+                pendingAmountInput.value = amountTypeInput.value;
+            } else {
+                const total = parseFloat(totalAmountInput.value) || 0;
+                const payment = parseFloat(advancePaymentInput.value) || 0;
+                const pending = total - payment;
+                pendingAmountInput.value = pending >= 0 ? pending.toFixed(2) : '0.00';
+            }
+            updateReceiptPreview();
+        }
+        
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+
+        function updateRoomTable() {
+            roomTableBody.innerHTML = '';
+            rooms.forEach((room, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td><input type="text" class="room-number" value="${room.number}" placeholder="Enter room number"></td>
+                    <td>
+                        <select class="room-type">
+                            <option value="" ${room.type === '' ? 'selected' : ''}>Select type</option>
+                            <option value="Standard" ${room.type === 'Standard' ? 'selected' : ''}>Standard</option>
+                            <option value="Changing" ${room.type === 'Changing' ? 'selected' : ''}>Changing</option>
+                            <option value="Honeymoon" ${room.type === 'Honeymoon' ? 'selected' : ''}>Honeymoon</option>
+                            <option value="Anniversary" ${room.type === 'Anniversary' ? 'selected' : ''}>Anniversary</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="room-hotel">
+                            <option value="" ${room.hotel === '' ? 'selected' : ''}>Select hotel</option>
+                            <option value="Grand View Lodge" ${room.hotel === 'Grand View Lodge' ? 'selected' : ''}>Grand View Lodge</option>
+                            <option value="Paragon" ${room.hotel === 'Paragon' ? 'selected' : ''}>Paragon</option>
+                            <option value="Sky" ${room.hotel === 'Sky' ? 'selected' : ''}>Sky</option>
+                            <option value="Grand Guardian Hotel" ${room.hotel === 'Grand Guardian Hotel' ? 'selected' : ''}>Grand Guardian Hotel</option>
+                            <option value="Sapthpadhi Hotel" ${room.hotel === 'Sapthpadhi Hotel' ? 'selected' : ''}>Sapthpadhi Hotel</option>
+                            <option value="Rose Garden Hotel" ${room.hotel === 'Rose Garden Hotel' ? 'selected' : ''}>Rose Garden Hotel</option>
+                        </select>
+                    </td>
+                    <td><button class="remove-room" data-index="${index}">Remove</button></td>
+                `;
+                roomTableBody.appendChild(row);
+            });
+
+            // Add event listeners for room inputs
+            document.querySelectorAll('.room-number, .room-type, .room-hotel').forEach(input => {
+                input.addEventListener('input', (e) => {
+                    const index = Array.from(roomTableBody.children).indexOf(e.target.closest('tr'));
+                    const field = e.target.classList.contains('room-number') ? 'number' :
+                                 e.target.classList.contains('room-type') ? 'type' : 'hotel';
+                    rooms[index][field] = e.target.value;
+                    updateReceiptPreview();
+                });
+            });
+
+            // Add event listeners for remove buttons
+            document.querySelectorAll('.remove-room').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const index = parseInt(e.target.dataset.index);
+                    if (rooms.length > 1) {
+                        rooms.splice(index, 1);
+                        updateRoomTable();
+                        updateReceiptPreview();
+                    }
+                });
+            });
+        }
+
+        function updateReceiptPreview() {
+            const nic = nicInput.value || 'Not provided';
+            const contactNo = contactNoInput.value || 'Not provided';
+            const mealPlan = [
+                breakfastInput.checked ? 'Breakfast' : '',
+                lunchInput.checked ? 'Lunch' : '',
+                dinnerInput.checked ? 'Dinner' : '',
+                roomOnlyInput.checked ? 'Room Only' : ''
+            ].filter(plan => plan).join(', ') || 'Not specified';
+            const remarks = remarksInput.value;
+            const totalValueType = totalValueInput.value;
+            const amountType = amountTypeInput.value;
+            const totalAmount = amountType === 'FOC' || ['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType) ? amountType : totalAmountInput.value;
+            const advancePayment = advancePaymentInput.value;
+            const pendingAmount = pendingAmountInput.value;
+            const addedAmount = addedAmountInput.value;
+            const acType = Array.from(acTypeInputs).find(input => input.checked)?.value || '';
+
+            // Update NIC
+            let nicPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('NIC:'));
+            if (nicPara) {
+                nicPara.nextElementSibling.textContent = nic;
+            } else {
+                const namePara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Name:'));
+                if (namePara) {
+                    const nicNamePara = document.createElement('p');
+                    const nicValuePara = document.createElement('p');
+                    nicNamePara.innerHTML = '<strong>NIC:</strong>';
+                    nicValuePara.textContent = nic;
+                    namePara.nextElementSibling.insertAdjacentElement('afterend', nicValuePara);
+                    namePara.nextElementSibling.insertAdjacentElement('afterend', nicNamePara);
+                }
+            }
+
+            // Update Contact No
+            let contactNoPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Contact No:'));
+            if (contactNoPara) {
+                contactNoPara.nextElementSibling.textContent = contactNo;
+            } else {
+                const nicPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('NIC:'));
+                if (nicPara) {
+                    const contactNoNamePara = document.createElement('p');
+                    const contactNoValuePara = document.createElement('p');
+                    contactNoNamePara.innerHTML = '<strong>Contact No:</strong>';
+                    contactNoValuePara.textContent = contactNo;
+                    nicPara.nextElementSibling.insertAdjacentElement('afterend', contactNoValuePara);
+                    nicPara.nextElementSibling.insertAdjacentElement('afterend', contactNoNamePara);
+                }
+            }
+
+            // Update room details as table
+            let roomTable = roomDetailsDiv.querySelector('.room-table');
+            if (!roomTable) {
+                roomTable = document.createElement('table');
+                roomTable.className = 'room-table';
+                roomDetailsDiv.innerHTML = '';
+                roomDetailsDiv.appendChild(roomTable);
+            }
+            roomTable.innerHTML = `
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Room Type</th>
+                        <th>Hotel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${rooms.map(room => `
+                        <tr>
+                            <td>${room.number || 'Not specified'}</td>
+                            <td>${room.type || 'Not specified'}</td>
+                            <td>${room.hotel || 'Not specified'}</td>
+                        </tr>
+                    `).join('')}
+                </tbody>
+            `;
+
+            // Update A/C or Non A/C
+            if (acType) {
+                let acPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Room Type:'));
+                if (acPara) {
+                    acPara.nextElementSibling.textContent = acType;
+                } else {
+                    const namePara = document.createElement('p');
+                    const valuePara = document.createElement('p');
+                    namePara.innerHTML = '<strong>Room Type:</strong>';
+                    valuePara.textContent = acType;
+                    detailsDiv.appendChild(namePara);
+                    detailsDiv.appendChild(valuePara);
+                }
+            }
+
+            // Update meal plan
+            if (mealPlan !== 'Not specified') {
+                let mealPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Meal Plan:'));
+                if (mealPara) {
+                    mealPara.nextElementSibling.textContent = mealPlan;
+                } else {
+                    const namePara = document.createElement('p');
+                    const valuePara = document.createElement('p');
+                    namePara.innerHTML = '<strong>Meal Plan:</strong>';
+                    valuePara.textContent = mealPlan;
+                    detailsDiv.appendChild(namePara);
+                    detailsDiv.appendChild(valuePara);
+                }
+            }
+
+            // Update remarks
+            if (remarks) {
+                let remarksPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Remarks:'));
+                if (remarksPara) {
+                    remarksPara.nextElementSibling.textContent = remarks;
+                } else {
+                    const namePara = document.createElement('p');
+                    const valuePara = document.createElement('p');
+                    namePara.innerHTML = '<strong>Remarks:</strong>';
+                    valuePara.textContent = remarks;
+                    detailsDiv.appendChild(namePara);
+                    detailsDiv.appendChild(valuePara);
+                }
+            }
+
+            // Update added amount
+            if (['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType) && addedAmount) {
+                let addedAmountPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Added Amount:'));
+                if (addedAmountPara) {
+                    addedAmountPara.nextElementSibling.textContent = `Rs. ${parseFloat(addedAmount).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                } else {
+                    const namePara = document.createElement('p');
+                    const valuePara = document.createElement('p');
+                    namePara.innerHTML = '<strong>Added Amount:</strong>';
+                    valuePara.textContent = `Rs. ${parseFloat(addedAmount).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+                    detailsDiv.appendChild(namePara);
+                    detailsDiv.appendChild(valuePara);
+                }
+            } else {
+                let addedAmountPara = Array.from(detailsDiv.querySelectorAll('p')).find(p => p.textContent.includes('Added Amount:'));
+                if (addedAmountPara) {
+                    addedAmountPara.nextElementSibling.remove();
+                    addedAmountPara.remove();
+                }
+            }
+
+            // Create payment summary
+            paymentSectionDiv.innerHTML = '';
+            if (totalValueType && (totalAmount || ['FOC', 'Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType)) || advancePayment || pendingAmount) {
+                const paymentSummary = document.createElement('div');
+                paymentSummary.className = 'payment-summary';
+
+                if (totalValueType && (totalAmount || ['FOC', 'Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType))) {
+                    const totalRow = document.createElement('div');
+                    totalRow.className = 'payment-row total';
+                    totalRow.innerHTML = `
+                        <span>${totalValueType}:</span>
+                        <span>${['FOC', 'Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType) ? amountType : 'Rs. ' + (parseFloat(totalAmount) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                    `;
+                    paymentSummary.appendChild(totalRow);
+                }
+
+                if (advancePayment) {
+                    const paymentRow = document.createElement('div');
+                    paymentRow.className = 'payment-row';
+                    paymentRow.innerHTML = `
+                        <span>Advance Payment:</span>
+                        <span>${['FOC', 'Added to package', 'Add to Menu', 'Add to Repayment'].includes(advancePayment) ? advancePayment : 'Rs. ' + (parseFloat(advancePayment) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                    `;
+                    paymentSummary.appendChild(paymentRow);
+                }
+
+                if (pendingAmount) {
+                    const pendingRow = document.createElement('div');
+                    pendingRow.className = 'payment-row pending';
+                    pendingRow.innerHTML = `
+                        <span>Pending Amount:</span>
+                        <span>${['FOC', 'Added to package', 'Add to Menu', 'Add to Repayment'].includes(pendingAmount) ? pendingAmount : 'Rs. ' + (parseFloat(pendingAmount) || 0).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+                    `;
+                    paymentSummary.appendChild(pendingRow);
+                }
+
+                paymentSectionDiv.appendChild(paymentSummary);
+            }
+
+            // Enable save button if valid input
+            const isValidRoom = rooms.every(room => room.number && room.type && room.hotel);
+            saveButton.disabled = !(totalValueType && amountType && (['FOC', 'Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType) || (totalAmount && advancePayment)) && isValidRoom);
+        }
+
+        // Update preview on input change
+        document.querySelectorAll('input, select').forEach(element => {
+            element.addEventListener('input', updateReceiptPreview);
+        });
+        
+        // Print button event listener
+        printButton.addEventListener('click', async () => {
+            // Disable buttons to prevent multiple clicks
+            printButton.disabled = true;
+            saveButton.disabled = true;
+
+            // Check if required fields are filled
+            const totalValueType = totalValueInput.value;
+            const amountType = amountTypeInput.value;
+            const totalAmount = totalAmountInput.value;
+            const advancePayment = advancePaymentInput.value;
+            const addedAmount = addedAmountInput.value;
+            const isValidRoom = rooms.every(room => room.number && room.type && room.hotel);
+
+            if (!totalValueType || !amountType || 
+                (amountType === 'Amount' && (!totalAmount || !advancePayment)) || 
+                (['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountType) && !addedAmount) || 
+                !isValidRoom) {
+                showError('Please fill all required fields, including at least one valid room and added amount if applicable, before printing');
+                printButton.disabled = false;
+                saveButton.disabled = false;
+                return;
+            }
+
+            try {
+                // Save payment and get invoice number
+                const invoiceNumber = await savePayment(false); // Pass false to prevent form reset
+                invoiceNumberDiv.textContent = `${invoiceNumber}`; // Update invoice number in UI
+
+                // Open print dialog
+                window.print();
+            } catch (error) {
+                showError('Error saving payment: ' + error.message);
+            } finally {
+                // Re-enable buttons
+                printButton.disabled = false;
+                saveButton.disabled = false;
+            }
+        });
+
+        // Search button
+        searchButton.addEventListener('click', function() {
+            if (searchButton.textContent === 'Search') {
+                const billingId = billingIdInput.value.trim();
+                
+                if (!billingId || billingId.length !== 4) {
+                    showError('Please enter a valid 4-character billing ID');
+                    return;
+                }
+                
+                currentBookingId = billingId;
+                fetchBookingDetails(billingId);
+            } else {
+                updateReceiptPreview();
+                showSuccess('Receipt preview updated');
+            }
+        });
+
+        function fetchBookingDetails(bookingReference) {
+            fetch(`api/get_booking_details.php?reference=${bookingReference}&table=history`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        return fetch(`api/get_booking_details.php?reference=${bookingReference}`);
+                    }
+                    return data;
+                })
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                    } else {
+                        displayBookingDetails(data);
+                        showSuccess('Booking details loaded successfully');
+                        
+                        document.querySelectorAll('.input-group').forEach(group => {
+                            group.style.display = 'block';
+                        });
+                        addedAmountGroup.style.display = ['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountTypeInput.value) ? 'block' : 'none';
+                        
+                        saveButton.disabled = true;
+                        printButton.disabled = false;
+                    }
+                })
+                .catch(error => {
+                    showError('Error fetching booking details: ' + error.message);
+                });
+        }
+
+        function displayBookingDetails(booking) {
+            // Format booking date
+            const bookingDate = booking.booking_date
+                ? formatDate(new Date(booking.booking_date))
+                : 'Date not specified';
+
+            const address = booking.groom_address || booking.bride_address || 'Address not specified';
+
+            // Separate function type and hall name
+            const functionType = booking.function_type || 'Not specified';
+            const hallName = booking.venue || 'Not specified';
+
+            // Populate details with separate fields
+            detailsDiv.innerHTML = `
+                <p><strong>Customer Name:</strong></p>
+                <p>${booking.full_name || 'Not provided'}</p>
+                <p><strong>Couple Name:</strong></p>
+                <p>${booking.couple_name || 'Not provided'}</p>
+                <p><strong>NIC:</strong></p>
+                <p></p>
+                <p><strong>Contact No:</strong></p>
+                <p></p>
+                <p><strong>Address:</strong></p>
+                <p>${address}</p>
+                <p><strong>Date of Event:</strong></p>
+                <p>${bookingDate}</p>
+                <p><strong>Function Type:</strong></p>
+                <p>${functionType}</p>
+                <p><strong>Hall Name:</strong></p>
+                <p>${hallName}</p>
+            `;
+            
+            invoiceNumberDiv.textContent = '(Will be generated on save)';
+            paymentSectionDiv.innerHTML = '';
+            searchButton.textContent = 'Update Form';
+            updateRoomTable();
+            updateReceiptPreview();
+        }
+
+        async function savePayment(resetForm = true) {
+            const paymentData = {
+                booking_reference: currentBookingId,
+                nic: nicInput.value || null,
+                contact_no: contactNoInput.value || null,
+                rooms: rooms,
+                ac_type: Array.from(acTypeInputs).find(input => input.checked)?.value || null,
+                meal_plan: [
+                    breakfastInput.checked ? 'Breakfast' : '',
+                    lunchInput.checked ? 'Lunch' : '',
+                    dinnerInput.checked ? 'Dinner' : '',
+                    roomOnlyInput.checked ? 'Room Only' : ''
+                ].filter(plan => plan).join(', ') || null,
+                remarks: remarksInput.value || null,
+                value_type: totalValueInput.value,
+                amount_type: amountTypeInput.value,
+                total_amount: amountTypeInput.value === 'FOC' || ['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountTypeInput.value) ? null : totalAmountInput.value || null,
+                advance_payment: advancePaymentInput.value || null,
+                pending_amount: pendingAmountInput.value || null,
+                added_amount: ['Added to package', 'Add to Menu', 'Add to Repayment'].includes(amountTypeInput.value) ? addedAmountInput.value || null : null
+            };
+            
+            // Log the JSON payload for debugging
+            console.log('Sending payment data:', JSON.stringify(paymentData, null, 2));
+
+            try {
+                const response = await fetch('api/save_boroompayment.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(paymentData)
+                });
+                const data = await response.json();
+                
+                if (!data.success) {
+                    throw new Error(data.error || 'Failed to save payment');
+                }
+
+                if (resetForm) {
+                    // Reset form
+                    nicInput.value = '';
+                    contactNoInput.value = '';
+                    rooms = [{ number: '', type: '', hotel: '' }];
+                    acTypeInputs.forEach(input => input.checked = false);
+                    breakfastInput.checked = false;
+                    lunchInput.checked = false;
+                    dinnerInput.checked = false;
+                    roomOnlyInput.checked = false;
+                    remarksInput.value = '';
+                    totalValueInput.value = 'Subtotal';
+                    amountTypeInput.value = '';
+                    totalAmountInput.value = '';
+                    totalAmountInput.style.display = 'none';
+                    advancePaymentInput.value = '';
+                    advancePaymentInput.type = 'text';
+                    advancePaymentInput.setAttribute('readonly', 'true');
+                    advancePaymentInput.classList.add('readonly-input');
+                    pendingAmountInput.value = '';
+                    pendingAmountInput.type = 'text';
+                    pendingAmountInput.setAttribute('readonly', 'true');
+                    pendingAmountInput.classList.add('readonly-input');
+                    addedAmountInput.value = '';
+                    addedAmountGroup.style.display = 'none';
+                    saveButton.disabled = true;
+                    updateRoomTable();
+                    updateReceiptPreview();
+                }
+                showSuccess('Payment saved successfully');
+                return data.invoice_number; // Return invoice number
+            } catch (error) {
+                console.error('Error saving payment:', error);
+                throw error;
+            }
+        }
+
+        function fetchCurrentUser() {
+            fetch('api/get_current_user.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.username) {
+                        issuedBySpan.textContent = data.username;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching current user:', error);
+                    issuedBySpan.textContent = 'Admin';
+                });
+        }
+
+        function showError(message) {
+            errorDiv.textContent = message;
+            errorDiv.className = 'error-message error';
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 5000);
+        }
+
+        function showSuccess(message) {
+            errorDiv.textContent = message;
+            errorDiv.className = 'error-message success';
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 3000);
+        }
+
+        // Initialize room table
+        updateRoomTable();
+
+        // Fetch current user when page loads
+        fetchCurrentUser();
+    });
+    </script>
+</body>
+</html>

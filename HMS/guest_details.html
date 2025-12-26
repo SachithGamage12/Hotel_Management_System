@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Registration Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      width: 190mm;
+      height: 277mm;
+      padding: 0;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+    }
+    .header {
+      text-align: center;
+      padding: 1rem 1.5rem 0.75rem;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      margin-bottom: 0;
+      position: relative;
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 10px solid #2a5298;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 0.5rem;
+      background: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 2px solid #d4af37;
+    }
+    .logo img {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 0.25rem 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    .subheader {
+      font-size: 0.8rem;
+      color: #e8f2ff;
+      margin: 0;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .content-area {
+      padding: 1rem 1.5rem 1rem;
+      flex-grow: 1;
+    }
+    .welcome-text {
+      text-align: center;
+      color: #666;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+      padding: 0.5rem;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 6px;
+      border-left: 3px solid #d4af37;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    tr {
+      height: 1.75rem;
+    }
+    tr:nth-child(even) {
+      background: #f8f9fa;
+    }
+    tr:nth-child(odd) {
+      background: #ffffff;
+    }
+    td {
+      border: 1px solid #e9ecef;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      color: #333;
+      border-top: none;
+      border-bottom: none;
+    }
+    tr:first-child td {
+      border-top: 1px solid #e9ecef;
+    }
+    tr:last-child td {
+      border-bottom: 1px solid #e9ecef;
+    }
+    td:first-child {
+      font-weight: 600;
+      color: #1e3c72;
+      width: 35%;
+      background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+      border-right: 2px solid #d4af37;
+    }
+    td:last-child {
+      border-right: 1px solid #e9ecef;
+    }
+    td:first-child:first-of-type {
+      border-left: 1px solid #e9ecef;
+    }
+    td span {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    .checkin-checkout {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.75rem;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #ffffff;
+      margin-top: 1rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .checkin-checkout div {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-align: center;
+      flex: 1;
+    }
+    .checkin-checkout div:first-child {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+      padding-right: 0.75rem;
+    }
+    .checkin-checkout div:last-child {
+      padding-left: 0.75rem;
+    }
+    .signatures {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      gap: 1.5rem;
+    }
+    .signature-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45%;
+      padding: 0.75rem;
+      background: #f8f9fa;
+      border-radius: 6px;
+      border: 1px solid #e9ecef;
+    }
+    .signature-line {
+      border-top: 2px dotted #1e3c72;
+      width: 100%;
+      margin-bottom: 0.25rem;
+      height: 1.5rem;
+    }
+    .signature-text {
+      font-size: 0.85rem;
+      color: #1e3c72;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .print-button {
+      background: linear-gradient(135deg, #d4af37, #ffd700);
+      color: #1e3c72;
+      padding: 0.75rem 2.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      align-self: center;
+      margin-top: 1rem;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .print-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #ffd700, #d4af37);
+    }
+    .decorative-border {
+      height: 2px;
+      background: linear-gradient(90deg, #d4af37, #ffd700, #d4af37);
+      margin: 1rem 0;
+    }
+    .hotel-amenities {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+    }
+    .amenities-text {
+      font-size: 0.8rem;
+      color: #666;
+      font-style: italic;
+    }
+    @media print {
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+      body {
+        background: #ffffff;
+        padding: 0;
+        margin: 0;
+      }
+      .card {
+        box-shadow: none;
+        border: 1px solid #000;
+        border-radius: 0;
+        padding: 0;
+        width: 190mm;
+        height: 277mm;
+        margin: 0;
+        page-break-inside: avoid;
+      }
+      .card::before {
+        background: #000;
+      }
+      .header {
+        background: none;
+        border-bottom: 2px solid #000;
+        margin-bottom: 0.5rem;
+        padding: 1rem 1.5rem 0.5rem;
+      }
+      .header::after {
+        display: none;
+      }
+      .logo {
+        background: #ffffff;
+        border: 2px solid #000;
+        box-shadow: none;
+      }
+      h1, .subheader {
+        color: #000;
+        text-shadow: none;
+      }
+      .welcome-text {
+        background: #f5f5f5;
+        border-left: 4px solid #000;
+      }
+      table {
+        box-shadow: none;
+        border: 1px solid #000;
+      }
+      table td {
+        border: 1px solid #000;
+        color: #000;
+        font-size: 9pt;
+        padding: 0.4rem 0.6rem;
+      }
+      tr {
+        height: 1.5rem;
+      }
+      td:first-child {
+        color: #000;
+        background: #f5f5f5;
+        border-right: 2px solid #000;
+      }
+      .checkin-checkout {
+        border: 2px solid #000;
+        background: #f5f5f5;
+        color: #000;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .signature-box {
+        background: #ffffff;
+        border: 1px solid #000;
+        border-radius: 0;
+      }
+      .signature-line {
+        border-top: 2px dotted #000;
+      }
+      .signature-text {
+        color: #000;
+      }
+      .hotel-amenities {
+        background: #f5f5f5;
+        border: 1px solid #000;
+        border-radius: 0;
+      }
+      .amenities-text {
+        color: #000;
+      }
+      .decorative-border {
+        background: #000;
+      }
+      .print-button {
+        display: none;
+      }
+    }
+    @media (max-width: 640px) {
+      .card {
+        width: 100%;
+        min-height: auto;
+        border-radius: 12px;
+      }
+      .header {
+        padding: 1.5rem 1rem 1rem;
+      }
+      .logo {
+        width: 80px;
+        height: 80px;
+      }
+      .logo img {
+        width: 60px;
+        height: 60px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .subheader {
+        font-size: 0.8rem;
+      }
+      .content-area {
+        padding: 1.5rem 1rem 1rem;
+      }
+      table td {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+      }
+      tr {
+        height: 2rem;
+      }
+      .checkin-checkout {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .checkin-checkout div:first-child {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 0 0 0.5rem 0;
+      }
+      .checkin-checkout div:last-child {
+        padding: 0.5rem 0 0 0;
+      }
+      .signature-box {
+        width: 48%;
+        padding: 0.75rem;
+      }
+      .signature-text {
+        font-size: 0.75rem;
+      }
+      .signatures {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+      }
+      .hotel-amenities {
+        margin-top: 1.5rem;
+      }
+      .amenities-text {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.avif" alt="Hotel Logo">
+      </div>
+      <h1>Guest Registration</h1>
+      <div class="subheader">Hospitality Excellence</div>
+    </div>
+    
+    <div class="content-area">
+     
+      
+      <div class="decorative-border"></div>
+      
+      <table>
+        <tr><td>GRC Number</td><td><span id="grc-number">-</span></td></tr>
+        <tr><td>Guest Name</td><td><span id="guest-name">-</span></td></tr>
+        <tr><td>Contact Number</td><td><span id="contact-number">-</span></td></tr>
+        <tr><td>Email Address</td><td><span id="email">-</span></td></tr>
+        <tr><td>Address</td><td><span id="address">-</span></td></tr>
+        <tr><td>ID Type</td><td><span id="id-type">-</span></td></tr>
+        <tr><td>ID Number</td><td><span id="id-number">-</span></td></tr>
+        <tr><td>Check-In</td><td><span id="check-in">-</span></td></tr>
+        <tr><td>Check-Out</td><td><span id="check-out">-</span></td></tr>
+        <tr><td>Room Details</td><td><span id="rooms">-</span></td></tr>
+        <tr><td>Meal Plan</td><td><span id="meal-plan">-</span></td></tr>
+        <tr><td>Number of Guests</td><td><span id="number-of-pax">-</span></td></tr>
+        <tr><td>Special Requests</td><td><span id="remarks">-</span></td></tr>
+      </table>
+      
+      <div class="decorative-border"></div>
+      
+      <div class="checkin-checkout">
+        <div>
+          <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 0.25rem;">CHECK-IN TIME</div>
+          <div style="font-size: 1.1rem; font-weight: 600;">2:00 PM</div>
+        </div>
+        <div>
+          <div style="font-size: 0.75rem; opacity: 0.8; margin-bottom: 0.25rem;">CHECK-OUT TIME</div>
+          <div style="font-size: 1.1rem; font-weight: 600;">12:00 PM</div>
+        </div>
+      </div>
+
+  
+
+      <div class="signatures">
+        <div class="signature-box">
+          <div class="signature-line"></div>
+          <div class="signature-text">Receptionist Signature</div>
+        </div>
+        <div class="signature-box">
+          <div class="signature-line"></div>
+          <div class="signature-text">Guest Signature</div>
+        </div>
+      </div>
+      
+      <button class="print-button" onclick="window.print()">Print Registration Card</button>
+    </div>
+  </div>
+  
+  <script>
+    async function fetchOptionName(fieldType, id) {
+      if (!id) return '-';
+      try {
+        const response = await fetch(`api/fetch_options.php?field_type=${fieldType}`);
+        if (!response.ok) throw new Error(`Network response was not ok: ${response.status}`);
+        const items = await response.json();
+        const item = items.find(item => item.id == id);
+        return item ? item.name : '-';
+      } catch (error) {
+        console.error(`Error fetching ${fieldType}:`, error);
+        return '-';
+      }
+    }
+
+    async function displayGuestDetails() {
+      const guestData = JSON.parse(localStorage.getItem('guestData') || '{}');
+      const fields = {
+        'grc-number': guestData.grc_number || '-',
+        'guest-name': guestData.guest_name || '-',
+        'contact-number': guestData.contact_number || '-',
+        'email': guestData.email || '-',
+        'address': guestData.address || '-',
+        'id-type': guestData.id_type || '-',
+        'id-number': guestData.id_number || '-',
+        'check-in': guestData.check_in_date ? `${guestData.check_in_date} ${guestData.check_in_time} ${guestData.check_in_time_am_pm}` : '-',
+        'check-out': guestData.check_out_date ? `${guestData.check_out_date} ${guestData.check_out_time} ${guestData.check_out_time_am_pm}` : '-',
+        'number-of-pax': guestData.number_of_pax || '-',
+        'remarks': guestData.remarks || '-'
+      };
+
+      // Handle multiple rooms
+      let roomsDisplay = '-';
+      if (guestData.rooms && Array.isArray(guestData.rooms) && guestData.rooms.length > 0) {
+        const roomPromises = guestData.rooms.map(async (room, index) => {
+          const roomTypeName = await fetchOptionName('room_types', room.room_type);
+          return `Room No. ${room.room_number}, Rate: ${room.room_rate}`;
+        });
+        roomsDisplay = (await Promise.all(roomPromises)).join('<br>');
+      }
+      fields['rooms'] = roomsDisplay;
+
+      // Fetch meal plan name
+      fields['meal-plan'] = await fetchOptionName('meal_plans', guestData.meal_plan_id);
+
+      // Update DOM with field values
+      for (const [id, value] of Object.entries(fields)) {
+        document.getElementById(id).innerHTML = value;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', displayGuestDetails);
+  </script>
+</body>
+</html>
